@@ -1,4 +1,4 @@
-emulators
+Emulators
 =========
 
-development methodology software emulators
+Development Methodology Software Emulators
