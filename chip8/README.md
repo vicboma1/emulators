@@ -43,14 +43,14 @@ Load Rom OK!
 
 ##Screenshots:
 
-* Brix :
+###Brix :
 
 ![](http://i59.tinypic.com/16hixkj.png)
    * Inputs:
      * ```Q -> Left ```
      * ```E -> Right ```
 
-* Pong :
+###Pong :
 
 ![](http://i60.tinypic.com/s4mdyp.png)
    * Inputs:
