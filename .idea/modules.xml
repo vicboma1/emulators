@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/chip8/chip8.iml" filepath="$PROJECT_DIR$/chip8/chip8.iml" />
+      <module fileurl="file://$PROJECT_DIR$/emulators.iml" filepath="$PROJECT_DIR$/emulators.iml" />
+    </modules>
+  </component>
+</project>
+
