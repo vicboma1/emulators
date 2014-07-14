@@ -24,7 +24,7 @@ Tag hierarchy of the project
   * David Winter, http://www.pong-story.com/chip8/
   * Matthew Mikolay, http://mattmik.com/chip8.html
   * Peter Miller, http://chip8.sourceforge.net/chip8-1.1.pdf
-  * http://es.wikipedia.org/wiki/SOLID_(object-oriented_design)
-  * http://en.wikipedia.org/wiki/Software_design_pattern
-  * BENJAMIN WINTERBERG, winterbe.com/posts/2014/03/16/java-8-tutorial/
+  * SOLID, http://es.wikipedia.org/wiki/SOLID_(object-oriented_design)
+  * Software Design Pattern, http://en.wikipedia.org/wiki/Software_design_pattern
+  * Benjamin winterberg, winterbe.com/posts/2014/03/16/java-8-tutorial/
   * My own know.
