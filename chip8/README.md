@@ -2,10 +2,6 @@ Chip8 Java Emulator
 =========
 
 * [Core]()
-  * ```AsyncTask```
-  * ```Executable```
-  * ```Processor```
-  * ```Updateable```
 
 * [Emulator]()
   * ```Dispose```
@@ -16,17 +12,9 @@ Chip8 Java Emulator
   * ```Emulator ```
 
 * [Windows]()
-  * ```Action Command```
-  * ```Windows```
-  * ```Windows Action Listener Implementation```
-  * ```Windows Item Listener Implementation```
-  * ```Windows Listener Listener Implementation```
 
 
-
-
-
-  References:
+ References:
   * Thomas P. Greene, http://devernay.free.fr/hacks/chip8/C8TECH10.HTM
   * David Winter, http://www.pong-story.com/chip8/
   * Matthew Mikolay, http://mattmik.com/chip8.html
