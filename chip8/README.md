@@ -9,7 +9,7 @@ Chip8 Java Emulator  (WIP)
   * ```Instructions```
   * ```Specification```
   * ```Utils ```
-* [Windows](https://github.com/victorakamon/emulators/tree/master/chip8/src/emulator)
+* [Windows](https://github.com/victorakamon/emulators/tree/master/chip8/src/windows)
 
 
 ##Loader Rom:
