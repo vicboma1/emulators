@@ -50,6 +50,12 @@ Load Rom OK!
      * ```Q -> Left ```
      * ```E -> Right ```
 
+* Pong :
+
+![](http://i60.tinypic.com/s4mdyp.png)
+   * Inputs:
+     * ```1 Player 1 -> Up | Q -> Down ```
+     * ```2 Player 4 -> Up | R -> Down ```
 
 
 ##References:
