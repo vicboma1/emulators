@@ -20,7 +20,16 @@ public class Render {
 
     public static Render create(Video video, short[] texelBitLine, int x, int y) {
         return new Render(video,texelBitLine,x,y);
-    }    /**
+    }   
+    
+    public Render(Video video, short[] texelBitLine, int x, int y) {
+        this.video = video;
+        this.texelBitLine = texelBitLine;
+        this.x = x;
+        this.y = y;
+    }
+
+    /**
      * Proceso optimizado de pintado y deteccion de colision
      *
      * @param video
@@ -29,13 +38,6 @@ public class Render {
      * @param y
      * @return
      */
-    public Render(Video video, short[] texelBitLine, int x, int y) {
-        this.video = video;
-        this.texelBitLine = texelBitLine;
-        this.x = x;
-        this.y = y;
-    }
-
     public Boolean binaryMatrix() {
         final boolean [] collision = {false};
         final int posX = 2 * x;
