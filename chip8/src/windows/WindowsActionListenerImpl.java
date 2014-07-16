@@ -40,9 +40,9 @@ public class WindowsActionListenerImpl implements ActionListener {
                         put(LOAD_ROM, () -> {
                             specificationChip8Impl.stopAsyncTask();
                             FileDialog loadFile = new FileDialog(frame, SELECT_CHIP8_SUPER_CHIP_ROM, FileDialog.LOAD);
-                            loadFile.setDirectory(".\\");
-                            loadFile.setFile("*.rom");
-                            loadFile.show();
+                            loadFile.setDirectory("./roms/c");
+                            loadFile.setFilenameFilter((dir, name) -> (name.contains(".rom")));
+                            loadFile.setVisible(true);
 
                             final boolean isLoaded = Loader.rom(loadFile.getDirectory() + loadFile.getFile(), specificationChip8Impl.memory());
                             if (isLoaded) {
