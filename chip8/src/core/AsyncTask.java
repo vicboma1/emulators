@@ -4,6 +4,7 @@ import emulator.dispose.Disposable;
 
 /**
  * Created by vicboma on 11/07/14.
+ * Create a task asynchronously executable.
  */
 public class AsyncTask<T extends Executable> implements Disposable {
     private static final String PROCESSOR_THREAD = "processor-thread";
