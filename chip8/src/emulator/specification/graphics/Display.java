@@ -30,6 +30,7 @@ public class Display implements ImageProducer {
     private static final int GMASK = 0x0000ff00; // Green mask
     private static final int BMASK = 0x000000ff; //Blue mask
     private static final int AMASK = 0x00000000; // Alpha mask
+    
     // This color model is similar to an X11 TrueColor visual.
     // The default RGB ColorModel specified by the getRGBdefault
     // method is a DirectColorModel with the following parameters:
