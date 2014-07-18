@@ -29,14 +29,14 @@ public class KeyBoard implements Disposable {
         stream.sequential().forEach(x -> this.keyPressed.add(x, false));
     }
 
-    public KeyListener listener() {
-        return this.keyBoardListener.listener();
-    }
-
     @Override
     public void dispose() {
         initializeKeyPressed();
         this.keyBoardListener.initializeMapEvent();
+    }
+
+    public KeyListener listener() {
+        return this.keyBoardListener.listener();
     }
 
     public Boolean get(final int index) {
