@@ -31,12 +31,6 @@ public class Render {
 
     /**
      * Proceso optimizado de pintado y deteccion de colision
-     *
-     * @param video
-     * @param texelBitLine
-     * @param x
-     * @param y
-     * @return
      */
     public Boolean binaryMatrix() {
         final boolean [] collision = {false};

@@ -1,7 +1,7 @@
 Chip8 Java Emulator  (WIP)
 =========
 
-##Tag hierarchy of the project
+##Tag hierarchy of the project :
 
 * [Core](https://github.com/victorakamon/emulators/tree/master/chip8/src/core)
 * [Emulator](https://github.com/victorakamon/emulators/tree/master/chip8/src/emulator)
@@ -12,7 +12,7 @@ Chip8 Java Emulator  (WIP)
 * [Windows](https://github.com/victorakamon/emulators/tree/master/chip8/src/windows)
 
 
-##Loader Rom:
+##Loader Rom :
 ```
 Emulator loaded OK!
 Rom size: 280.0 bytes
@@ -41,7 +41,7 @@ Stack
 Load Rom OK!
 ```
 
-##Screenshots:
+##Screenshots :
 
 ###Brix :
 
@@ -58,7 +58,7 @@ Load Rom OK!
      * ```2 Player 4 -> Up | R -> Down ```
 
 
-##References:
+##References :
 
 * Thomas P. Greene, http://devernay.free.fr/hacks/chip8/C8TECH10.HTM
 * David Winter, http://www.pong-story.com/chip8/
