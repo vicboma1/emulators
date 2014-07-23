@@ -26,7 +26,7 @@ public class Display implements ImageProducer {
     public static final int HEIGHT = 320;
     public static final int ZERO = Utils.ZERO;
     private static final int BITS = 32;
-    
+
     private static final int RMASK = 0x00ff0000; // Red mask
     private static final int GMASK = 0x0000ff00; // Green mask
     private static final int BMASK = 0x000000ff; //Blue mask
