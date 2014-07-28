@@ -14,19 +14,15 @@ public class Render {
     private int x;
     private int y;
 
-    public static Render create(Video video, short[] texelBitLine, int x, int y) {
-        return new Render(video,texelBitLine,x,y);
-    }
-
-    public static Render create(Video video, short[] texelBitLine, int x, int y) {
-        return new Render(video,texelBitLine,x,y);
-    }   
-    
     public Render(Video video, short[] texelBitLine, int x, int y) {
         this.video = video;
         this.texelBitLine = texelBitLine;
         this.x = x;
         this.y = y;
+    }
+
+    public static Render create(Video video, short[] texelBitLine, int x, int y) {
+        return new Render(video,texelBitLine,x,y);
     }
 
     /**
