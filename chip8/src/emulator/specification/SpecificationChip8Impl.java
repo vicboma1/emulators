@@ -13,6 +13,7 @@ import emulator.specification.input.KeyBoard;
 import emulator.specification.memory.Memory;
 import emulator.specification.register.Register;
 import emulator.specification.sound.Sound;
+import emulator.specification.timer.Timer;
 import emulator.utils.Utils;
 
 import javax.swing.*;
