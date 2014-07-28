@@ -34,7 +34,6 @@ public class Memory {
     }
 
     public void loadFont(Font font) {
-        // cargo las fuentes en las primeras posiciones de memoria desempaquetandolas
         for (int i = 0; i < 40; i++) {
             final int index = i << 1;
             final int mask = 0xf0;
