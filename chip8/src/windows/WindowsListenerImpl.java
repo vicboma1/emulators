@@ -8,15 +8,11 @@ import java.awt.event.WindowListener;
  */
 public class WindowsListenerImpl implements WindowListener {
 
-    public static WindowListener create() {
-        return new WindowsListenerImpl();
-    }
-
-    public static WindowListener create() {
-        return new WindowsListenerImpl();
-    }
-
     WindowsListenerImpl() {
+    }
+
+    public static WindowListener create() {
+        return new WindowsListenerImpl();
     }
 
     public void windowOpened(WindowEvent e) {

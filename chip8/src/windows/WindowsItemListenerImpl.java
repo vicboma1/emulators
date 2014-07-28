@@ -14,18 +14,14 @@ public class WindowsItemListenerImpl implements ItemListener {
     private SpecificationChip8Impl specificationChip8Impl;
     private JCheckBoxMenuItem sound;
 
-    public static ItemListener create(final SpecificationChip8Impl specificationChip8Impl, final JCheckBoxMenuItem sound) {
-        return new WindowsItemListenerImpl(specificationChip8Impl, sound);
-    }
-
-    public static ItemListener create(final SpecificationChip8Impl specificationChip8Impl, final JCheckBoxMenuItem sound) {
-        return new WindowsItemListenerImpl(specificationChip8Impl, sound);
-    }
-
     WindowsItemListenerImpl(final SpecificationChip8Impl specificationChip8Impl, final JCheckBoxMenuItem sound) {
         this.specificationChip8Impl = specificationChip8Impl;
         this.sound = sound;
         this.sound.addItemListener(this);
+    }
+
+    public static ItemListener create(final SpecificationChip8Impl specificationChip8Impl, final JCheckBoxMenuItem sound) {
+        return new WindowsItemListenerImpl(specificationChip8Impl, sound);
     }
 
     @Override
