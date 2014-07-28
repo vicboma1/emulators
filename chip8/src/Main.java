@@ -1,3 +1,4 @@
+import emulator.Chip8;
 import emulator.utils.Utils;
 
 import javax.swing.*;
