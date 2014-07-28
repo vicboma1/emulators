@@ -1,6 +1,8 @@
 package emulator.instructions;
 
-import emulator.instructions.map.*;
+import emulator.instructions.map.KeyBoardOp;
+import emulator.instructions.map.Operators;
+import emulator.instructions.map.ZeroOp;
 import emulator.specification.SpecificationsChip8;
 
 import java.util.Map;
