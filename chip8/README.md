@@ -1,4 +1,4 @@
-Chip8 Java Emulator  (WIP)
+Chip8 Java Emulator  
 =========
 
 ##Tag hierarchy of the project :
