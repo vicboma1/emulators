@@ -3,13 +3,15 @@ Chip8 Java Emulator
 
 ##Tag hierarchy of the project :
 
-* [Core](https://github.com/victorakamon/emulators/tree/master/chip8/src/core)
 * [Emulator](https://github.com/victorakamon/emulators/tree/master/chip8/src/emulator)
-  * ```Dispose```
   * ```Instructions```
   * ```Specification```
   * ```Utils ```
-* [Windows](https://github.com/victorakamon/emulators/tree/master/chip8/src/windows)
+* [Framework](https://github.com/victorakamon/emulators/tree/master/chip8/src/framework)
+  * [Core](https://github.com/victorakamon/emulators/tree/master/chip8/src/framework/core)
+  * [Windows](https://github.com/victorakamon/emulators/tree/master/chip8/src/framework/windows)
+  * ```Dispose```
+
 
 
 ##Loader Rom :
