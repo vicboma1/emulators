@@ -2,7 +2,7 @@ package emulator;
 
 import emulator.specification.SpecificationChip8Impl;
 import emulator.specification.input.KeyBoard;
-import windows.Windows;
+import framework.windows.Windows;
 
 import javax.swing.*;
 

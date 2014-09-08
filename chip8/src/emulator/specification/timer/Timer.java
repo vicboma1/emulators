@@ -1,7 +1,7 @@
 package emulator.specification.timer;
 
-import emulator.dispose.Disposable;
 import emulator.utils.Utils;
+import framework.dispose.Disposable;
 
 /**
  * Created by vicboma on 08/07/14.

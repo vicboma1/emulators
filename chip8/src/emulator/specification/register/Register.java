@@ -1,7 +1,7 @@
 package emulator.specification.register;
 
-import emulator.dispose.Disposable;
 import emulator.specification.memory.Memory;
+import framework.dispose.Disposable;
 
 /**
  * Created by vicboma on 08/07/14.

@@ -1,4 +1,4 @@
-package core;
+package framework.core;
 
 /**
  * Created by vicboma on 14/07/14.

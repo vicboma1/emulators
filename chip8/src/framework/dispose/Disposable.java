@@ -1,4 +1,4 @@
-package emulator.dispose;
+package framework.dispose;
 
 /**
  * Created by vicboma on 08/07/14.

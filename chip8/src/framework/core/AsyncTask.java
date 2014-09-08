@@ -1,6 +1,6 @@
-package core;
+package framework.core;
 
-import emulator.dispose.Disposable;
+import framework.dispose.Disposable;
 
 /**
  * Created by vicboma on 11/07/14.

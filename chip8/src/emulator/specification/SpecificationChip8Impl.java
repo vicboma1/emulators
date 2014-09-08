@@ -1,7 +1,5 @@
 package emulator.specification;
 
-import core.AsyncTask;
-import core.Processor;
 import emulator.Emulator;
 import emulator.instructions.Instructions;
 import emulator.specification.font.Font;
@@ -15,6 +13,8 @@ import emulator.specification.register.Register;
 import emulator.specification.sound.Sound;
 import emulator.specification.timer.Timer;
 import emulator.utils.Utils;
+import framework.core.AsyncTask;
+import framework.core.Processor;
 
 import javax.swing.*;
 import java.awt.*;

@@ -1,6 +1,6 @@
 package emulator.specification.input;
 
-import emulator.dispose.Disposable;
+import framework.dispose.Disposable;
 
 import java.awt.event.KeyListener;
 import java.util.ArrayList;

@@ -1,4 +1,4 @@
-package windows;
+package framework.windows;
 
 import emulator.specification.SpecificationChip8Impl;
 import emulator.specification.input.KeyBoard;

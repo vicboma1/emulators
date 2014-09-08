@@ -6,7 +6,7 @@ import javax.swing.*;
 /**
  * Created by vicboma on 08/07/14.
  */
-public class Main {
+public class MainChip8 {
 
     private static final String SYSTEM_LOOK_AND_FEEL_CLASS_NAME = UIManager.getSystemLookAndFeelClassName();
     private static final String EMULATOR_LOADED = "Emulator loaded ";

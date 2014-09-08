@@ -1,4 +1,4 @@
-package core;
+package framework.core;
 
 import emulator.instructions.Instructions;
 import emulator.specification.SpecificationChip8Impl;
