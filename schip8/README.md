@@ -3,13 +3,13 @@ S-Chip8 Java Emulator (WIP)
 
 ##Tag hierarchy of the project :
 
-* [Core](https://github.com/victorakamon/emulators/tree/master/chip8/src/core)
+* [Core](https://github.com/victorakamon/emulators/tree/master/chip8/src/framework.core)
 * [Emulator](https://github.com/victorakamon/emulators/tree/master/chip8/src/emulator)
   * ```Dispose```
   * ```Instructions```
   * ```Specification```
   * ```Utils ```
-* [Windows](https://github.com/victorakamon/emulators/tree/master/chip8/src/windows)
+* [Windows](https://github.com/victorakamon/emulators/tree/master/chip8/src/framework.windows)
 
 
 ##References :
