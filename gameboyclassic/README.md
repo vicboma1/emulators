@@ -23,7 +23,7 @@ DMG: Game Boy (monochrome), introduced on April 21, 1989
 * 0x000 to 0x0FF: Allocated as the destination address for RST instructions and the starting address for interrupts.
 * 0x100 to 0x14F: Allocated as the ROM area for storing data such as the name of the game.
 * 0x150: Allocated as the starting address of the user program.
-
+___
 * 0x8000 to 0x9FFF : used as RAM for the LCD display (8 KB).
 * 0xA000 to 0xBFFF : the area allocated for external expansion RAM (8 KB).
 * 0xC000 to 0xDFFF : the work RAM area (8 KB).
@@ -78,12 +78,13 @@ Sound 3:
 
 Sounds 1, 2, and 4:
 * When the default level is set to 0000 with the envelope in DOWN mode (initialization not required)
+
 Sound 3:
 * When the Sound OFF flag (bit 7 of NR30) is set to 0. Setting the Sound OFF flag to 1 cancels OFF mode. Sound 3 is started by re-initialization.
 
 ####Sumary
 
-Reg  |  Addr  |  D7 ... D0
+```Reg  |  Addr  |  D7 ... D0 ```
 
 ##CPU (WIP)
 * Acc : Accumulator (8 bits)
