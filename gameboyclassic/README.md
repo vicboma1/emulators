@@ -1,4 +1,4 @@
-GameBoy Classic Java Emulator  (WIP)
+GameBoy Classic Java Emulator  (SSADM - WIP)
 =========
 
 ##References :
