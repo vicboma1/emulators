@@ -1,4 +1,4 @@
-Emulators in java 8
+Emulators with Java 8
 =========
 
 Development Methodology Software Emulators
