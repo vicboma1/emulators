@@ -1,4 +1,4 @@
-GameBoy Classic Java Emulator  
+GameBoy Classic Java Emulator  (WIP)
 =========
 
 ##References :
