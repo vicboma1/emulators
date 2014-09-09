@@ -43,7 +43,7 @@ The transfer start address can be specified in increments of 0x100 for 0x8000-0x
 * TMA (timer modulo register) 
 * TAC (timer control register)
 
-##Display
+##Display (WIP)
 The DMG CPU has 8 KB (64 Kbits) of built-in LCD display RAM.
 
 Data specification ranges for OBJ characters: 
@@ -103,17 +103,19 @@ C | H | N | Z |  CYCL | OpCodes
 * N - Subtract Flag
 * H - Half Carry Flag
 * C - Carry Flag
-* (OpCodes)[http://www.pastraiser.com/cpu/gameboy/gameboy_opcodes.html]
+* [OpCodes](http://www.pastraiser.com/cpu/gameboy/gameboy_opcodes.html)
 
 
-#Monitor Rom
+##Monitor Rom
 When power on the hardware is turned on, the monitor ROM checks for errors in the ‘Nintendo’ logo character data within the game software.
 If the data is correct, the Nintendo logo is displayed and the program is then started. 
 If there is an error in the data, the screen flashes repeatedly.
 
 The conditions required for starting the user program are as follows.
 Starting Address 0x150.
-The starting address can be freely set by writing a jump destination address at 0x102 and 0x103
+The starting address can be freely set by writing a jump destination address at 0x102 and 0x103.
+
+
 
 ##References :
 * Game BoyTM CPU Manual, Pan of Anthrox, GABY, Marat Fayzullin, Pascal Felber, Paul Robson, Martin Korth, kOOPa, Bowser.
