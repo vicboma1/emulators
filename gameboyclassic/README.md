@@ -1,7 +1,7 @@
 GameBoy Classic Java Emulator (DMG)
 =========
 
-##Abreviation
+##Abbreviation
 DMG: Game Boy (monochrome), introduced on April 21, 1989
 
 ##System DMG
@@ -20,26 +20,28 @@ DMG: Game Boy (monochrome), introduced on April 21, 1989
 
 ##Memory
 32 KB from 0x0 to 0x7FFF is available as program area :
-* 0x000-0x0FF: Allocated as the destination address for RST instructions and the starting address for interrupts.
-* 0x100-0x14F: Allocated as the ROM area for storing data such as the name of the game.
+* 0x000 to 0x0FF: Allocated as the destination address for RST instructions and the starting address for interrupts.
+* 0x100 to 0x14F: Allocated as the ROM area for storing data such as the name of the game.
 * 0x150: Allocated as the starting address of the user program.
 
-0x8000 to 0x9FFF : used as RAM for the LCD display (8 KB).
-0xA000 to 0xBFFF : the area allocated for external expansion RAM (8 KB).
-0xC000 to 0xDFFF : the work RAM area (8 KB).
-0xFE00 to 0xFFFF : allocated for CPU internal RAM.
-0xFE00 to 0xFE9F: OAM-RAM (Holds display data for 40 objects)
-0xFF00 to 0xFF7F & 0xFFFF: Specified for purposes such as instruction registers and system controller flags.
-0xFF80 to 0xFFFE: Can be used as CPU work RAM and/or stack RAM.
+* 0x8000 to 0x9FFF : used as RAM for the LCD display (8 KB).
+* 0xA000 to 0xBFFF : the area allocated for external expansion RAM (8 KB).
+* 0xC000 to 0xDFFF : the work RAM area (8 KB).
+* 0xFE00 to 0xFFFF : allocated for CPU internal RAM.
+* 0xFE00 to 0xFE9F : OAM-RAM (Holds display data for 40 objects)
+* 0xFF00 to 0xFF7F & 0xFFFF: Specified for purposes such as instruction registers and system controller flags.
+* 0xFF80 to 0xFFFE : Can be used as CPU work RAM and/or stack RAM.
 
 DMA transfers are controlled by the DMA registers.
+
 DMG allows 40 x 32-bit DMA transfers from 0x8000-0xDFFF to OAM (0xFE00-0xFE9F).
+
 The transfer start address can be specified in increments of 0x100 for 0x8000-0xDFFF.
 
-##Timer
-TIMA (timer counter)
-TMA (timer modulo register) 
-TAC (timer control register)
+##Timer (WIP)
+* TIMA (timer counter)
+* TMA (timer modulo register) 
+* TAC (timer control register)
 
 ##Display
 The DMG CPU has 8 KB (64 Kbits) of built-in LCD display RAM.
@@ -63,38 +65,45 @@ Frame frequency: 59.7Hz
 * Sound 3: Outputs any waveform from waveform RAM.
 * Sound 4: Generates white noise with an envelope function.
 
-ON Mode
+####ON Mode
+
 Sounds 1, 2, 4:
 * Output level is 0 with the default envelope value set to a value other than 0000 and in DOWN mode
 * The step is 0 with the default envelope value set to a value of 0000 and in UP mode (NR12, NR22, and NR42 set to 0x08 and the initialization flag set)
-Sound 3:
-With the output level set to mute (bits 5 and 6 of NR32 set to 0)
 
-OFF Mode
+Sound 3:
+* With the output level set to mute (bits 5 and 6 of NR32 set to 0)
+
+####OFF Mode
+
 Sounds 1, 2, and 4:
 * When the default level is set to 0000 with the envelope in DOWN mode (initialization not required)
 Sound 3:
 * When the Sound OFF flag (bit 7 of NR30) is set to 0. Setting the Sound OFF flag to 1 cancels OFF mode. Sound 3 is started by re-initialization.
 
-Sumary
-Reg | Addr | D7 ... D0
+####Sumary
+
+Reg  |  Addr  |  D7 ... D0
 
 ##CPU (WIP)
-Acc : Accumulator (8 bits)
-Aux Reg: B,C,D,E,H,L -> (BC), (DE), (HL) (8 bits)
-PC: Program Counter (16 bits)
-SP: Stack Pointer (16 bits),  SP + 2 (Pop) || SP - 2 (Push)
-F: Flag Register (8 bits)
+* Acc : Accumulator (8 bits)
+* Aux Reg: B,C,D,E,H,L -> (BC), (DE), (HL) (8 bits)
+* PC: Program Counter (16 bits)
+* SP: Stack Pointer (16 bits),  SP + 2 (Pop) || SP - 2 (Push)
+* F: Flag Register (8 bits)
 
-Sumary
+####Sumary
 
-     FLAGS
-C | H | N | Z |  CYCL | [OpCodes](http://www.pastraiser.com/cpu/gameboy/gameboy_opcodes.html)
+```
+C | H | N | Z |  CYCL | OpCodes
+```
 
-Z - Zero Flag
-N - Subtract Flag
-H - Half Carry Flag
-C - Carry Flag
+* Z - Zero Flag
+* N - Subtract Flag
+* H - Half Carry Flag
+* C - Carry Flag
+* (OpCodes)[http://www.pastraiser.com/cpu/gameboy/gameboy_opcodes.html]
+
 
 #Monitor Rom
 When power on the hardware is turned on, the monitor ROM checks for errors in the ‘Nintendo’ logo character data within the game software.
