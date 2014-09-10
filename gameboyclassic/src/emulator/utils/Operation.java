@@ -30,17 +30,6 @@ public class Operation {
 
     }
 
-    private static Short _unsign(short b) {
-        short result;
-        if (b >= 0)
-            result = b;
-        else
-            result = (short) (0x100 + b);
-
-        return result;
-
-    }
-
     public static final String hexChars = "0123456789ABCDEF";
 
     /**
