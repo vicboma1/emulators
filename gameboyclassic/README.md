@@ -59,7 +59,7 @@ Attr data
 Window display data also can be specified as character codes, beginning from 0x9800 or 0x9C00 in external SRAM.
 Frame frequency: 59.7Hz
 
-##Sound
+##Sound (WIP)
 * Sound 1: Generates a rectangle waveform with sweep and envelope functions.
 * Sound 2: Generates a rectangle waveform with an envelope function.
 * Sound 3: Outputs any waveform from waveform RAM.
