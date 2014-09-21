@@ -127,7 +127,7 @@ The starting address can be freely set by writing a jump destination address at 
 
 ##References :
 * Game BoyTM CPU Manual, Pan of Anthrox, GABY, Marat Fayzullin, Pascal Felber, Paul Robson, Martin Korth, kOOPa, Bowser.
-*￼Game Boy PROGRAMMING MANUAL v.1.0, DMG-06-4216-001-A Released 11/09/1999 Nintendo.
+* ￼Game Boy PROGRAMMING MANUAL v.1.0, DMG-06-4216-001-A Released 11/09/1999 Nintendo.
 * Study of the techniques for emulation programming, Victor Moya del Barrio, Agustin Fernandez, 2001.
 * GB microChip Z80 opCodes, http://goldencrystal.free.fr/GBZ80Opcodes.pdf
 * My own know.
