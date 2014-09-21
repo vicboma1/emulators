@@ -43,6 +43,14 @@ The transfer start address can be specified in increments of 0x100 for 0x8000-0x
 * TMA (timer modulo register) 
 * TAC (timer control register)
 
+##Registers JoyPad interrupt $FF00 (WIP)
+* Bit 3 - P13 in port 
+* Bit 2 - P12 in port 
+* Bit 1 - P11 in port 
+* Bit 0 - P10 in port
+* Bit 5 - P15 out port { $8 - Down | $4 - Up | $2 - Left | $1 - Right }
+* Bit 4 - P14 out port { $80 - Start | $40 - Select | $20 -B | $10 -A }
+
 ##Display (WIP)
 The DMG CPU has 8 KB (64 Kbits) of built-in LCD display RAM.
 
