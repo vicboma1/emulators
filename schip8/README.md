@@ -1,4 +1,4 @@
-S-Chip8 Java Emulator (WIP)
+S-Chip8 Java Emulator
 =========
 
 ##References :
