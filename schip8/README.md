@@ -2,7 +2,7 @@ S-Chip8 Java Emulator
 =========
 
 
-Super Chip-48 New Instructions
+Super Chip-48:  New Instructions
 ```
 00Cn - SCD nibble
 00FB - SCR
