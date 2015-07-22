@@ -3,7 +3,7 @@ S-Chip8 Java Emulator
 
 
 Super Chip-48 New Instructions
-
+```
 00Cn - SCD nibble
 00FB - SCR
 00FC - SCL
@@ -14,7 +14,7 @@ Dxy0 - DRW Vx, Vy, 0
 Fx30 - LD HF, Vx
 Fx75 - LD R, Vx
 Fx85 - LD Vx, R
-
+```
 
 
 ##References :
