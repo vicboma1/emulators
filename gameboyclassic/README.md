@@ -123,7 +123,14 @@ The conditions required for starting the user program are as follows.
 Starting Address 0x150.
 The starting address can be freely set by writing a jump destination address at 0x102 and 0x103.
 
+##Game Boy Memory Controllers (MBC)
 
+#### MBC1
+MBC1 is a memory controller that enables the use of 512 Kbits (64 Kbytes) or more of ROM and 256 Kbits (32 Kbytes) of RAM. RAM use by MBC1 is restricted to 64 Kbits (8 Kbytes).
+* Register 0 : 0x0000-0x1FFF 
+* Register 1 : 0x2000-0x3FFF 
+* Register 2 : 0x4000-0x5FFF
+* Register 3 : 0x6000-0x7FFF 
 
 ##References :
 * Game BoyTM CPU Manual, Pan of Anthrox, GABY, Marat Fayzullin, Pascal Felber, Paul Robson, Martin Korth, kOOPa, Bowser.
