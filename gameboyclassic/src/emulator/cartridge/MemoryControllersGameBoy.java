@@ -1,10 +1,12 @@
 package emulator.cartridge;
 
-import java.util.ArrayList;
-import java.util.List;
+import java.util.HashMap;
+import java.util.Map;
 
 /**
  * Created by vicboma on 03/12/14.
+ *
+ * Los valores de las claves están referenciadas en Hexadecimal mediante String.
  */
 public class MemoryControllersGameBoy {
 
@@ -28,47 +30,135 @@ public class MemoryControllersGameBoy {
     public static final String POCKET_CAMERA = "POCKET CAMERA";
 
 
-    /*
+    public static final String JAPANESE = "Japanese";
+    public static final String NON_JAPANESE = "Non-Japanese";
+
+
+    public static final String CHECK = "Check";
+
+
+    public static final String CLASSIC = "Classic";
+    public static final String COLOR = "Color";
+    /**
+     * $80 = Color GB, $00 or other = not Color GB
+     */
+    public static final Map<String,String> GB_COLOR = new HashMap(){
+        {
+            put("00", CLASSIC);
+            put("80", COLOR);
+        }
+    };
+
+
+    /**
+     * GB/SGB Indicator
+     */
+    public static final Map<String, String> GB_SGB_INDICATOR = new HashMap(){
+        {
+            put("00", "Game Boy");
+            put("03", "Super GameBoy functions");
+        }
+    };
+
+    /**
+     * LICENSEE CODE OLD
+     *
+     * 33 - Check 0144/0145 for Licensee code.
+     * 79 - Accolade
+     * A4 - Konami
+     * (Super GameBoy function won't work
+     * if <> $33.)
+     *
+     */
+    public static final Map<String, String> LICENSEE_CODE_OLD = new HashMap(){
+        {
+            put("33", CHECK);
+            put("79", "Accolade");
+            put("A4", "Konami");
+        }
+    };
+
+
+    /**
+     * ROM SIZE
+     *
+     * Index - Size Banks
+     *
+     * Example : 0 - 256Kbit  = 32KByte  = 2 Banks
+     *         : 1 - 512kBits = 64Kbytes = 4 Banks
+     *         ...
+     *
+     */
+    public static final Map<String, Integer> ROM_SIZE = new HashMap(){
+        {
+            put("00", 2);     put("01", 4);   put("02", 8);   put("03", 16);    put("04", 32);
+            put("05", 64);    put("06", 128); put("07", 256); put("52", 72); put("53", 80);
+            put("54", 96);
+            put("4E", 64); //ROM + "+" + MBC3 + "+" + NO_RTC + "+" + RAM +"+"+ BATT);
+        }
+    };
+
+
+    /**
+     * RAM SIZE
+     *
+     * Index - Size Banks
+     *
+     * Example : 0 - None
+     *         : 1 - 16kBit = 2kB = 1bank
+     *         : 2 - 64kBit = 8kB = 1bank
+     *         ...
+     *
+     */
+    public static final Map<String, Integer> RAM_SIZE = new HashMap(){
+        {
+            put("00", 0);     put("01", 1);   put("02", 1);   put("03", 4);  put("04", 16);  put("05", 64);
+        }
+    };
+
+    /**
+     * Destination code:
+     * 0 - Japanese
+     * 1 - Non-Japanese
+     */
+    public static final Map<String, String> DESTINATION_CODE = new HashMap(){
+        {
+            put("00", JAPANESE);     put("01", NON_JAPANESE);
+        }
+    };
+
+     /*
      *  Chapter 8: Game Boy Memory Controllers (MBC) Page 212 - 230
      *
      */
-    public static final List<String> table = new ArrayList<String>() {
+    public static final Map<String,String> CARTRIDGE_TYPE = new HashMap<String,String>() {
         {
-            add(ROM);                                                               /* 00H ROM*/
-            add(ROM + "+" + MBC1);                                                  /* 01H MBC1*/
-            add(ROM + "+" + MBC1 + "+" + RAM);                                      /* 02H MBC1*/
-            add(ROM + "+" + MBC1 + "+" + RAM + "+" + BATT);                         /* 03H MBC1*/
-            add(UNKNOWN);                                                           /* 04H */
-            add(ROM + "+" + MBC2);                                                  /* 05H MBC2*/
-            add(ROM + "+" + MBC2 + "+" + BATT);                                     /* 06H MBC2*/
-            add(UNKNOWN);                                                           /* 07H */
-            add(ROM + "+" + RAM);                                                   /* 08H ROM*/
-            add(ROM + "+" + RAM + "+" + BATT);                                      /* 09H ROM*/
-            add(UNKNOWN);                                                           /* 0AH */
-            add(ROM + "+" + MMM01);                                                 /* 0BH */
-            add(ROM + "+" + MMM01 + "+" + SRAM);                                    /* 0CH */
-            add(ROM + "+" + MMM01 + "+" + SRAM + "+" + BATT);                       /* 0DH */
-            add(UNKNOWN);                                                           /* 0EH */
-            add(ROM + "+" + MBC3 + "+" + RTC + "+" + BATT);                         /* 0FH MBC3 */
-            add(ROM + "+" + MBC3 + "+" + RTC + "+" + RAM + "+" + BATT);             /* 10H MBC3*/
-            add(ROM + "+" + MBC3 + "+" + NO_RTC + "+" + RAM);                       /* 11H MBC3*/
-            add(ROM + "+" + MBC3 + "+" + NO_RTC + "+" + RAM + "+" + BATT);          /* 12H MBC3*/
-            add(UNKNOWN);                                                           /* 13H */
-            add(UNKNOWN);                                                           /* 14H */
-            add(UNKNOWN);                                                           /* 15H */
-            add(UNKNOWN);                                                           /* 16H */
-            add(UNKNOWN);                                                           /* 17H */
-            add(UNKNOWN);                                                           /* 18H */
-            add(ROM + "+" + MBC5 + "+" + NO_RUMBLE);                                /* 19H MBC5*/
-            add(ROM + "+" + MBC5 + "+" + NO_RUMBLE + "+" + SRAM);                   /* 1AH MBC5*/
-            add(ROM + "+" + MBC5 + "+" + NO_RUMBLE + "+" + SRAM + "+" + BATT);      /* 1BH MBC5*/
-            add(ROM + "+" + MBC5 + "+" + RUMBLE);                                   /* 1CH MBC5*/
-            add(ROM + "+" + MBC5 + "+" + RUMBLE + "+" + SRAM);                      /* 1DH MBC5*/
-            add(ROM + "+" + MBC5 + "+" + RUMBLE + "+" + SRAM + "+" + BATT);         /* 1EH MBC5*/
-            add(POCKET_CAMERA);                                                     /* 1FH POCKET_CAMERA*/
-            //    add(BANDAI_TAMA5);                                                /* FD BANDAI_TAMA5*/
-            //    add(HUDSON_HUC_3);                                                /* FE HUDSON_HUC_3*/
-            //    add(HUDSON_HUC_1);                                                /*  FF HUDSON_HUC_1*/
+            put("00", ROM);
+            put("01", ROM + "+" + MBC1);
+            put("02", ROM + "+" + MBC1 + "+" + RAM);
+            put("03", ROM + "+" + MBC1 + "+" + RAM + "+" + BATT);
+            put("05", ROM + "+" + MBC2);
+            put("06", ROM + "+" + MBC2 + "+" + BATT);
+            put("08", ROM + "+" + RAM);
+            put("09", ROM + "+" + RAM + "+" + BATT);
+            put("0B", ROM + "+" + MMM01);
+            put("0C", ROM + "+" + MMM01 + "+" + SRAM);
+            put("0D", ROM + "+" + MMM01 + "+" + SRAM + "+" + BATT);
+            put("0F", ROM + "+" + MBC3 + "+" + RTC + "+" + BATT);
+            put("10",ROM + "+" + MBC3 + "+" + RTC + "+" + RAM + "+" + BATT);
+            put("11",ROM + "+" + MBC3 + "+" + NO_RTC);
+            put("12",ROM + "+" + MBC3 + "+" + NO_RTC + "+" + RAM);
+            put("13",ROM + "+" + MBC3 + "+" + NO_RTC + "+" + RAM +"+"+ BATT);
+            put("19", ROM + "+" + MBC5 + "+" + NO_RUMBLE);
+            put("1A", ROM + "+" + MBC5 + "+" + NO_RUMBLE + "+" + SRAM);
+            put("1B", ROM + "+" + MBC5 + "+" + NO_RUMBLE + "+" + SRAM + "+" + BATT);
+            put("1C", ROM + "+" + MBC5 + "+" + RUMBLE);
+            put("1D", ROM + "+" + MBC5 + "+" + RUMBLE + "+" + SRAM);
+            put("1E", ROM + "+" + MBC5 + "+" + RUMBLE + "+" + SRAM + "+" + BATT);
+            put("1F", POCKET_CAMERA);
+            put("FD",BANDAI_TAMA5);
+            put("FE",HUDSON_HUC_3);
+            put("FF",HUDSON_HUC_1);
         }
     };
 }
