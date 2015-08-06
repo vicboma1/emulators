@@ -11,7 +11,7 @@ import java.util.concurrent.CompletableFuture;
 import java.util.concurrent.ExecutionException;
 
 /**
- * Created by vicboma on 05/08/14.
+ * Created by vicboma on 05/08/15.
  */
 public class FileAsync {
 
@@ -38,20 +38,23 @@ public class FileAsync {
         return completableFuture;
     }
 
-    public static CompletableFuture<Boolean> write(String filePath, StringBuilder input)  throws IOException, InterruptedException, ExecutionException {
-        final CompletableFuture<Boolean> completableFuture =  new CompletableFuture();
+    public static CompletableFuture<ByteBuffer> write(String filePath, StringBuilder input)  throws IOException, InterruptedException, ExecutionException {
+        final CompletableFuture<ByteBuffer> completableFuture =  new CompletableFuture();
 
         byte [] byteArray = input.toString().getBytes();
         ByteBuffer buffer = ByteBuffer.wrap(byteArray);
 
         Path path = Paths.get(filePath);
-        AsynchronousFileChannel channel = AsynchronousFileChannel.open(path, StandardOpenOption.WRITE);
+        AsynchronousFileChannel channel = AsynchronousFileChannel.open(
+                path,
+                StandardOpenOption.WRITE,
+                StandardOpenOption.CREATE);
 
-        channel.read(buffer, 0, null, new CompletionHandler<Integer, Void>() {
+        channel.write(buffer, 0, null, new CompletionHandler<Integer, Void>() {
             @Override
             public void completed(Integer result, Void attachment) {
                 try { channel.close(); } catch (IOException e) {  e.printStackTrace(); }
-                completableFuture.complete(Boolean.TRUE);
+                completableFuture.complete(buffer);
             }
 
             @Override
