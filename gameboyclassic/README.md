@@ -18,6 +18,26 @@ DMG: Game Boy (monochrome), introduced on April 21, 1989
 * Stereo headphone connector
 * Input connector for external power source
 
+##General Memory Map
+```
+Interrupt Enable Register  --------------------------- FFFF
+Internal RAM               --------------------------- FF80
+Empty but unusable for I/O --------------------------- FF4C
+I/O ports                  --------------------------- FF00
+Empty but unusable for I/O --------------------------- FEA0
+Sprite Attrib Memory (OAM) --------------------------- FE00
+Echo of 8kB Internal RAM   --------------------------- E000
+8kB Internal RAM           --------------------------- C000
+8kB switchable RAM bank    --------------------------- A000
+
+8kB Video RAM              --------------------------- 8000 |
+16kB switchable ROM bank   --------------------------- 4000 | -> 32kB Cartrigbe
+16kB ROM bank              --------------------------- 0000 |
+
+NOTE: b = bit, B = byte
+
+```
+
 ##Memory
 32 KB from 0x0 to 0x7FFF is available as program area :
 * 0x000 to 0x0FF: Allocated as the destination address for RST instructions and the starting address for interrupts.
