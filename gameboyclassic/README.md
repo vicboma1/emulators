@@ -63,6 +63,14 @@ The transfer start address can be specified in increments of 0x100 for 0x8000-0x
 * TMA (timer modulo register) 
 * TAC (timer control register)
 
+##Registers JoyPad interrupt $FF00 (WIP)
+* Bit 3 - P13 in port 
+* Bit 2 - P12 in port 
+* Bit 1 - P11 in port 
+* Bit 0 - P10 in port
+* Bit 5 - P15 out port { $8 - Down | $4 - Up | $2 - Left | $1 - Right }
+* Bit 4 - P14 out port { $80 - Start | $40 - Select | $20 -B | $10 -A }
+
 ##Display (WIP)
 The DMG CPU has 8 KB (64 Kbits) of built-in LCD display RAM.
 
@@ -79,7 +87,7 @@ Attr data
 Window display data also can be specified as character codes, beginning from 0x9800 or 0x9C00 in external SRAM.
 Frame frequency: 59.7Hz
 
-##Sound
+##Sound (WIP)
 * Sound 1: Generates a rectangle waveform with sweep and envelope functions.
 * Sound 2: Generates a rectangle waveform with an envelope function.
 * Sound 3: Outputs any waveform from waveform RAM.
@@ -135,11 +143,18 @@ The conditions required for starting the user program are as follows.
 Starting Address 0x150.
 The starting address can be freely set by writing a jump destination address at 0x102 and 0x103.
 
+##Game Boy Memory Controllers (MBC)
 
+#### MBC1
+MBC1 is a memory controller that enables the use of 512 Kbits (64 Kbytes) or more of ROM and 256 Kbits (32 Kbytes) of RAM. RAM use by MBC1 is restricted to 64 Kbits (8 Kbytes).
+* Register 0 : 0x0000-0x1FFF 
+* Register 1 : 0x2000-0x3FFF 
+* Register 2 : 0x4000-0x5FFF
+* Register 3 : 0x6000-0x7FFF 
 
 ##References :
 * Game BoyTM CPU Manual, Pan of Anthrox, GABY, Marat Fayzullin, Pascal Felber, Paul Robson, Martin Korth, kOOPa, Bowser.
-*￼Game Boy PROGRAMMING MANUAL v.1.0, DMG-06-4216-001-A Released 11/09/1999 Nintendo.
+* ￼Game Boy PROGRAMMING MANUAL v.1.0, DMG-06-4216-001-A Released 11/09/1999 Nintendo.
 * Study of the techniques for emulation programming, Victor Moya del Barrio, Agustin Fernandez, 2001.
 * GB microChip Z80 opCodes, http://goldencrystal.free.fr/GBZ80Opcodes.pdf
 * My own know.
