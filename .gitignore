@@ -1,2 +1,6 @@
 *.iml
 *.xml
+/Users/vicboma/Desktop/Informatica/emulators/gameboyclassic/src/emulator/cpu/processor/processor
+/Users/vicboma/Desktop/Informatica/emulators/gameboyclassic/src/emulator/cpu/processor/command/bits8/load_nn_n
+/Users/vicboma/Desktop/Informatica/emulators/gameboyclassic/src/emulator/cpu/processor/command/bits8/load
+/Users/vicboma/Desktop/Informatica/emulators/gameboyclassic/src/emulator/cpu/processor/command/bits8/load_r1_r2
