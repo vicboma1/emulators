@@ -145,7 +145,7 @@ The starting address can be freely set by writing a jump destination address at 
 
 ##Game Boy Memory Controllers (MBC)
 
-#### [MBC1](https://github.com/vicboma1/emulators/blob/master/gameboyclassic/LOAD_ROM)
+#### [MBC1](https://github.com/vicboma1/emulators/blob/master/gameboyclassic/LoadRomMBC1)
 MBC1 is a memory controller that enables the use of 512 Kbits (64 Kbytes) or more of ROM and 256 Kbits (32 Kbytes) of RAM. 
 RAM use by MBC1 is restricted to 64 Kbits (8 Kbytes).
 * Register 0 : 0x0000-0x1FFF 
@@ -162,3 +162,6 @@ RAM use by MBC1 is restricted to 64 Kbits (8 Kbytes).
 * GB microChip Z80 opCodes, http://goldencrystal.free.fr/GBZ80Opcodes.pdf
 * http://bgb.bircd.org/pandocs.htm
 * My own know.
+
+
+##[Development's video playlist](https://www.youtube.com/watch?v=zCy8_IkdMeE&list=PLNph7ndeSqE9E6XqolWg-6Vx4AOeneJSZ&index=1) 
