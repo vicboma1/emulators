@@ -157,4 +157,5 @@ MBC1 is a memory controller that enables the use of 512 Kbits (64 Kbytes) or mor
 * ￼Game Boy PROGRAMMING MANUAL v.1.0, DMG-06-4216-001-A Released 11/09/1999 Nintendo.
 * Study of the techniques for emulation programming, Victor Moya del Barrio, Agustin Fernandez, 2001.
 * GB microChip Z80 opCodes, http://goldencrystal.free.fr/GBZ80Opcodes.pdf
+* http://bgb.bircd.org/pandocs.htm
 * My own know.
