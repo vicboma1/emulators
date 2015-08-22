@@ -63,7 +63,7 @@ The transfer start address can be specified in increments of 0x100 for 0x8000-0x
 * TMA (timer modulo register) 
 * TAC (timer control register)
 
-##Registers JoyPad interrupt $FF00 (WIP)
+##Registers JoyPad interrupt $FF00
 * Bit 3 - P13 in port 
 * Bit 2 - P12 in port 
 * Bit 1 - P11 in port 
@@ -86,6 +86,9 @@ Attr data
 
 Window display data also can be specified as character codes, beginning from 0x9800 or 0x9C00 in external SRAM.
 Frame frequency: 59.7Hz
+
+!(Monochrome4-shades)[http://fornaxvoid.com/colorpalettes/GameBoy-palette.png]
+
 
 ##Sound (WIP)
 * Sound 1: Generates a rectangle waveform with sweep and envelope functions.
@@ -114,7 +117,7 @@ Sound 3:
 
 ```Reg  |  Addr  |  D7 ... D0 ```
 
-##CPU (WIP)
+##CPU
 * Acc : Accumulator (8 bits)
 * Aux Reg: B,C,D,E,H,L -> (BC), (DE), (HL) (8 bits)
 * PC: Program Counter (16 bits)
@@ -193,7 +196,6 @@ RAM use by MBC1 is restricted to 64 Kbits (8 Kbytes).
 * Register 1 : 0x2000-0x3FFF 
 * Register 2 : 0x4000-0x5FFF
 * Register 3 : 0x6000-0x7FFF 
-
 
 
 ##References :
