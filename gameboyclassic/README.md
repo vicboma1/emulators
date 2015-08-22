@@ -87,7 +87,7 @@ Attr data
 Window display data also can be specified as character codes, beginning from 0x9800 or 0x9C00 in external SRAM.
 Frame frequency: 59.7Hz
 
-!(Monochrome4-shades)[http://fornaxvoid.com/colorpalettes/GameBoy-palette.png]
+![Monochrome4-shades](http://fornaxvoid.com/colorpalettes/GameBoy-palette.png)
 
 
 ##Sound (WIP)
