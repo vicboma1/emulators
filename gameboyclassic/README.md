@@ -133,6 +133,38 @@ C | H | N | Z |  CYCL | OpCodes
 * C - Carry Flag
 * [OpCodes](http://www.pastraiser.com/cpu/gameboy/gameboy_opcodes.html)
 
+#### Game Loop
+
+Main:
+ halt                    ; stop system clock
+                         ; return from halt when interrupted
+ nop                     ; (See WARNING above.)
+ ld      a,(VblnkFlag)
+ or      a               ; V-Blank interrupt ?
+ jr      z,Main          ; No, some other interrupt
+ xor     a
+ ld      (VblnkFlag),a   ; Clear V-Blank flag
+ call    Controls        ; button inputs
+ call    Game            ; game operation
+
+ jr      Main
+
+ **** V-Blank Interrupt Routine ****
+Vblnk:
+ push    af
+ push    bc
+ push    de
+ push    hl
+ call    SpriteDma       ; Do sprite updates
+ ld      a,1
+ ld      (VblnkFlag),a
+ pop     hl
+ pop     de 
+ pop     bc
+ pop     af
+
+reti
+
 
 ##Monitor Rom
 When power on the hardware is turned on, the monitor ROM checks for errors in the ‘Nintendo’ logo character data within the game software.
