@@ -134,7 +134,7 @@ C | H | N | Z |  CYCL | OpCodes
 * [OpCodes](http://www.pastraiser.com/cpu/gameboy/gameboy_opcodes.html)
 
 #### Game Loop
-
+```
 Main:
  halt                    ; stop system clock
                          ; return from halt when interrupted
@@ -148,7 +148,8 @@ Main:
  call    Game            ; game operation
 
  jr      Main
-
+```
+```
  **** V-Blank Interrupt Routine ****
 Vblnk:
  push    af
@@ -164,7 +165,7 @@ Vblnk:
  pop     af
 
 reti
-
+```
 
 ##Monitor Rom
 When power on the hardware is turned on, the monitor ROM checks for errors in the ‘Nintendo’ logo character data within the game software.
