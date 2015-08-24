@@ -89,6 +89,12 @@ Frame frequency: 59.7Hz
 
 ![Monochrome4-shades](http://fornaxvoid.com/colorpalettes/GameBoy-palette.png)
 
+###Shader
+```
+    Green Scale                    Dark Yellow Scale                  Grey Scale 
+```
+![Super Mario Land I](http://i.imgur.com/bpHnetb.png)  ![Super Mario Land I](http://i.imgur.com/nrtThhD.png)  ![Super Mario Land I](http://i.imgur.com/9KAar8E.png)
+
 
 ##Sound (WIP)
 * Sound 1: Generates a rectangle waveform with sweep and envelope functions.
@@ -196,7 +202,6 @@ RAM use by MBC1 is restricted to 64 Kbits (8 Kbytes).
 * Register 1 : 0x2000-0x3FFF 
 * Register 2 : 0x4000-0x5FFF
 * Register 3 : 0x6000-0x7FFF 
-
 
 ##References :
 * Game BoyTM CPU Manual, Pan of Anthrox, GABY, Marat Fayzullin, Pascal Felber, Paul Robson, Martin Korth, kOOPa, Bowser.
