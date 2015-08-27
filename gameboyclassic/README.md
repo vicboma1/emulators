@@ -63,7 +63,7 @@ The transfer start address can be specified in increments of 0x100 for 0x8000-0x
 * TMA (timer modulo register) 
 * TAC (timer control register)
 
-##Registers JoyPad interrupt $FF00 (WIP)
+##Registers JoyPad interrupt $FF00
 * Bit 3 - P13 in port 
 * Bit 2 - P12 in port 
 * Bit 1 - P11 in port 
@@ -86,6 +86,19 @@ Attr data
 
 Window display data also can be specified as character codes, beginning from 0x9800 or 0x9C00 in external SRAM.
 Frame frequency: 59.7Hz
+
+![Monochrome4-shades](http://fornaxvoid.com/colorpalettes/GameBoy-palette.png)
+
+###Shader
+```
+    Green Scale                    Dark Yellow Scale                  Grey Scale 
+```
+![Super Mario Land I](http://i.imgur.com/bpHnetb.png)  ![Super Mario Land I](http://i.imgur.com/nrtThhD.png)  ![Super Mario Land I](http://i.imgur.com/9KAar8E.png)
+```
+    Gb Pocket                    
+```
+![F1 Race](http://s11.postimg.org/sl0w0olkj/Screen_Shot_2015_08_27_at_22_05_17.png)
+
 
 ##Sound (WIP)
 * Sound 1: Generates a rectangle waveform with sweep and envelope functions.
@@ -114,7 +127,7 @@ Sound 3:
 
 ```Reg  |  Addr  |  D7 ... D0 ```
 
-##CPU (WIP)
+##CPU
 * Acc : Accumulator (8 bits)
 * Aux Reg: B,C,D,E,H,L -> (BC), (DE), (HL) (8 bits)
 * PC: Program Counter (16 bits)
@@ -132,6 +145,47 @@ C | H | N | Z |  CYCL | OpCodes
 * H - Half Carry Flag
 * C - Carry Flag
 * [OpCodes](http://www.pastraiser.com/cpu/gameboy/gameboy_opcodes.html)
+
+#### Game Loop
+```
+Main:
+ halt                    ; stop system clock
+                         ; return from halt when interrupted
+ nop                     ; (See WARNING above.)
+ ld      a,(VblnkFlag)
+ or      a               ; V-Blank interrupt ?
+ jr      z,Main          ; No, some other interrupt
+ xor     a
+ ld      (VblnkFlag),a   ; Clear V-Blank flag
+ call    Controls        ; button inputs
+ call    Game            ; game operation
+
+ jr      Main
+```
+```
+ **** V-Blank Interrupt Routine ****
+Vblnk:
+ push    af
+ push    bc
+ push    de
+ push    hl
+ call    SpriteDma       ; Do sprite updates
+ ld      a,1
+ ld      (VblnkFlag),a
+ pop     hl
+ pop     de 
+ pop     bc
+ pop     af
+
+reti
+```
+
+##Interrupt Procedure
+* V-Blank
+* LCDC Status
+* Timer Overflow
+* Serial Transfer Completion
+* Joy P10-P13
 
 
 ##Monitor Rom
@@ -152,8 +206,6 @@ RAM use by MBC1 is restricted to 64 Kbits (8 Kbytes).
 * Register 1 : 0x2000-0x3FFF 
 * Register 2 : 0x4000-0x5FFF
 * Register 3 : 0x6000-0x7FFF 
-
-
 
 ##References :
 * Game BoyTM CPU Manual, Pan of Anthrox, GABY, Marat Fayzullin, Pascal Felber, Paul Robson, Martin Korth, kOOPa, Bowser.
