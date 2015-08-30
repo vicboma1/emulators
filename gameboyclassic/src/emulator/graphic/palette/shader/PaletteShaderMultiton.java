@@ -1,6 +1,6 @@
 package emulator.graphic.palette.shader;
 
-import emulator.graphic.palette.shader.effect.*;
+import graphics.palette.shader.effect.*;
 import toolBar.video.ToolBarVideoImpl;
 
 import java.util.Hashtable;

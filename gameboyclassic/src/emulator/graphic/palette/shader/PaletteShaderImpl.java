@@ -1,5 +1,7 @@
 package emulator.graphic.palette.shader;
 
+import java.awt.*;
+
 /**
  * Created by vicboma on 22/08/15.
  */

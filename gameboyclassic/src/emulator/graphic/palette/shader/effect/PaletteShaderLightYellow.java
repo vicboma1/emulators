@@ -1,6 +1,8 @@
 package emulator.graphic.palette.shader.effect;
 
-import emulator.graphic.palette.shader.PaletteShaderImpl;
+import graphics.palette.shader.PaletteShaderImpl;
+
+import java.awt.*;
 
 /**
  * Created by vicboma on 22/08/15.

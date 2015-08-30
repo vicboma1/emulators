@@ -1,6 +1,9 @@
 package emulator.graphic.palette.shader.effect;
 
-import emulator.graphic.palette.shader.PaletteShaderImpl;
+
+import graphics.palette.shader.PaletteShaderImpl;
+
+import java.awt.*;
 
 /**
  * Created by vicboma on 22/08/15.
@@ -9,8 +12,8 @@ public class PaletteShaderDarkYellow extends PaletteShaderImpl {
 
     public static Color P1 = new Color(255, 243, 140);
     public static Color P2 = new Color(182, 173, 90);
-    public static Color P3 = new Color(107 , 105,  57);
-    public static Color P4 = new Color(33 , 32,  19);
+    public static Color P3 = new Color(107 ,105, 57);
+    public static Color P4 = new Color(33  ,32,  19);
 
 
     public static PaletteShaderDarkYellow Create() {
