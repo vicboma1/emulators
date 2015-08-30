@@ -1,5 +1,6 @@
 package emulator.graphic.palette;
 
+import emulator.graphic.GameboyPalette;
 import graphics.palette.shader.effect.PaletteShaderGreen;
 import utils.Operation;
 import utils.shell.Logger;
@@ -11,7 +12,7 @@ import java.util.Map;
 import java.util.stream.IntStream;
 
 
-public class GameboyPalette {
+public class GameboyPaletteImpl implements GameboyPalette {
 
     public static final int BACKGROUND_DATA = 0;
     public static final int OBJECT_DATA_0 = 4;
@@ -36,7 +37,7 @@ public class GameboyPalette {
     private Map<Integer, Integer> mapRegisterColorRGB;
 
 
-    public GameboyPalette(String name) {
+    public GameboyPaletteImpl(String name) {
         this.name = name;
         this.mapRegisterColorRGB = loadRegisterColor();
     }
