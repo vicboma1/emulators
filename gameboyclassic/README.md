@@ -100,6 +100,14 @@ Frame frequency: 59.7Hz
 ![F1 Race](http://s11.postimg.org/sl0w0olkj/Screen_Shot_2015_08_27_at_22_05_17.png)
 
 
+
+### Backlight (DMG/Pocket) Custom
+```
+    Orange Scale                     Green Scale                     Pink Scale 
+```
+![Super Mario Land I](http://s28.postimg.org/5wr80r7il/Screen_Shot_2015_09_01_at_17_32_37.png)  ![Super Mario Land I](http://s28.postimg.org/gywaz71l9/Screen_Shot_2015_09_01_at_17_34_57.png)  ![Super Mario Land I](http://s28.postimg.org/4izl5g899/Screen_Shot_2015_09_01_at_17_36_35.png)
+
+
 ##Sound (WIP)
 * Sound 1: Generates a rectangle waveform with sweep and envelope functions.
 * Sound 2: Generates a rectangle waveform with an envelope function.
