@@ -9,6 +9,7 @@ public class FPSImpl implements FPS {
 
     public static final int MILLISECONDS = 1000;
     public static final int POOR_FRAME = 30;
+    public static final int NORMALIZE = 17 ; // 1000 / (60 fps ~ 58 fps)
 
     private boolean done;
     private int avg;
@@ -45,7 +46,7 @@ public class FPSImpl implements FPS {
         if (avg != 0)
             time = MILLISECONDS / avg;
 
-        waitTime = 10 - time + waitTime;
+        waitTime = NORMALIZE - time + waitTime;
         Logger.Debug("" + waitTime);
         count = 0;
     }
