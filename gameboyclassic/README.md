@@ -90,33 +90,33 @@ Frame frequency: 59.7Hz
 ![Monochrome4-shades](http://fornaxvoid.com/colorpalettes/GameBoy-palette.png)
 
 
-###Resolution 160x144px = 20x18 tiles 
+###Resolution 160x144px = 20x18 tiles
 ```
     Max # of sprites: 40
     Max # sprites/line: 10
     Max sprite size: 8x16      (Coming soon *)
     Min sprite size: 8x8
-     
-    1 Tile = ( 8w x 8h ) 64 imagenes = 16 bytes +/- 
     
-                                           1 Image = [255 - 0]                  
-                                                                                
-    1 Tile                                 .33333.. = 01111100               Segment 0     
+    1 Tile = ( 8w x 8h ) 64 imagenes = 16 bytes +/-
+
+                                           1 Image = [255 - 0]          
+                                                                    
+    1 Tile                                 .33333.. = 01111100               Segment 0
                                                       01111100               Segment 1                
-    .33333..                               22...22. = 00000000                  
-    22...22.                                          11000110                             
-    11...11.                               11...11. = 11000110                  
-    2222222. <-- digits         =                     00000000                             
+    .33333..                               22...22. = 00000000          
+    22...22.                                          11000110          
+    11...11.                               11...11. = 11000110      
+    2222222. <-- digits         =                     00000000              
     33...33.     represent                 22222222 = 00000000                  
-    22...22.     color                                11111111                             
-    11...11.     numbers                   33...33. = 11000110                  
-    ........                                          11000110                             
-                                           22...22. = 00000000                  
-                                                      11000011                             
+    22...22.     color                                11111111              
+    11...11.     numbers                   33...33. = 11000110      
+    ........                                          11000110                  
+                                           22...22. = 00000000      
+                                                      11000011                      
                                            11...11. = 11000110                  
                                                       00000000                             
                                            ........ = 00000000                  
-                                                      00000000                             
+                                                      00000000      
  ```
 
 ###Shader
