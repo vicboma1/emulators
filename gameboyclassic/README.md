@@ -101,6 +101,19 @@ Frame frequency: 59.7Hz
 
 
 
+###Shader Invert
+```
+    Green Scale                    Dark Yellow Scale                  Grey Scale 
+```
+![Super Mario Land I](http://i.imgur.com/CbLBxTZ.png)  ![Super Mario Land I](http://i.imgur.com/NXFALzF.png)  ![Super Mario Land I](http://i.imgur.com/MCHTTxz.png)
+```
+    Gb Pocket                      Ligth Yellow Scale                 Grey Stark Scale 
+```
+![Super Mario Land I](http://i.imgur.com/wAVrtVG.png)  ![Super Mario Land I](http://i.imgur.com/SyZy6zr.png)  ![Super Mario Land I](http://i.imgur.com/SPTPFZV.png)
+
+
+
+
 ### Backlight (DMG/Pocket) Custom
 ```
     Orange Scale                     Green Scale                     Pink Scale 
