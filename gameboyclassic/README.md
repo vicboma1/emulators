@@ -118,7 +118,12 @@ Frame frequency: 59.7Hz
 ```
     Orange Scale                     Green Scale                     Pink Scale 
 ```
-![Super Mario Land I](http://s28.postimg.org/5wr80r7il/Screen_Shot_2015_09_01_at_17_32_37.png)  ![Super Mario Land I](http://s28.postimg.org/gywaz71l9/Screen_Shot_2015_09_01_at_17_34_57.png)  ![Super Mario Land I](http://s28.postimg.org/4izl5g899/Screen_Shot_2015_09_01_at_17_36_35.png)
+![Super Mario Land I](http://s28.postimg.org/5wr80r7il/Screen_Shot_2015_09_01_at_17_32_37.png)  ![Super Mario Land I](http://s28.postimg.org/gywaz71l9/Screen_Shot_2015_09_01_at_17_34_57.png)  ![Super Mario Land I](http://s28.postimg.org/4izl5g899/Screen_Shot_2015_09_01_at_17_36_35.png)  
+
+```
+    Teal Scale                      White Blue Scale                  
+```
+![Super Mario Land I](http://i.imgur.com/DVLegQZ.png)   ![Super Mario Land I](http://i.imgur.com/KZ5mEsE.png)
 
 
 ##Sound (WIP)
