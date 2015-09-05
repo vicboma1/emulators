@@ -90,7 +90,7 @@ Frame frequency: 59.7Hz
 ![Monochrome4-shades](http://fornaxvoid.com/colorpalettes/GameBoy-palette.png)
 
 
-###Resolution 160x144px = 20x18 tiles
+####Resolution 160x144 = 20x18 tiles
 ```
     Max # of sprites: 40
     Max # sprites/line: 10
@@ -119,7 +119,7 @@ Frame frequency: 59.7Hz
                                                       00000000      
  ```
 
-###Shader
+####Shader
 ```
     Green Scale                    Dark Yellow Scale                  Grey Scale 
 ```
@@ -131,7 +131,7 @@ Frame frequency: 59.7Hz
 
 
 
-###Shader Invert
+####Shader Invert
 ```
     Green Scale                    Dark Yellow Scale                  Grey Scale 
 ```
@@ -144,7 +144,7 @@ Frame frequency: 59.7Hz
 
 
 
-### Backlight (DMG/Pocket) Custom
+#### Backlight (DMG/Pocket) Custom
 ```
     Orange Scale                     Green Scale                     Pink Scale 
 ```
@@ -236,13 +236,30 @@ Vblnk:
 reti
 ```
 
+### Raster graphics
+The original GameBoy hardware simulates a cathode-ray tube (CRT) in its timings.
+![Scanlines and blanking periods](http://imrannazar.com/content/img/jsgb-gpu-blank.png)
+
+The following table states how long the GPU stays in each period, in terms of the CPU's T-clock which runs at 4194304 Hz.
+
+```
+          Period	                GPU mode number  Time spent (clocks)
+Scanline (accessing OAM)                  	2               80
+Scanline (accessing VRAM)               	3               172
+Horizontal blank                        	0	            204
+One line (scan and blank)		            X               456
+Vertical blank	                            1           	4560 (10 lines)
+Full frame (scans and vblank)		        X               70224
+```
+
+
+
 ##Interrupt Procedure
 * V-Blank
 * LCDC Status
 * Timer Overflow
 * Serial Transfer Completion
 * Joy P10-P13
-
 
 ##Monitor Rom
 When power on the hardware is turned on, the monitor ROM checks for errors in the ‘Nintendo’ logo character data within the game software.
