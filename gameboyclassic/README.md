@@ -89,23 +89,71 @@ Frame frequency: 59.7Hz
 
 ![Monochrome4-shades](http://fornaxvoid.com/colorpalettes/GameBoy-palette.png)
 
-###Shader
+
+####Resolution 160x144 = 20x18 tiles
+```
+    Max # of sprites: 40
+    Max # sprites/line: 10
+    Max sprite size: 8x16      (Coming soon *)
+    Min sprite size: 8x8
+    
+    1 Tile = ( 8w x 8h ) 64 imagenes = 16 bytes +/-
+
+                                           1 Image = [255 - 0]          
+                                                                    
+    1 Tile                                 .33333.. = 01111100               Segment 0
+                                                      01111100               Segment 1                
+    .33333..                               22...22. = 00000000          
+    22...22.                                          11000110          
+    11...11.                               11...11. = 11000110      
+    2222222. <-- digits         =                     00000000              
+    33...33.     represent                 22222222 = 00000000                  
+    22...22.     color                                11111111              
+    11...11.     numbers                   33...33. = 11000110      
+    ........                                          11000110                  
+                                           22...22. = 00000000      
+                                                      11000011                      
+                                           11...11. = 11000110                  
+                                                      00000000                             
+                                           ........ = 00000000                  
+                                                      00000000      
+ ```
+
+####Shader
 ```
     Green Scale                    Dark Yellow Scale                  Grey Scale 
 ```
-![Super Mario Land I](http://i.imgur.com/bpHnetb.png)  ![Super Mario Land I](http://i.imgur.com/nrtThhD.png)  ![Super Mario Land I](http://i.imgur.com/9KAar8E.png)
+![Super Mario Land I](http://i.imgur.com/bpHnetb.png)  ![Super Mario Land I](http://i.imgur.com/54PpYgY.png?1) ![Super Mario Land I](http://i.imgur.com/9KAar8E.png)
 ```
-    Gb Pocket                    
+    Gb Pocket                      Ligth Yellow Scale                 Grey Stark Scale         
 ```
-![F1 Race](http://s11.postimg.org/sl0w0olkj/Screen_Shot_2015_08_27_at_22_05_17.png)
+![F1 Race](http://i.imgur.com/qMlY8tS.png)   ![Super Mario Land I](http://i.imgur.com/Te6b2mj.png)  ![Super Mario Land I](http://i.imgur.com/LvSc7V1.png)
 
 
 
-### Backlight (DMG/Pocket) Custom
+####Shader Invert
+```
+    Green Scale                    Dark Yellow Scale                  Grey Scale 
+```
+![Super Mario Land I](http://i.imgur.com/CbLBxTZ.png)  ![Super Mario Land I](http://i.imgur.com/NXFALzF.png)  ![Super Mario Land I](http://i.imgur.com/MCHTTxz.png)
+```
+    Gb Pocket                      Ligth Yellow Scale                 Grey Stark Scale 
+```
+![Super Mario Land I](http://i.imgur.com/wAVrtVG.png)  ![Super Mario Land I](http://i.imgur.com/SyZy6zr.png)  ![Super Mario Land I](http://i.imgur.com/SPTPFZV.png)
+
+
+
+
+#### Backlight (DMG/Pocket) Custom
 ```
     Orange Scale                     Green Scale                     Pink Scale 
 ```
-![Super Mario Land I](http://s28.postimg.org/5wr80r7il/Screen_Shot_2015_09_01_at_17_32_37.png)  ![Super Mario Land I](http://s28.postimg.org/gywaz71l9/Screen_Shot_2015_09_01_at_17_34_57.png)  ![Super Mario Land I](http://s28.postimg.org/4izl5g899/Screen_Shot_2015_09_01_at_17_36_35.png)
+![Super Mario Land I](http://s28.postimg.org/5wr80r7il/Screen_Shot_2015_09_01_at_17_32_37.png)  ![Super Mario Land I](http://s28.postimg.org/gywaz71l9/Screen_Shot_2015_09_01_at_17_34_57.png)  ![Super Mario Land I](http://s28.postimg.org/4izl5g899/Screen_Shot_2015_09_01_at_17_36_35.png)  
+
+```
+    Teal Scale                      White Blue Scale                  
+```
+![Super Mario Land I](http://i.imgur.com/DVLegQZ.png)   ![Super Mario Land I](http://i.imgur.com/KZ5mEsE.png)
 
 
 ##Sound (WIP)
@@ -188,13 +236,30 @@ Vblnk:
 reti
 ```
 
+### Raster graphics
+The original GameBoy hardware simulates a cathode-ray tube (CRT) in its timings.
+![Scanlines and blanking periods](http://imrannazar.com/content/img/jsgb-gpu-blank.png)
+
+The following table states how long the GPU stays in each period, in terms of the CPU's T-clock which runs at 4194304 Hz.
+
+```
+          Period	                GPU mode number  Time spent (clocks)
+Scanline (accessing OAM)                  	2               80
+Scanline (accessing VRAM)               	3               172
+Horizontal blank                        	0	            204
+One line (scan and blank)		            X               456
+Vertical blank	                            1           	4560 (10 lines)
+Full frame (scans and vblank)		        X               70224
+```
+
+
+
 ##Interrupt Procedure
 * V-Blank
 * LCDC Status
 * Timer Overflow
 * Serial Transfer Completion
 * Joy P10-P13
-
 
 ##Monitor Rom
 When power on the hardware is turned on, the monitor ROM checks for errors in the ‘Nintendo’ logo character data within the game software.
