@@ -162,6 +162,25 @@ Frame frequency: 59.7Hz
 ![Super Mario Land I](http://i.imgur.com/gBvD48t.png?1)
 
 
+
+#### Backlight (DMG/Pocket) Custom Invert
+```
+    Orange Scale                     Green Scale                     Pink Scale 
+```
+![Super Mario Land I](http://i.imgur.com/hGL75yN.png?1)  ![Super Mario Land I](http://i.imgur.com/6Dz5wPE.png?1)  ![Super Mario Land I](http://i.imgur.com/8Sqk1J3.png?1)  
+
+```
+    Teal Scale                      White Blue Scale                 Red scale                         
+```
+![Super Mario Land I](http://i.imgur.com/1TVOR79.png)   ![Super Mario Land I](http://i.imgur.com/NMjF9qI.png)
+![Super Mario Land I](http://i.imgur.com/SAh26JO.png)
+
+```
+    Blue Scale                                                    
+```
+![Super Mario Land I](http://i.imgur.com/aAlZp6X.png)
+
+
 ##Sound (WIP)
 * Sound 1: Generates a rectangle waveform with sweep and envelope functions.
 * Sound 2: Generates a rectangle waveform with an envelope function.
