@@ -143,6 +143,17 @@ Frame frequency: 59.7Hz
 
 
 
+####Shader Polarized
+```
+    Green Scale                    Dark Yellow Scale                  Grey Scale 
+```
+![Super Mario Land I](http://i.imgur.com/h8RRcDv.png)  ![Super Mario Land I](http://i.imgur.com/NeOLgAc.png)  ![Super Mario Land I](http://i.imgur.com/Jvc5ZjE.png)
+```
+    Gb Pocket                      Ligth Yellow Scale                 Grey Stark Scale 
+```
+![Super Mario Land I](http://i.imgur.com/fK8kXDP.png)  ![Super Mario Land I](http://i.imgur.com/GmicIBa.png)  ![Super Mario Land I](http://i.imgur.com/w4mhueE.png)
+
+
 
 #### Backlight (DMG/Pocket) Custom
 ```
@@ -151,9 +162,53 @@ Frame frequency: 59.7Hz
 ![Super Mario Land I](http://s28.postimg.org/5wr80r7il/Screen_Shot_2015_09_01_at_17_32_37.png)  ![Super Mario Land I](http://s28.postimg.org/gywaz71l9/Screen_Shot_2015_09_01_at_17_34_57.png)  ![Super Mario Land I](http://s28.postimg.org/4izl5g899/Screen_Shot_2015_09_01_at_17_36_35.png)  
 
 ```
-    Teal Scale                      White Blue Scale                  
+    Teal Scale                      White Blue Scale                 Red scale                         
 ```
 ![Super Mario Land I](http://i.imgur.com/DVLegQZ.png)   ![Super Mario Land I](http://i.imgur.com/KZ5mEsE.png)
+![Super Mario Land I](http://i.imgur.com/cmAP6uD.png)
+
+```
+    Blue Scale                                                    
+```
+![Super Mario Land I](http://i.imgur.com/gBvD48t.png?1)
+
+
+#### Backlight (DMG/Pocket) Custom Invert
+```
+    Orange Scale                     Green Scale                     Pink Scale 
+```
+![Super Mario Land I](http://i.imgur.com/hGL75yN.png?1)  ![Super Mario Land I](http://i.imgur.com/6Dz5wPE.png?1)  ![Super Mario Land I](http://i.imgur.com/8Sqk1J3.png?1)  
+
+```
+    Teal Scale                      White Blue Scale                 Red scale                         
+```
+![Super Mario Land I](http://i.imgur.com/1TVOR79.png)   ![Super Mario Land I](http://i.imgur.com/NMjF9qI.png)
+![Super Mario Land I](http://i.imgur.com/SAh26JO.png)
+
+```
+    Blue Scale                                                    
+```
+![Super Mario Land I](http://i.imgur.com/aAlZp6X.png)
+
+
+
+#### Backlight (DMG/Pocket) Custom Polarized
+```
+    Orange Scale                     Green Scale                     Pink Scale 
+```
+![Super Mario Land I](http://i.imgur.com/LBsea7q.png)  ![Super Mario Land I](http://i.imgur.com/ZloM5eI.png)  ![Super Mario Land I](http://i.imgur.com/QABFYQ1.png)  
+
+```
+    Teal Scale                      White Blue Scale                 Red scale                         
+```
+![Super Mario Land I](http://i.imgur.com/M4Zjj9G.png)   ![Super Mario Land I](http://i.imgur.com/vwugztY.png)
+![Super Mario Land I](http://i.imgur.com/fMnWyan.png)
+
+```
+    Blue Scale                                                    
+```
+![Super Mario Land I](http://i.imgur.com/W2jDY65.png)
+
 
 
 ##Sound (WIP)
