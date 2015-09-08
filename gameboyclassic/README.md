@@ -207,7 +207,7 @@ Frame frequency: 59.7Hz
 ```
     Blue Scale                                                    
 ```
-![Super Mario Land I](http://i.imgur.com/W2jDY65.png)
+![Super Mario Land I](https://lh6.googleusercontent.com/M7Ee8FztI4c1sx_ers4DL-p6kuVsiBY4eIlc8IeW49IGnR_uJB5ay5xW9hCkd2kas3t9cLU5mJcoL3M=w1256-h560)
 
 
 
