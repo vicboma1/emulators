@@ -196,7 +196,7 @@ Frame frequency: 59.7Hz
 ```
     Orange Scale                     Green Scale                     Pink Scale 
 ```
-![Super Mario Land I](http://i.imgur.com/LBsea7q.png)  ![Super Mario Land I](http://i.imgur.com/ZloM5eI.png)  ![Super Mario Land I](http://i.imgur.com/QABFYQ1.png)  
+![Super Mario Land I](https://lh5.googleusercontent.com/yZFipCrDBHGB2f8Y6UoBDw2N4rwB9pOYcENNr_qXt-9IncIKzLLs7UUblGftd4BAHKjtd-JzOzZf6x0=w1256-h560)  ![Super Mario Land I](http://i.imgur.com/ZloM5eI.png)  ![Super Mario Land I](http://i.imgur.com/QABFYQ1.png)  
 
 ```
     Teal Scale                      White Blue Scale                 Red scale                         
