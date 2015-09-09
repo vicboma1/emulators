@@ -246,6 +246,17 @@ Sound 3:
 * SP: Stack Pointer (16 bits),  SP + 2 (Pop) || SP - 2 (Push)
 * F: Flag Register (8 bits)
 
+
+###Reducing Power Consumption
+
+Can be used to recude the power consumption of the gameboy, and to extend the life of the batteries.
+
+* PWR Using the HALT Instruction
+* PWR Using the STOP Instruction
+* PWR Disabeling the Sound Controller
+* PWR Not using CGB Double Speed Mode
+* PWR Using the Skills
+
 ####Sumary
 
 ```
