@@ -209,6 +209,7 @@ Frame frequency: 59.7Hz
 ```
 ![Super Mario Land I](http://i.imgur.com/W2jDY65.png)
 
+ 
 
 
 ##Sound (WIP)
@@ -301,9 +302,9 @@ The following table states how long the GPU stays in each period, in terms of th
           Period	                GPU mode number  Time spent (clocks)
 Scanline (accessing OAM)                  	2               80
 Scanline (accessing VRAM)               	3               172
-Horizontal blank                        	0	            204
-One line (scan and blank)		            X               456
-Vertical blank	                            1           	4560 (10 lines)
+Horizontal blank                        	0               204
+One line (scan and blank)		        X               456
+Vertical blank	                                1           	4560 (10 lines)
 Full frame (scans and vblank)		        X               70224
 ```
 
