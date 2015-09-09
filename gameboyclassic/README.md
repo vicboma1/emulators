@@ -194,25 +194,25 @@ Frame frequency: 59.7Hz
 
 #### Backlight (DMG/Pocket) Custom Polarized
 ```
-    Orange Scale                                            Green Scale                     
+    Orange Scale                                       Green Scale                     
 ```
-![Super Mario Land I](https://lh5.googleusercontent.com/yZFipCrDBHGB2f8Y6UoBDw2N4rwB9pOYcENNr_qXt-9IncIKzLLs7UUblGftd4BAHKjtd-JzOzZf6x0=w1256-h560)  ![Super Mario Land I](https://lh3.googleusercontent.com/4moJGSEynV4mo8i95TjkV1qaWLlg5pDXfKs9n4b0Gnpl9Hx8UM6YMWkdEn6pTP9FiEJN3w=w1256-h560)  
+![Super Mario Land I](https://lh5.googleusercontent.com/yZFipCrDBHGB2f8Y6UoBDw2N4rwB9pOYcENNr_qXt-9IncIKzLLs7UUblGftd4BAHKjtd-JzOzZf6x0=w1256-h560) ![Super Mario Land I](https://lh3.googleusercontent.com/4moJGSEynV4mo8i95TjkV1qaWLlg5pDXfKs9n4b0Gnpl9Hx8UM6YMWkdEn6pTP9FiEJN3w=w1256-h560)  
 
 
 ```
-    Teal Scale                      White Blue Scale                                    
+    Teal Scale                                       White Blue Scale                                    
 ```
-![Super Mario Land I](https://lh6.googleusercontent.com/pbRKE6LfZbTYXg-N3Y2lPnA9qCNTygyyYJVSvMT81viqWNjaZ3t8rKsZrdaWZtoo28m6gQ=w1256-h560)   ![Super Mario Land I](https://i2.imgflip.com/qrfd9.gif)
+![Super Mario Land I](https://lh6.googleusercontent.com/pbRKE6LfZbTYXg-N3Y2lPnA9qCNTygyyYJVSvMT81viqWNjaZ3t8rKsZrdaWZtoo28m6gQ=w1256-h560)  ![Super Mario Land I](https://i2.imgflip.com/qrfd9.gif)
 
 
 ```
-     Red scale                                              Blue Scale                                            
+     Red scale                                       Blue Scale                                            
 ```
 ![Super Mario Land I](https://i2.imgflip.com/qrf71.gif)                   ![Super Mario Land I](https://lh6.googleusercontent.com/M7Ee8FztI4c1sx_ers4DL-p6kuVsiBY4eIlc8IeW49IGnR_uJB5ay5xW9hCkd2kas3t9cLU5mJcoL3M=w1256-h560)
 
 
 ```
-    Pink Scale 
+    Pink Scale                                       
 ```
 ![Super Mario Land I](https://lh5.googleusercontent.com/HWQXY-C5P98kCbIoBRuxP3KbgYjapgpvoVY248qChi8ZSt9t2iSCUUFe_g92Q2YedcMPzg=w1256-h560)  
 
@@ -307,9 +307,9 @@ The following table states how long the GPU stays in each period, in terms of th
           Period	                GPU mode number  Time spent (clocks)
 Scanline (accessing OAM)                  	2               80
 Scanline (accessing VRAM)               	3               172
-Horizontal blank                        	0	            204
-One line (scan and blank)		            X               456
-Vertical blank	                            1           	4560 (10 lines)
+Horizontal blank                        	0               204
+One line (scan and blank)		        X               456
+Vertical blank	                                1           	4560 (10 lines)
 Full frame (scans and vblank)		        X               70224
 ```
 
