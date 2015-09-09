@@ -202,13 +202,13 @@ Frame frequency: 59.7Hz
 ```
     Teal Scale                                       White Blue Scale                                    
 ```
-![Super Mario Land I](https://lh6.googleusercontent.com/pbRKE6LfZbTYXg-N3Y2lPnA9qCNTygyyYJVSvMT81viqWNjaZ3t8rKsZrdaWZtoo28m6gQ=w1256-h560)  ![Super Mario Land I](https://i2.imgflip.com/qrfd9.gif)
+![Super Mario Land I](https://lh6.googleusercontent.com/pbRKE6LfZbTYXg-N3Y2lPnA9qCNTygyyYJVSvMT81viqWNjaZ3t8rKsZrdaWZtoo28m6gQ=w1256-h560)  ![Super Mario Land I](https://lh4.googleusercontent.com/gySVoSnMf8eyWNRKYp25NpFOHOF8qyRrcyRJ4cchSM2Gng7dVp6CIrCBpsH01OHBz05GJw=w1256-h560)
 
 
 ```
      Red scale                                       Blue Scale                                            
 ```
-![Super Mario Land I](https://i2.imgflip.com/qrf71.gif)                   ![Super Mario Land I](https://lh6.googleusercontent.com/M7Ee8FztI4c1sx_ers4DL-p6kuVsiBY4eIlc8IeW49IGnR_uJB5ay5xW9hCkd2kas3t9cLU5mJcoL3M=w1256-h560)
+![Super Mario Land I](https://lh5.googleusercontent.com/h4_-rs1qWCDZ4koPzwujDfNjo9wtw_kN3jlXPnr8918QCYuM7Bfk1Nkhw-F0stJhqXKoGw=w1256-h560)                   ![Super Mario Land I](https://lh6.googleusercontent.com/M7Ee8FztI4c1sx_ers4DL-p6kuVsiBY4eIlc8IeW49IGnR_uJB5ay5xW9hCkd2kas3t9cLU5mJcoL3M=w1256-h560)
 
 
 ```
