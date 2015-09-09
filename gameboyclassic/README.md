@@ -194,21 +194,27 @@ Frame frequency: 59.7Hz
 
 #### Backlight (DMG/Pocket) Custom Polarized
 ```
-    Orange Scale                     Green Scale                     Pink Scale 
+    Orange Scale                                            Green Scale                     
 ```
-![Super Mario Land I](https://lh5.googleusercontent.com/yZFipCrDBHGB2f8Y6UoBDw2N4rwB9pOYcENNr_qXt-9IncIKzLLs7UUblGftd4BAHKjtd-JzOzZf6x0=w1256-h560)  ![Super Mario Land I](http://i.imgur.com/ZloM5eI.png)  ![Super Mario Land I](http://i.imgur.com/QABFYQ1.png)  
+![Super Mario Land I](https://lh5.googleusercontent.com/yZFipCrDBHGB2f8Y6UoBDw2N4rwB9pOYcENNr_qXt-9IncIKzLLs7UUblGftd4BAHKjtd-JzOzZf6x0=w1256-h560)  ![Super Mario Land I](https://lh3.googleusercontent.com/4moJGSEynV4mo8i95TjkV1qaWLlg5pDXfKs9n4b0Gnpl9Hx8UM6YMWkdEn6pTP9FiEJN3w=w1256-h560)  
+
 
 ```
-    Teal Scale                      White Blue Scale                 Red scale                         
+    Teal Scale                      White Blue Scale                                    
 ```
-![Super Mario Land I](http://i.imgur.com/M4Zjj9G.png)   ![Super Mario Land I](http://i.imgur.com/vwugztY.png)
-![Super Mario Land I](http://i.imgur.com/fMnWyan.png)
+![Super Mario Land I](https://lh6.googleusercontent.com/pbRKE6LfZbTYXg-N3Y2lPnA9qCNTygyyYJVSvMT81viqWNjaZ3t8rKsZrdaWZtoo28m6gQ=w1256-h560)   ![Super Mario Land I](https://i2.imgflip.com/qrfd9.gif)
+
 
 ```
-    Blue Scale                                                    
+     Red scale                                              Blue Scale                                            
 ```
-![Super Mario Land I](https://lh6.googleusercontent.com/M7Ee8FztI4c1sx_ers4DL-p6kuVsiBY4eIlc8IeW49IGnR_uJB5ay5xW9hCkd2kas3t9cLU5mJcoL3M=w1256-h560)
+![Super Mario Land I](https://i2.imgflip.com/qrf71.gif)                   ![Super Mario Land I](https://lh6.googleusercontent.com/M7Ee8FztI4c1sx_ers4DL-p6kuVsiBY4eIlc8IeW49IGnR_uJB5ay5xW9hCkd2kas3t9cLU5mJcoL3M=w1256-h560)
 
+
+```
+    Pink Scale 
+```
+![Super Mario Land I](https://lh5.googleusercontent.com/HWQXY-C5P98kCbIoBRuxP3KbgYjapgpvoVY248qChi8ZSt9t2iSCUUFe_g92Q2YedcMPzg=w1256-h560)  
 
 
 ##Sound (WIP)
