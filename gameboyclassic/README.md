@@ -1,4 +1,4 @@
-GameBoy Classic Java Emulator (DMG)
+_![](https://realboyemulator.files.wordpress.com/2013/01/220px-gameboy.jpg?w=47&h=90) GameBoy Classic Java Emulator (DMG) ![](https://realboyemulator.files.wordpress.com/2013/01/220px-gameboy.jpg?w=47&h=90)_
 =========
 
 ##Abbreviation
@@ -245,6 +245,17 @@ Sound 3:
 * PC: Program Counter (16 bits)
 * SP: Stack Pointer (16 bits),  SP + 2 (Pop) || SP - 2 (Push)
 * F: Flag Register (8 bits)
+
+
+###Reducing Power Consumption
+
+Can be used to recude the power consumption of the gameboy, and to extend the life of the batteries.
+
+* PWR Using the HALT Instruction
+* PWR Using the STOP Instruction
+* PWR Disabeling the Sound Controller
+* PWR Not using CGB Double Speed Mode
+* PWR Using the Skills
 
 ####Sumary
 
