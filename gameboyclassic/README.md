@@ -214,11 +214,11 @@ Frame frequency: 59.7Hz
 ```
     Horizontal                       Vertical                         Mixes 
 ```
-![](http://i.imgur.com/xLpEyAe.png) ![](http://i.imgur.com/fRPtIeN.png?1) ![](http://i.imgur.com/jsnVmSR.png?1)
+![](http://i.imgur.com/xLpEyAe.png)  ![](http://i.imgur.com/fRPtIeN.png?1) ![](http://i.imgur.com/jsnVmSR.png?1)
 
 
 ####[Tile Map Graphics](https://youtu.be/Z1gTD_SOAPg)
-![](http://i.imgur.com/N2u0Nnr.png) ![](http://i.imgur.com/rPFpkgz.png) ![](http://i.imgur.com/NXElIt2.png)
+ ![](http://i.imgur.com/rPFpkgz.png) ![](http://i.imgur.com/NXElIt2.png)  ![](http://i.imgur.com/N2u0Nnr.png)
 
 
 ##Sound (WIP)
