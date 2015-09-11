@@ -218,7 +218,7 @@ Frame frequency: 59.7Hz
 
 
 ####[Tile Map Graphics](https://youtu.be/Z1gTD_SOAPg)
- ![](http://i.imgur.com/rPFpkgz.png) ![](http://i.imgur.com/NXElIt2.png)  ![](http://i.imgur.com/N2u0Nnr.png)
+ ![](http://i.imgur.com/NXElIt2.png)  ![](http://i.imgur.com/N2u0Nnr.png) ![](http://i.imgur.com/rPFpkgz.png) 
 
 
 ##Sound (WIP)
