@@ -119,7 +119,7 @@ Frame frequency: 59.7Hz
                                                       00000000      
  ```
 
-####Shader
+####[Shader](https://youtu.be/6Xt7j9bnRRI)
 ```
     Green Scale                    Dark Yellow Scale                  Grey Scale 
 ```
@@ -131,7 +131,7 @@ Frame frequency: 59.7Hz
 
 
 
-####Shader Invert
+####[Shader Invert](https://youtu.be/-VP92QbATH8)
 ```
     Green Scale                    Dark Yellow Scale                  Grey Scale 
 ```
@@ -143,7 +143,7 @@ Frame frequency: 59.7Hz
 
 
 
-####Shader Polarized
+####[Shader Polarized](https://youtu.be/W7DstyFZ_j8)
 ```
     Green Scale                    Dark Yellow Scale                  Grey Scale 
 ```
@@ -155,7 +155,7 @@ Frame frequency: 59.7Hz
 
 
 
-#### Backlight (DMG/Pocket) Custom
+#### [Backlight (DMG/Pocket) Custom](https://youtu.be/XElP1Y7MT7c)
 ```
     Orange Scale                     Green Scale                     Pink Scale 
 ```
@@ -173,7 +173,7 @@ Frame frequency: 59.7Hz
 ![Super Mario Land I](http://i.imgur.com/gBvD48t.png?1)
 
 
-#### Backlight (DMG/Pocket) Custom Invert
+#### [Backlight (DMG/Pocket) Custom Invert](ttps://youtu.be/Em2u3XLbHvw)
 ```
     Orange Scale                     Green Scale                     Pink Scale 
 ```
@@ -192,7 +192,7 @@ Frame frequency: 59.7Hz
 
 
 
-#### Backlight (DMG/Pocket) Custom Polarized
+#### [Backlight (DMG/Pocket) Custom Polarized](https://youtu.be/oZMo_Q4DtRY)
 ```
     Orange Scale                     Green Scale                     Pink Scale 
 ```
