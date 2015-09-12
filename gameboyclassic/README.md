@@ -209,7 +209,16 @@ Frame frequency: 59.7Hz
 ```
 ![Super Mario Land I](http://i.imgur.com/W2jDY65.png)
 
- 
+
+####[Scalines Emulated](https://www.youtube.com/watch?v=rKAhKN8gFdw)
+```
+    Horizontal                       Vertical                         Mixes 
+```
+![](http://i.imgur.com/xLpEyAe.png)  ![](http://i.imgur.com/fRPtIeN.png?1) ![](http://i.imgur.com/jsnVmSR.png?1)
+
+
+####[Tile Map Graphics](https://youtu.be/Z1gTD_SOAPg)
+ ![](http://i.imgur.com/NXElIt2.png)  ![](http://i.imgur.com/N2u0Nnr.png) ![](http://i.imgur.com/rPFpkgz.png) 
 
 
 ##Sound (WIP)
