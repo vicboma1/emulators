@@ -1,7 +1,5 @@
-package framework.factory;
+package emulator.framework.factory;
 
-import emulator.framework.factory.FactoryCollection;
-import emulator.framework.factory.FactoryCollectionImpl;
 import junit.framework.TestCase;
 
 import java.util.ArrayList;

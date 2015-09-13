@@ -1,7 +1,5 @@
-package framework.container;
+package emulator.framework.container;
 
-import emulator.framework.container.ClassToMapContainer;
-import emulator.framework.container.ClassToMapKey;
 import junit.framework.TestCase;
 
 import java.util.stream.IntStream;

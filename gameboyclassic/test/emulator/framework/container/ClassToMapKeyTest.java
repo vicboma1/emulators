@@ -1,6 +1,5 @@
-package framework.container;
+package emulator.framework.container;
 
-import emulator.framework.container.ClassToMapKey;
 import junit.framework.TestCase;
 
 import static org.mockito.Mockito.spy;
