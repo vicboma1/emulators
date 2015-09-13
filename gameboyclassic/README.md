@@ -155,7 +155,7 @@ Frame frequency: 59.7Hz
 
 
 
-#### [Backlight (DMG/Pocket) Custom](https://youtu.be/XElP1Y7MT7c)
+####[Backlight (DMG/Pocket) Custom](https://youtu.be/XElP1Y7MT7c)
 ```
     Orange Scale                     Green Scale                     Pink Scale 
 ```
@@ -173,7 +173,7 @@ Frame frequency: 59.7Hz
 ![Super Mario Land I](http://i.imgur.com/gBvD48t.png?1)
 
 
-#### [Backlight (DMG/Pocket) Custom Invert](ttps://youtu.be/Em2u3XLbHvw)
+####[Backlight (DMG/Pocket) Custom Invert](https://youtu.be/Em2u3XLbHvw)
 ```
     Orange Scale                     Green Scale                     Pink Scale 
 ```
@@ -192,7 +192,9 @@ Frame frequency: 59.7Hz
 
 
 
-#### [Backlight (DMG/Pocket) Custom Polarized](https://youtu.be/oZMo_Q4DtRY)
+####Backlight (DMG/Pocket) Custom Invert
+
+[Backlight (DMG/Pocket) Custom Polarized](https://youtu.be/oZMo_Q4DtRY)
 ```
     Orange Scale                     Green Scale                     Pink Scale 
 ```
