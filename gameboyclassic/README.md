@@ -1,4 +1,4 @@
-_![](https://realboyemulator.files.wordpress.com/2013/01/220px-gameboy.jpg?w=47&h=90) GameBoy Classic Java Emulator (DMG) ![](https://realboyemulator.files.wordpress.com/2013/01/220px-gameboy.jpg?w=47&h=90)_
+_![](https://realboyemulator.files.wordpress.com/2013/01/220px-gameboy.jpg?w=47&h=90) GameBoy Classic Java Emulator / WIP ![](https://realboyemulator.files.wordpress.com/2013/01/220px-gameboy.jpg?w=47&h=90)_
 =========
 
 ##Abbreviation
