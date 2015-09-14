@@ -2,6 +2,8 @@ _![](https://realboyemulator.files.wordpress.com/2013/01/220px-gameboy.jpg?w=47&
 =========
 
 ## SOLID Software Development & TDD 
+* [Development's video playlist](https://www.youtube.com/watch?v=zCy8_IkdMeE&list=PLNph7ndeSqE9E6XqolWg-6Vx4AOeneJSZ&index=1) 
+
 
 ##Abbreviation
 DMG: Game Boy (monochrome), introduced on April 21, 1989
@@ -366,7 +368,6 @@ RAM use by MBC1 is restricted to 64 Kbits (8 Kbytes).
 * Study of the techniques for emulation programming, Victor Moya del Barrio, Agustin Fernandez, 2001.
 * GB microChip Z80 opCodes, http://goldencrystal.free.fr/GBZ80Opcodes.pdf
 * http://bgb.bircd.org/pandocs.htm
+* http://www.z80.info/z80undoc.htm for Zilog z80 instructions
 * My own know.
 
-
-##[Development's video playlist](https://www.youtube.com/watch?v=zCy8_IkdMeE&list=PLNph7ndeSqE9E6XqolWg-6Vx4AOeneJSZ&index=1) 
