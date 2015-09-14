@@ -369,5 +369,6 @@ RAM use by MBC1 is restricted to 64 Kbits (8 Kbytes).
 * GB microChip Z80 opCodes, http://goldencrystal.free.fr/GBZ80Opcodes.pdf
 * http://bgb.bircd.org/pandocs.htm
 * http://www.z80.info/z80undoc.htm for Zilog z80 instructions
+* http://www.ticalc.org/pub/text/z80/z80.txt for Zilog z80 instructions
 * My own know.
 
