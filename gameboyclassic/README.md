@@ -195,10 +195,7 @@ Frame frequency: 59.7Hz
 ![Super Mario Land I](http://i.imgur.com/aAlZp6X.png)
 
 
-
-####Backlight (DMG/Pocket) Custom Invert
-
-[Backlight (DMG/Pocket) Custom Polarized](https://youtu.be/oZMo_Q4DtRY)
+####[Backlight (DMG/Pocket) Custom Polarized](https://youtu.be/oZMo_Q4DtRY)
 ```
     Orange Scale                     Green Scale                     Pink Scale 
 ```
