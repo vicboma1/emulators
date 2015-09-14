@@ -1,5 +1,9 @@
-_![](https://realboyemulator.files.wordpress.com/2013/01/220px-gameboy.jpg?w=47&h=90) GameBoy Classic Java Emulator (DMG) ![](https://realboyemulator.files.wordpress.com/2013/01/220px-gameboy.jpg?w=47&h=90)_
+_![](https://realboyemulator.files.wordpress.com/2013/01/220px-gameboy.jpg?w=47&h=90) GameBoy Classic Java Emulator / WIP ![](https://realboyemulator.files.wordpress.com/2013/01/220px-gameboy.jpg?w=47&h=90)_
 =========
+
+## SOLID Software Development & TDD 
+* [Development's video playlist](https://www.youtube.com/watch?v=zCy8_IkdMeE&list=PLNph7ndeSqE9E6XqolWg-6Vx4AOeneJSZ&index=1) 
+
 
 ##Abbreviation
 DMG: Game Boy (monochrome), introduced on April 21, 1989
@@ -155,7 +159,7 @@ Frame frequency: 59.7Hz
 
 
 
-#### [Backlight (DMG/Pocket) Custom](https://youtu.be/XElP1Y7MT7c)
+####[Backlight (DMG/Pocket) Custom](https://youtu.be/XElP1Y7MT7c)
 ```
     Orange Scale                     Green Scale                     Pink Scale 
 ```
@@ -173,7 +177,7 @@ Frame frequency: 59.7Hz
 ![Super Mario Land I](http://i.imgur.com/gBvD48t.png?1)
 
 
-#### [Backlight (DMG/Pocket) Custom Invert](ttps://youtu.be/Em2u3XLbHvw)
+####[Backlight (DMG/Pocket) Custom Invert](https://youtu.be/Em2u3XLbHvw)
 ```
     Orange Scale                     Green Scale                     Pink Scale 
 ```
@@ -191,8 +195,7 @@ Frame frequency: 59.7Hz
 ![Super Mario Land I](http://i.imgur.com/aAlZp6X.png)
 
 
-
-#### [Backlight (DMG/Pocket) Custom Polarized](https://youtu.be/oZMo_Q4DtRY)
+####[Backlight (DMG/Pocket) Custom Polarized](https://youtu.be/oZMo_Q4DtRY)
 ```
     Orange Scale                     Green Scale                     Pink Scale 
 ```
@@ -362,7 +365,8 @@ RAM use by MBC1 is restricted to 64 Kbits (8 Kbytes).
 * Study of the techniques for emulation programming, Victor Moya del Barrio, Agustin Fernandez, 2001.
 * GB microChip Z80 opCodes, http://goldencrystal.free.fr/GBZ80Opcodes.pdf
 * http://bgb.bircd.org/pandocs.htm
+* http://www.z80.info/z80undoc.htm for Zilog z80 instructions
+* http://www.ticalc.org/pub/text/z80/z80.txt for Zilog z80 instructions
+* http://sgate.emt.bme.hu/patai/publications/z80guide/app1b.html for Zilog z80 instructions
 * My own know.
 
-
-##[Development's video playlist](https://www.youtube.com/watch?v=zCy8_IkdMeE&list=PLNph7ndeSqE9E6XqolWg-6Vx4AOeneJSZ&index=1) 
