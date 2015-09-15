@@ -14,8 +14,8 @@ public class ClassToMapContainer {
         map = new HashMap();
     }
 
-    public <T> void put(ClassToMapKey<T> key, T value ) {
-        map.put( key, value );
+    public <T> Object put(ClassToMapKey<T> key, T value ) {
+        return map.put( key, value );
     }
 
     public <T> T get(ClassToMapKey<T> key ) {

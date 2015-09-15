@@ -30,8 +30,8 @@ public class FactoryCollectionImpl<T extends Number> implements FactoryCollectio
     }
 
     @Override
-    public void write(int addres, T data) {
-        this.data.set(addres,data);
+    public T write(int addres, T data) {
+        return this.data.set(addres,data);
     }
 
 }

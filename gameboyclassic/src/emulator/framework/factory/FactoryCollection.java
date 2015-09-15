@@ -6,5 +6,5 @@ package emulator.framework.factory;
 public interface FactoryCollection<T extends Number> {
     T read(int addres);
 
-    void write(int addres, T data);
+    T write(int addres, T data);
 }
