@@ -388,6 +388,7 @@ RAM use by MBC1 is restricted to 64 Kbits (8 Kbytes).
 * Game BoyTM CPU Manual, Pan of Anthrox, GABY, Marat Fayzullin, Pascal Felber, Paul Robson, Martin Korth, kOOPa, Bowser.
 * ￼Game Boy PROGRAMMING MANUAL v.1.0, DMG-06-4216-001-A Released 11/09/1999 Nintendo.
 * Study of the techniques for emulation programming, Victor Moya del Barrio, Agustin Fernandez, 2001.
+* GameBoy Faqs http://www.devrs.com/gb/files/faqs.html
 * GB microChip Z80 opCodes, http://goldencrystal.free.fr/GBZ80Opcodes.pdf
 * http://bgb.bircd.org/pandocs.htm
 * http://www.z80.info/z80undoc.htm for Zilog z80 instructions
