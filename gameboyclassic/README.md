@@ -73,7 +73,6 @@ NOTE: b = bit, B = byte
 * 0x000 to 0x0FF: Allocated as the destination address for RST instructions and the starting address for interrupts.
 * 0x100 to 0x14F: Allocated as the ROM area for storing data such as the name of the game.
 * 0x150: Allocated as the starting address of the user program.
-___
 * 0x8000 to 0x9FFF : used as RAM for the LCD display (8 KB).
 * 0xA000 to 0xBFFF : the area allocated for external expansion RAM (8 KB).
 * 0xC000 to 0xDFFF : the work RAM area (8 KB).
@@ -88,10 +87,33 @@ DMG allows 40 x 32-bit DMA transfers from 0x8000-0xDFFF to OAM (0xFE00-0xFE9F).
 
 The transfer start address can be specified in increments of 0x100 for 0x8000-0xDFFF.
 
-##Timer (WIP)
+##Timer (Wip)
+Execution time (E.T.) for each instruction is given in microseconds for an assumed 4 MHz clock.
+Total machine cycles (M) are indicated with total clock periods (T States).
+
+```
+For example:
+M Cycles:   2T States: 7  (4,3)  4     MHzE.T.: 1.75
+```
+Also indicated are the number of T States for each M cycle. 
+Indicates that the instruction consists of 2 machine cycles. 
+The first cycle contains 4 clock periods (T States). 
+The second cycle contains 3 clock periods for a total of 7 clock periods or T States. 
+The instruction executes in 1.75 microseconds.
+Register format is indicated for each instruction with the most-significant bit to the left and the least-significant bit to the right. ^
+
+Register (First cycle)
 * TIMA (timer counter)
 * TMA (timer modulo register) 
 * TAC (timer control register)
+* DIV (Divider Register)
+
+Clock (Second cycle)
+* Sub
+* Div
+* Count
+
+^Time clock: The Z80 holds two types of clock (m and t)
 
 ##Registers JoyPad interrupt $FF00
 * Bit 3 - P13 in port 
@@ -349,14 +371,12 @@ The following table states how long the GPU stays in each period, in terms of th
 ```
           Period	                GPU mode number  Time spent (clocks)
 Scanline (accessing OAM)                  	2               80
-Scanline (accessing VRAM)               	3               172
-Horizontal blank                        	0               204
-One line (scan and blank)		        X               456
-Vertical blank	                                1           	4560 (10 lines)
-Full frame (scans and vblank)		        X               70224
+Scanline (accessing VRAM)               	  3               172
+Horizontal blank                        	  0               204
+One line (scan and blank)		                X               456
+Vertical blank	                            1           	4560 (10 lines)
+Full frame (scans and vblank)		            timeX               70224
 ```
-
-
 
 ##Interrupt Procedure
 * V-Blank
