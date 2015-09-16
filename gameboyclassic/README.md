@@ -2,7 +2,33 @@ _![](https://realboyemulator.files.wordpress.com/2013/01/220px-gameboy.jpg?w=47&
 =========
 
 ## SOLID Software Development & TDD 
-* [Development's video playlist](https://www.youtube.com/watch?v=zCy8_IkdMeE&list=PLNph7ndeSqE9E6XqolWg-6Vx4AOeneJSZ&index=1) 
+```
+Z80 CPU emulated with Pool Async.
+I/O Ports emulated Async (Video Display - Joypad Input - Timer and Divider Registers - Interrupts).
+Reducing Power Consumption in CPU & ROM.
+SRAM emulated for LCD display & Working memory.
+Multi connector for ROM cartridge connection (ROM -MBC1 - MBC2 - MBC3).
+Custom OAM (Sprite Attrib Memory ) & VRAM (Video Ram) & MRAM (Main Ram).
+Graphics emulated with ascendency architectural. 
+Grayscale Display evolutioned to Monochromatic Shader and Polirazed Backlight multi-color.
+Scalines emulated.
+Map Tiles represented.
+ 
+Complementary Tools Developed:
+Async Debug Console
+Analysis Dump Memory (OAM - VRAM - MRAM - CPU )
+```
+
+#### Coming soon - Version 0.25.0
+```
+Semantantic classes : Pixel - Tile - Sprite - Background.
+Cached Pool Pixel & Tile.
+Optimization and improving of performance CPU.
+Test in commands of the processor.
+Recude the power consumption : Halt & Disable sound
+```
+
+#### [Development's video playlist](https://www.youtube.com/watch?v=zCy8_IkdMeE&list=PLNph7ndeSqE9E6XqolWg-6Vx4AOeneJSZ&index=1) 
 
 
 ##Abbreviation
@@ -263,14 +289,13 @@ Sound 3:
 
 Can be used to recude the power consumption of the gameboy, and to extend the life of the batteries.
 
-* PWR Using the HALT Instruction
+* PWR Using the HALT Instruction (WIP)
 * PWR Using the STOP Instruction
-* PWR Disabeling the Sound Controller
-* PWR Not using CGB Double Speed Mode
+* PWR Disabeling the Sound Controller (WIP)
+* PWR Not using CGB Double Speed Mode (Future work)
 * PWR Using the Skills
 
 ####Sumary
-
 ```
 C | H | N | Z |  CYCL | OpCodes
 ```
