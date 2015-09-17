@@ -2,7 +2,33 @@ _![](https://realboyemulator.files.wordpress.com/2013/01/220px-gameboy.jpg?w=47&
 =========
 
 ## SOLID Software Development & TDD 
-* [Development's video playlist](https://www.youtube.com/watch?v=zCy8_IkdMeE&list=PLNph7ndeSqE9E6XqolWg-6Vx4AOeneJSZ&index=1) 
+```
+Z80 CPU emulated with Pool Async.
+I/O Ports emulated Async (Video Display - Joypad Input - Timer and Divider Registers - Interrupts).
+Reducing Power Consumption in CPU & ROM.
+SRAM emulated for LCD display & Working memory.
+Multi connector for ROM cartridge connection (ROM -MBC1 - MBC2 - MBC3).
+Custom OAM (Sprite Attrib Memory ) & VRAM (Video Ram) & MRAM (Main Ram).
+Graphics emulated with ascendency architectural. 
+Grayscale Display evolutioned to Monochromatic Shader and Polirazed Backlight multi-color.
+Scalines emulated.
+Map Tiles represented.
+ 
+Complementary Tools Developed:
+Async Debug Console
+Analysis Dump Memory (OAM - VRAM - MRAM - CPU )
+```
+
+#### Coming soon - Version 0.25.0
+```
+Semantantic classes : Pixel - Tile - Sprite - Background.
+Cached Pool Pixel & Tile.
+Optimization and improving of performance CPU.
+Test in commands of the processor.
+Recude the power consumption : Halt & Disable sound
+```
+
+#### [Development's video playlist](https://www.youtube.com/watch?v=zCy8_IkdMeE&list=PLNph7ndeSqE9E6XqolWg-6Vx4AOeneJSZ&index=1) 
 
 
 ##Abbreviation
@@ -47,7 +73,6 @@ NOTE: b = bit, B = byte
 * 0x000 to 0x0FF: Allocated as the destination address for RST instructions and the starting address for interrupts.
 * 0x100 to 0x14F: Allocated as the ROM area for storing data such as the name of the game.
 * 0x150: Allocated as the starting address of the user program.
-___
 * 0x8000 to 0x9FFF : used as RAM for the LCD display (8 KB).
 * 0xA000 to 0xBFFF : the area allocated for external expansion RAM (8 KB).
 * 0xC000 to 0xDFFF : the work RAM area (8 KB).
@@ -62,10 +87,33 @@ DMG allows 40 x 32-bit DMA transfers from 0x8000-0xDFFF to OAM (0xFE00-0xFE9F).
 
 The transfer start address can be specified in increments of 0x100 for 0x8000-0xDFFF.
 
-##Timer (WIP)
+##Timer (Wip)
+Execution time (E.T.) for each instruction is given in microseconds for an assumed 4 MHz clock.
+Total machine cycles (M) are indicated with total clock periods (T States).
+
+```
+For example:
+M Cycles:   2T States: 7  (4,3)  4     MHzE.T.: 1.75
+```
+Also indicated are the number of T States for each M cycle. 
+Indicates that the instruction consists of 2 machine cycles. 
+The first cycle contains 4 clock periods (T States). 
+The second cycle contains 3 clock periods for a total of 7 clock periods or T States. 
+The instruction executes in 1.75 microseconds.
+Register format is indicated for each instruction with the most-significant bit to the left and the least-significant bit to the right. ^
+
+Register (First cycle)
 * TIMA (timer counter)
 * TMA (timer modulo register) 
 * TAC (timer control register)
+* DIV (Divider Register)
+
+Clock (Second cycle)
+* Sub
+* Div
+* Count
+
+^Time clock: The Z80 holds two types of clock (m and t)
 
 ##Registers JoyPad interrupt $FF00
 * Bit 3 - P13 in port 
@@ -263,14 +311,13 @@ Sound 3:
 
 Can be used to recude the power consumption of the gameboy, and to extend the life of the batteries.
 
-* PWR Using the HALT Instruction
+* PWR Using the HALT Instruction (WIP)
 * PWR Using the STOP Instruction
-* PWR Disabeling the Sound Controller
-* PWR Not using CGB Double Speed Mode
+* PWR Disabeling the Sound Controller (WIP)
+* PWR Not using CGB Double Speed Mode (Future work)
 * PWR Using the Skills
 
 ####Sumary
-
 ```
 C | H | N | Z |  CYCL | OpCodes
 ```
@@ -324,14 +371,12 @@ The following table states how long the GPU stays in each period, in terms of th
 ```
           Period	                GPU mode number  Time spent (clocks)
 Scanline (accessing OAM)                  	2               80
-Scanline (accessing VRAM)               	3               172
-Horizontal blank                        	0               204
-One line (scan and blank)		        X               456
-Vertical blank	                                1           	4560 (10 lines)
-Full frame (scans and vblank)		        X               70224
+Scanline (accessing VRAM)               	  3               172
+Horizontal blank                        	  0               204
+One line (scan and blank)		                X               456
+Vertical blank	                            1           	4560 (10 lines)
+Full frame (scans and vblank)		            timeX               70224
 ```
-
-
 
 ##Interrupt Procedure
 * V-Blank
@@ -363,6 +408,7 @@ RAM use by MBC1 is restricted to 64 Kbits (8 Kbytes).
 * Game BoyTM CPU Manual, Pan of Anthrox, GABY, Marat Fayzullin, Pascal Felber, Paul Robson, Martin Korth, kOOPa, Bowser.
 * ￼Game Boy PROGRAMMING MANUAL v.1.0, DMG-06-4216-001-A Released 11/09/1999 Nintendo.
 * Study of the techniques for emulation programming, Victor Moya del Barrio, Agustin Fernandez, 2001.
+* GameBoy Faqs http://www.devrs.com/gb/files/faqs.html
 * GB microChip Z80 opCodes, http://goldencrystal.free.fr/GBZ80Opcodes.pdf
 * http://bgb.bircd.org/pandocs.htm
 * http://www.z80.info/z80undoc.htm for Zilog z80 instructions
