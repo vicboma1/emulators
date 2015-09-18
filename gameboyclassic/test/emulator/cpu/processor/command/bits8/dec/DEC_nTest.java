@@ -8,82 +8,87 @@ import static org.mockito.Mockito.mock;
 /**
  * Created by vicboma on 18/09/15.
  */
-public class DEC_DTest extends TestCase {
+public class DEC_nTest extends TestCase {
+
 
     private Z80Impl z80;
-    private DEC_D dec_d;
-
+    private DEC_n dec_n;
+    @Override
     public void setUp() throws Exception {
         super.setUp();
+
         z80 = mock(Z80Impl.class);
-        dec_d = new DEC_D(z80);
+        dec_n = new DEC_n(z80);
     }
 
+    @Override
     public void tearDown() throws Exception {
-        z80 = null;
+        super.tearDown();
+
+        dec_n = null;
     }
 
-    public void testDec_00() throws Exception {
-        z80.d = 0x00;
+    public void testDec_C00() throws Exception {
+        z80.c = 0x00;
         z80.pc = 0;
         z80.f = 0x70;
 
-        dec_d.execute(0, 0, 0, 0);
+        z80.c = dec_n.execute(z80.c);
 
-        assertTrue("Not same d", z80.d == 0xFF);
+        assertTrue("Not same c", z80.c == 0xFF);
         assertTrue("Not same f", z80.f == 0x70);
         assertTrue("Not same pc", z80.pc == 1);
         assertTrue("Not same cycles", z80.cycles == 4);
     }
 
 
-    public void testDec_01() throws Exception {
-        z80.d= 0x01;
+    public void testDec_C01() throws Exception {
+        z80.c = 0x01;
         z80.pc = 0;
         z80.f = 0x71;
 
-        dec_d.execute(0, 0, 0, 0);
+        z80.c = dec_n.execute(z80.c);
 
-        assertTrue("Not same d", z80.b == 0x00);
+        assertTrue("Not same c", z80.c == 0x00);
         assertTrue("Not same f", z80.f == 0xD0);
         assertTrue("Not same pc", z80.pc == 1);
         assertTrue("Not same cycles", z80.cycles == 4);
     }
 
-    public void testDec_10() throws Exception {
-        z80.d = 0x10;
+    public void testDec_C10() throws Exception {
+        z80.c = 0x10;
         z80.pc = 0;
         z80.f = 0x70;
 
-        dec_d.execute(0, 0, 0, 0);
+        z80.c = dec_n.execute(z80.c);
 
-        assertTrue("Not same d",  z80.d == 0x0F);
+        assertTrue("Not same c", z80.c == 0x0F);
         assertTrue("Not same f", z80.f == 0x70);
         assertTrue("Not same pc", z80.pc == 1);
         assertTrue("Not same cycles", z80.cycles == 4);
     }
 
-    public void testDec_11() throws Exception {
-        z80.d = 44;
+    public void testDec_C11() throws Exception {
+        z80.c = 44;
         z80.pc = 0;
         z80.f = 0x77;
 
-        dec_d.execute(0, 0, 0, 0);
+        z80.c = dec_n.execute(z80.c);
 
-        assertTrue("Not same d",  z80.d == 43);
+        assertTrue("Not same c", z80.c == 43);
         assertTrue("Not same f", z80.f == 0x50);
         assertTrue("Not same pc", z80.pc == 1);
         assertTrue("Not same cycles", z80.cycles == 4);
     }
 
     public void testDec_11_2() throws Exception {
-        z80.d = 4;
+        z80.c = 4;
         z80.pc = 0;
         z80.f = 0x77;
 
-        dec_d.execute(0, 0, 0, 0);
+        z80.c = dec_n.execute(z80.c);
 
-        assertTrue("Not same d", z80.d == 3);
+        assertTrue("Not same c", z80.c == 3);
         assertTrue("Not same f", z80.f == 0x50);
         assertTrue("Not same pc", z80.pc == 1);
         assertTrue("Not same cycles", z80.cycles == 4);

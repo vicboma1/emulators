@@ -5,7 +5,7 @@ import junit.framework.TestCase;
 
 import static org.mockito.Mockito.mock;
 
-public class DEC_BTest extends TestCase {
+public class DEC_n_BTest extends TestCase {
     private Z80Impl z80;
     private DEC_B dec_b;
 
@@ -26,24 +26,24 @@ public class DEC_BTest extends TestCase {
 
         dec_b.execute(0, 0, 0, 0);
 
-        assertTrue("Not same b", z80.b == 0xFF);
-        assertTrue("Not same f", z80.f == 0x70);
-        assertTrue("Not same pc", z80.pc == 1);
-        assertTrue("Not same cycles", z80.cycles == 4);
+        assertTrue("Not same b",z80.b == 0xFF);
+        assertTrue("Not same f",z80.f == 0x70);
+        assertTrue("Not same pc",z80.pc == 1);
+        assertTrue("Not same cycles",z80.cycles == 4);
     }
 
 
     public void testDec_01() throws Exception {
-        z80.b= 0x01;
+        z80.b = 0x01;
         z80.pc = 0;
         z80.f = 0x71;
 
         dec_b.execute(0, 0, 0, 0);
 
-        assertTrue("Not same b", z80.b == 0x00);
-        assertTrue("Not same f", z80.f == 0xD0);
-        assertTrue("Not same pc", z80.pc == 1);
-        assertTrue("Not same cycles", z80.cycles == 4);
+        assertTrue("Not same b",z80.b == 0x00);
+        assertTrue("Not same f",z80.f == 0xD0);
+        assertTrue("Not same pc",z80.pc == 1);
+        assertTrue("Not same cycles",z80.cycles == 4);
     }
 
     public void testDec_10() throws Exception {
@@ -53,10 +53,10 @@ public class DEC_BTest extends TestCase {
 
         dec_b.execute(0, 0, 0, 0);
 
-        assertTrue("Not same b",  z80.b == 0x0F);
-        assertTrue("Not same f", z80.f == 0x70);
-        assertTrue("Not same pc", z80.pc == 1);
-        assertTrue("Not same cycles", z80.cycles == 4);
+        assertTrue("Not same b",z80.b == 0x0F);
+        assertTrue("Not same f",z80.f == 0x70);
+        assertTrue("Not same pc",z80.pc == 1);
+        assertTrue("Not same cycles",z80.cycles == 4);
     }
 
     public void testDec_11() throws Exception {
@@ -66,10 +66,10 @@ public class DEC_BTest extends TestCase {
 
         dec_b.execute(0, 0, 0, 0);
 
-        assertTrue("Not same b",  z80.b == 43);
-        assertTrue("Not same f", z80.f == 0x50);
-        assertTrue("Not same pc", z80.pc == 1);
-        assertTrue("Not same cycles", z80.cycles == 4);
+        assertTrue("Not same b",z80.b == 43);
+        assertTrue("Not same f",z80.f == 0x50);
+        assertTrue("Not same pc",z80.pc == 1);
+        assertTrue("Not same cycles",z80.cycles == 4);
     }
 
     public void testDec_11_2() throws Exception {
@@ -80,8 +80,9 @@ public class DEC_BTest extends TestCase {
         dec_b.execute(0, 0, 0, 0);
 
         assertTrue("Not same b", z80.b == 3);
-        assertTrue("Not same f", z80.f == 0x50);
-        assertTrue("Not same pc", z80.pc == 1);
-        assertTrue("Not same cycles", z80.cycles == 4);
+        assertTrue("Not same f",z80.f == 0x50);
+        assertTrue("Not same pc",z80.pc == 1);
+        assertTrue("Not same cycles",z80.cycles == 4);
     }
+
 }
