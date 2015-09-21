@@ -123,7 +123,7 @@ Clock (Second cycle)
 * Bit 5 - P15 out port { $8 - Down | $4 - Up | $2 - Left | $1 - Right }
 * Bit 4 - P14 out port { $80 - Start | $40 - Select | $20 -B | $10 -A }
 
-##Display (WIP)
+##Display
 The DMG CPU has 8 KB (64 Kbits) of built-in LCD display RAM.
 
 Data specification ranges for OBJ characters: 
@@ -261,11 +261,22 @@ Frame frequency: 59.7Hz
 ![Super Mario Land I](http://i.imgur.com/W2jDY65.png)
 
 
-####[Scalines Emulated](https://www.youtube.com/watch?v=rKAhKN8gFdw) / Click on the image 
+####[Scalines Emulated](https://www.youtube.com/watch?v=rKAhKN8gFdw) / click on the image 
 ```
-    Vertical                       Horizontal                         Mixes 
+    Vertical
 ```
-![](http://i.imgur.com/xLpEyAe.png)  [![](http://i.imgur.com/fRPtIeN.png?1)](https://youtu.be/1-L3qa2kmMk) ![](http://i.imgur.com/jsnVmSR.png?1)
+[![](http://i.imgur.com/sqtDrTC.png?1)](https://youtu.be/1-L3qa2kmMk)
+
+```
+    Horizontal
+```
+ [![](http://i.imgur.com/5HYFZb1.png?1)](https://youtu.be/lJZFqBM-fxQ)
+ 
+```
+    Mixes 
+```
+[![](http://i.imgur.com/9kfLgZ9.png?1)](https://youtu.be/90i4lERsSbU)
+
 
 
 ####[Tile Map Graphics](https://youtu.be/Z1gTD_SOAPg)
@@ -369,7 +380,7 @@ The original GameBoy hardware simulates a cathode-ray tube (CRT) in its timings.
 The following table states how long the GPU stays in each period, in terms of the CPU's T-clock which runs at 4194304 Hz.
 
 ```
-          Period	                GPU mode number  Time spent (clocks)
+          Period     	                GPU mode number  Time spent (clocks)
 Scanline (accessing OAM)                  	2               80
 Scanline (accessing VRAM)               	  3               172
 Horizontal blank                        	  0               204
