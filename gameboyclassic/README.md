@@ -9,10 +9,10 @@ Reducing Power Consumption in CPU & ROM.
 SRAM emulated for LCD display & Working memory.
 Multi connector for ROM cartridge connection (ROM -MBC1 - MBC2 - MBC3).
 Custom OAM (Sprite Attrib Memory ) & VRAM (Video Ram) & MRAM (Main Ram).
-Graphics emulated with ascendency architectural. 
+Graphics emulated with ascendency architectural (576i resolution).
 Grayscale Display evolutioned to Monochromatic Shader and Polirazed Backlight multi-color.
 Scalines emulated.
-Map Tiles represented.
+Block Tiles represented.
  
 Complementary Tools Developed:
 Async Debug Console
@@ -261,11 +261,11 @@ Frame frequency: 59.7Hz
 ![Super Mario Land I](http://i.imgur.com/W2jDY65.png)
 
 
-####[Scalines Emulated](https://www.youtube.com/watch?v=rKAhKN8gFdw)
+####[Scalines Emulated](https://www.youtube.com/watch?v=rKAhKN8gFdw) / Click on the image 
 ```
-    Horizontal                       Vertical                         Mixes 
+    Vertical                       Horizontal                         Mixes 
 ```
-![](http://i.imgur.com/xLpEyAe.png)  ![](http://i.imgur.com/fRPtIeN.png?1) ![](http://i.imgur.com/jsnVmSR.png?1)
+![](http://i.imgur.com/xLpEyAe.png)  [![](http://i.imgur.com/fRPtIeN.png?1)](https://youtu.be/1-L3qa2kmMk) ![](http://i.imgur.com/jsnVmSR.png?1)
 
 
 ####[Tile Map Graphics](https://youtu.be/Z1gTD_SOAPg)
