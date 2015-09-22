@@ -279,15 +279,15 @@ Frame frequency: 59.7Hz
 
 
 
-####[Tile Block Graphics](https://youtu.be/Z1gTD_SOAPg)
+####[Tile Block Graphics](https://youtu.be/LpRdiGlk1zY)
 ```
    Original                                                w/ Tile Block 
 ```
- ![](http://i.imgur.com/04jPosb.png?2)  ![](http://i.imgur.com/sSC17T4.png?1)
+ [![](http://i.imgur.com/04jPosb.png?2)](https://youtu.be/LpRdiGlk1zY)  [![](http://i.imgur.com/sSC17T4.png?1)](https://youtu.be/LpRdiGlk1zY)
 ```
    Original                                                w/ Tile Block  
 ```
- ![](http://i.imgur.com/tL8vp7S.png?1)  ![](http://i.imgur.com/Pe8UwMa.png?1) 
+ [![](http://i.imgur.com/tL8vp7S.png?1)](https://youtu.be/LpRdiGlk1zY)  [![](http://i.imgur.com/Pe8UwMa.png?1)](https://youtu.be/LpRdiGlk1zY)
 
 
 ##Sound (WIP)
