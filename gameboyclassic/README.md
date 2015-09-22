@@ -19,7 +19,7 @@ Async Debug Console
 Analysis Dump Memory (OAM - VRAM - MRAM - CPU )
 ```
 
-#### Coming soon - Version 0.25.0
+#### Coming soon - Version 0.25.7
 ```
 Semantantic classes : Pixel - Tile - Sprite - Background.
 Cached Pool Pixel & Tile.
@@ -279,15 +279,15 @@ Frame frequency: 59.7Hz
 
 
 
-####[Tile Block Graphics](https://youtu.be/LpRdiGlk1zY)
+####[Tile Block Graphics](https://youtu.be/LpRdiGlk1zY) / click on the image
 ```
    Original                                                w/ Tile Block 
 ```
- [![](http://i.imgur.com/04jPosb.png?2)](https://youtu.be/LpRdiGlk1zY)  [![](http://i.imgur.com/sSC17T4.png?1)](https://youtu.be/LpRdiGlk1zY)
+[![](http://i.imgur.com/04jPosb.png?2)](https://youtu.be/LpRdiGlk1zY)[![](http://i.imgur.com/sSC17T4.png?1)](https://youtu.be/LpRdiGlk1zY)
 ```
    Original                                                w/ Tile Block  
 ```
- [![](http://i.imgur.com/tL8vp7S.png?1)](https://youtu.be/LpRdiGlk1zY)  [![](http://i.imgur.com/Pe8UwMa.png?1)](https://youtu.be/LpRdiGlk1zY)
+[![](http://i.imgur.com/tL8vp7S.png?1)](https://youtu.be/LpRdiGlk1zY)[![](http://i.imgur.com/Pe8UwMa.png?1)](https://youtu.be/LpRdiGlk1zY)
 
 
 ##Sound (WIP)
