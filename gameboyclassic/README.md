@@ -279,8 +279,14 @@ Frame frequency: 59.7Hz
 
 
 
-####[Tile Map Graphics](https://youtu.be/Z1gTD_SOAPg)
- ![](http://i.imgur.com/c3a9iKH.png?1)  ![](http://i.imgur.com/uo9ifTz.png?1) 
+####[Tile Block Graphics](https://youtu.be/Z1gTD_SOAPg)
+```
+   Original                                                w/ Tile Block 
+```
+ ![](http://i.imgur.com/c3a9iKH.png?1)  ![](http://i.imgur.com/uo9ifTz.png?1)
+```
+   Original                                                w/ Tile Block  
+```
  ![](http://i.imgur.com/tL8vp7S.png?1)  ![](http://i.imgur.com/Pe8UwMa.png?1) 
 
 
