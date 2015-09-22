@@ -283,7 +283,7 @@ Frame frequency: 59.7Hz
 ```
    Original                                                w/ Tile Block 
 ```
- ![](http://i.imgur.com/c3a9iKH.png?1)  ![](http://i.imgur.com/uo9ifTz.png?1)
+ ![](http://i.imgur.com/04jPosb.png?2)  ![](http://i.imgur.com/sSC17T4.png?1)
 ```
    Original                                                w/ Tile Block  
 ```
