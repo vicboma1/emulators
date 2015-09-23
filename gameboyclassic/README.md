@@ -270,7 +270,7 @@ Frame frequency: 59.7Hz
 ```
     Horizontal
 ```
- [![](http://i.imgur.com/5HYFZb1.png?1)](https://youtu.be/lJZFqBM-fxQ)
+ [![](http://i.imgur.com/c1VbQTF.png?1)](https://youtu.be/lJZFqBM-fxQ)
  
 ```
     Mixes 
