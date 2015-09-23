@@ -261,7 +261,7 @@ Frame frequency: 59.7Hz
 ![Super Mario Land I](http://i.imgur.com/W2jDY65.png)
 
 
-####[Scalines Emulated](https://www.youtube.com/watch?v=rKAhKN8gFdw) / click on the image 
+####[Scanlines Emulated](https://www.youtube.com/watch?v=rKAhKN8gFdw) / click on the image 
 ```
     Vertical
 ```
