@@ -19,7 +19,7 @@ Async Debug Console
 Analysis Dump Memory (OAM - VRAM - MRAM - CPU )
 ```
 
-#### Coming soon - Version 0.25.7
+#### Coming soon - SemVer 0.25.10
 ```
 Semantantic classes : Pixel - Tile - Sprite - Background.
 Cached Pool Pixel & Tile.
@@ -432,5 +432,6 @@ RAM use by MBC1 is restricted to 64 Kbits (8 Kbytes).
 * http://www.z80.info/z80undoc.htm for Zilog z80 instructions
 * http://www.ticalc.org/pub/text/z80/z80.txt for Zilog z80 instructions
 * http://sgate.emt.bme.hu/patai/publications/z80guide/app1b.html for Zilog z80 instructions
+* Semantic Versioning 2.0.0 http://semver.org
 * My own know.
 
