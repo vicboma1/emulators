@@ -173,7 +173,7 @@ Frame frequency: 59.7Hz
 
 ####[Shader](https://youtu.be/6Xt7j9bnRRI)
 ```
-    Green Scale                                           Dark Yellow Scale                  
+    Green Scale                                           Dark Yellow Scale
 ```
 ![Super Mario Land I](http://i.imgur.com/CoW1VWm.png?1) ![Super Mario Land I](http://i.imgur.com/SekcP4j.png?2)
 
@@ -183,7 +183,7 @@ Frame frequency: 59.7Hz
 ![Super Mario Land I](http://i.imgur.com/GVVYdlB.png?2) ![Super Mario Land I](http://i.imgur.com/aM7FRdh.png?1) 
 
 ```
-   Ligth Yellow Scale                                    Grey Stark Scale         
+   Ligth Yellow Scale                                    Grey Stark Scale
 ```
 ![F1 Race](http://i.imgur.com/c40HMSK.png?1) ![Super Mario Land I](http://i.imgur.com/ksVSBVk.png?2)
 
