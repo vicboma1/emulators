@@ -175,7 +175,7 @@ Frame frequency: 59.7Hz
 ```
     Green Scale                                           Dark Yellow Scale
 ```
-![](http://i.imgur.com/CoW1VWm.png?1)![](http://i.imgur.com/SekcP4j.png?2)
+![](http://i.imgur.com/CoW1VWm.png?1)![](http://i.imgur.com/SekcP4j.png?3)
 
 ```
    Grey Scale                                             Gb Pocket
