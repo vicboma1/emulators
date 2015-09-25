@@ -185,7 +185,7 @@ Frame frequency: 59.7Hz
 ```
    Ligth Yellow Scale                                    Grey Stark Scale
 ```
-![](http://i.imgur.com/c40HMSK.png?1)![](http://i.imgur.com/ksVSBVk.png?2)
+![](http://i.imgur.com/c40HMSK.png?1)![](http://i.imgur.com/ksVSBVk.png?3)
 
 
 
