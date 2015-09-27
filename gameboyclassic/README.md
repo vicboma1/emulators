@@ -233,20 +233,24 @@ Frame frequency: 59.7Hz
 
 ####[Backlight (DMG/Pocket) Custom Invert](https://youtu.be/Em2u3XLbHvw)
 ```
-    Orange Scale                     Green Scale                     Pink Scale 
+    Orange Scale                                           Green Scale
 ```
-![Super Mario Land I](http://i.imgur.com/hGL75yN.png?1)  ![Super Mario Land I](http://i.imgur.com/6Dz5wPE.png?1)  ![Super Mario Land I](http://i.imgur.com/8Sqk1J3.png?1)  
+![](http://i.imgur.com/dckFcmn.png?1)![](http://i.imgur.com/j6qShkC.png?1)  
 
 ```
-    Teal Scale                      White Blue Scale                 Red scale                         
+    Pink Scale                                             Teal Scale 
 ```
-![Super Mario Land I](http://i.imgur.com/1TVOR79.png)   ![Super Mario Land I](http://i.imgur.com/NMjF9qI.png)
-![Super Mario Land I](http://i.imgur.com/SAh26JO.png)
+![](http://i.imgur.com/9C1Mjtw.png?2)![](http://i.imgur.com/2fryDFM.png?2)   
 
 ```
-    Blue Scale                                                    
+    White Blue Scale                                       Red scale                                                      
 ```
-![Super Mario Land I](http://i.imgur.com/aAlZp6X.png)
+![](http://i.imgur.com/22zlktq.png?1)![](http://i.imgur.com/gNxqTZx.png?2)
+
+```
+    Blue                                                                   
+```
+![](http://i.imgur.com/NmIdCzZ.png?1)
 
 
 ####[Backlight (DMG/Pocket) Custom Polarized](https://youtu.be/oZMo_Q4DtRY)
