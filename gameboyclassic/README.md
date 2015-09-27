@@ -215,20 +215,25 @@ Frame frequency: 59.7Hz
 
 ####[Backlight (DMG/Pocket) Custom](https://youtu.be/XElP1Y7MT7c)
 ```
-    Orange Scale                     Green Scale                     Pink Scale 
+    Orange Scale                                           Green Scale
 ```
-![Super Mario Land I](http://s28.postimg.org/5wr80r7il/Screen_Shot_2015_09_01_at_17_32_37.png)  ![Super Mario Land I](http://s28.postimg.org/gywaz71l9/Screen_Shot_2015_09_01_at_17_34_57.png)  ![Super Mario Land I](http://s28.postimg.org/4izl5g899/Screen_Shot_2015_09_01_at_17_36_35.png)  
+![](http://i.imgur.com/OXJ38E1.png?1)![](http://i.imgur.com/BrUrCgH.png?2)  
 
 ```
-    Teal Scale                      White Blue Scale                 Red scale                         
+    Pink Scale                                             Teal Scale 
 ```
-![Super Mario Land I](http://i.imgur.com/DVLegQZ.png)   ![Super Mario Land I](http://i.imgur.com/KZ5mEsE.png)
-![Super Mario Land I](http://i.imgur.com/cmAP6uD.png)
+![](http://i.imgur.com/GUjyxkY.png?2)![](http://i.imgur.com/i22Hl6W.png?1)   
 
 ```
-    Blue Scale                                                    
+    White Blue Scale                                       Red scale                                                      
 ```
-![Super Mario Land I](http://i.imgur.com/gBvD48t.png?1)
+![](http://i.imgur.com/Q9zRXA0.png?1)![](http://i.imgur.com/B36fgb3.png?1)
+
+```
+    Blue                                                                   
+```
+![](http://i.imgur.com/zwOmmJo.png?1)
+
 
 
 ####[Backlight (DMG/Pocket) Custom Invert](https://youtu.be/Em2u3XLbHvw)
@@ -253,6 +258,7 @@ Frame frequency: 59.7Hz
 ![](http://i.imgur.com/NmIdCzZ.png?1)
 
 
+
 ####[Backlight (DMG/Pocket) Custom Polarized](https://youtu.be/oZMo_Q4DtRY)
 ```
     Orange Scale                                           Green Scale
@@ -273,6 +279,7 @@ Frame frequency: 59.7Hz
     Blue                                                                   
 ```
 ![](http://i.imgur.com/IPPuw2B.png?1)
+
 
 
 ####[Scanlines Emulated](https://www.youtube.com/watch?v=rKAhKN8gFdw) / click on the image 
