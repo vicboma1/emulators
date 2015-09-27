@@ -227,7 +227,7 @@ Frame frequency: 59.7Hz
 ```
     White Blue Scale                                       Red scale                                                      
 ```
-![](http://i.imgur.com/pbv0YzB.png?1)![](http://i.imgur.com/RdS5dSj.png?1)
+![](http://i.imgur.com/pbv0YzB.png?1)![](http://i.imgur.com/RdS5dSj.png?2)
 
 ```
     Blue                                                                   
