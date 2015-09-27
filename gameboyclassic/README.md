@@ -258,7 +258,7 @@ Frame frequency: 59.7Hz
 ```
     Pink Scale                                             Teal Scale 
 ```
-![](http://i.imgur.com/G0vEUwF.png?2)![](http://i.imgur.com/yNTLBNU.png?2)   
+![](http://i.imgur.com/G0vEUwF.png?2)![](http://i.imgur.com/yNTLBNU.png?3)   
 
 ```
     White Blue Scale                                       Red scale                                                      
