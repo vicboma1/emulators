@@ -19,13 +19,13 @@ Async Debug Console
 Analysis Dump Memory (OAM - VRAM - MRAM - CPU )
 ```
 
-#### [Version Control](https://github.com/vicboma1/emulators/blob/master/gameboyclassic/semanticVersioning.md) - v.0.25.10
+#### [Version Control](https://github.com/vicboma1/emulators/blob/master/gameboyclassic/semanticVersioning.md) -  v.0.26.0
 ```
 Semantantic classes : Pixel - Tile - Sprite - Background.
 Cached Pool Pixel & Tile.
-Optimization and improving of performance CPU.
-Test in commands of the processor.
-Recude the power consumption : Halt & Disable sound
+Optimization and improving of performance CPU. (WIP)
+Test in commands of the processor. (WIP)
+Recude the power consumption : Halt ((WIP) 
 ```
 
 #### [Development's video playlist](https://www.youtube.com/watch?v=zCy8_IkdMeE&list=PLNph7ndeSqE9E6XqolWg-6Vx4AOeneJSZ&index=1) 
