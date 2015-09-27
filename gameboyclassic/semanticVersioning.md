@@ -8,8 +8,18 @@ MAJOR version when you make incompatible API changes,
 MINOR version when you add functionality in a backwards-compatible manner, and
 PATCH version when you make backwards-compatible bug fixes.
 Additional labels for pre-release and build metadata are available as extensions to the MAJOR.MINOR.PATCH format.
-
 ```
+
+#### version 0.26.00
+```
+Adding TDD & Semantic classes [Register 8 & 16 bits] in Cpu z80Impl
+```
+
+#### version 0.25.11
+```
+Fixed Flags in instruction ADD_A_NN OP_CODE_0xC6
+```
+
 #### version 0.25.10
 ```
 Fixed instruction call z.
@@ -18,18 +28,18 @@ Fixed instruction call z.
 #### version 0.25.9
 ```
 Replace mask in RLC A instruction
-Add iterator pattern refactor
-Add semantic classes for RLA - RLC - RRA - RRC_A - RST_08 - SCF - DAA - CPL_A
+Adding iterator pattern refactor
+Adding semantic classes for RLA - RLC - RRA - RRC_A - RST_08 - SCF - DAA - CPL_A
 ```
 
 #### version 0.25.8
 ```
-Add mask in write data for PC
+Adding mask in write data for PC
 ```
 
 #### version 0.25.8
 ```
-Add mask in write data for PC
+Adding mask in write data for PC
 ```
 
 #### version 0.25.7
@@ -39,7 +49,7 @@ Replace method for bitwise XOR ('^') in aggregate class for instruction XOR OP_C
 
 #### version 0.25.6
 ```
-Add Flags in instruction CCF OP_CODE_0x3F
+Adding Flags in instruction CCF OP_CODE_0x3F
 ```
 
 #### version 0.25.5
