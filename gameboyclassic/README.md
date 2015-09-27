@@ -296,7 +296,7 @@ Frame frequency: 59.7Hz
 ```
     Mixes 
 ```
-[![](http://i.imgur.com/EhRVMJb.png?1)](https://youtu.be/90i4lERsSbU)[![](http://i.imgur.com/Hsu1SF2.png?1)](https://youtu.be/90i4lERsSbU)
+[![](http://i.imgur.com/EhRVMJb.png?2)](https://youtu.be/90i4lERsSbU)[![](http://i.imgur.com/Hsu1SF2.png?1)](https://youtu.be/90i4lERsSbU)
 
 
 
