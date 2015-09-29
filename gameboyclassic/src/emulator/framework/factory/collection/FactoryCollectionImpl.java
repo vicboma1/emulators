@@ -1,4 +1,4 @@
-package emulator.framework.factory;
+package emulator.framework.factory.collection;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -18,6 +18,9 @@ public class FactoryCollectionImpl<T extends Number> implements FactoryCollectio
         final List<T> list = new ArrayList(size);
         IntStream.range(0,size).boxed().forEach(x -> list.add(x, defautl));
         return list;
+    }
+
+    public FactoryCollectionImpl() {
     }
 
     public FactoryCollectionImpl(List<T> _data) {

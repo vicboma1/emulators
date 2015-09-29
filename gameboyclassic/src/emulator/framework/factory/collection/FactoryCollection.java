@@ -1,4 +1,4 @@
-package emulator.framework.factory;
+package emulator.framework.factory.collection;
 
 /**
  * Created by vicboma on 10/09/15.
