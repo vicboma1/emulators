@@ -8,6 +8,54 @@ MAJOR version when you make incompatible API changes,
 MINOR version when you add functionality in a backwards-compatible manner, and
 PATCH version when you make backwards-compatible bug fixes.
 Additional labels for pre-release and build metadata are available as extensions to the MAJOR.MINOR.PATCH format.
+
+```
+#### version 0.32.00
+```
+Adding instance annotation (Prototype - Singleton - Value)
+```
+
+#### version 0.31.00
+```
+Adding Context in framework for initial persisten async configuration
+* Permit access injector
+* Permit access CommandMapper
+* Immediately Install Extension
+* Install Extension Async
+* Immediately Configure Queue
+* Configure Queue Async
+* Execute Completable Async
+* Execute Queue Async
+```
+
+#### version 0.30.00
+```
+Adding Thread Pool Async in framework
+```
+
+#### version 0.30.00
+```
+Adding Command Mapper for toolBar options in framework
+```
+
+#### version 0.29.00
+```
+Adding configuration pattern in framework
+```
+
+#### version 0.28.00
+```
+Adding logger with log4java in framework
+```
+
+#### version 0.27.00
+```
+Adding annotations compatibility for injector in framework
+```
+
+#### version 0.27.00
+```
+Adding own Dependency Injection (DI) in framework
 ```
 
 #### version 0.26.00
