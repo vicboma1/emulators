@@ -19,7 +19,20 @@ Async Debug Console
 Analysis Dump Memory (OAM - VRAM - MRAM - CPU )
 ```
 
-#### [Version Control](https://github.com/vicboma1/emulators/blob/master/gameboyclassic/semanticVersioning.md) -  v.0.26.0
+## [Winter FrameWork](https://github.com/vicboma1/emulators/tree/master/gameboyclassic/src/emulator/framework) - Rev 2.0.4 (Access API)
+```
+Adding Context in framework for persistent async configuration
+* Permit access injector
+* Permit access CommandMapper
+* Immediately Install Extension
+* Install Extension Async
+* Immediately Configuration Queue
+* Configuration Queue Async
+* Execute promise Async
+* Execute task queue Async
+```
+
+#### [Version Control](https://github.com/vicboma1/emulators/blob/master/gameboyclassic/semanticVersioning.md) -  v.0.31.0
 ```
 Semantantic classes : Pixel - Tile - Sprite - Background.
 Cached Pool Pixel & Tile.
