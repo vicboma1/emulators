@@ -9,23 +9,23 @@ Reducing Power Consumption in CPU & ROM.
 SRAM emulated for LCD display & Working memory.
 Multi connector for ROM cartridge connection (ROM -MBC1 - MBC2 - MBC3).
 Custom OAM (Sprite Attrib Memory ) & VRAM (Video Ram) & MRAM (Main Ram).
-Graphics emulated with ascendency architectural. 
+Graphics emulated with ascendency architectural (576i resolution).
 Grayscale Display evolutioned to Monochromatic Shader and Polirazed Backlight multi-color.
 Scalines emulated.
-Map Tiles represented.
+Block Tiles represented.
  
 Complementary Tools Developed:
 Async Debug Console
 Analysis Dump Memory (OAM - VRAM - MRAM - CPU )
 ```
 
-#### Coming soon - Version 0.25.0
+#### [Version Control](https://github.com/vicboma1/emulators/blob/master/gameboyclassic/semanticVersioning.md) -  v.0.26.0
 ```
 Semantantic classes : Pixel - Tile - Sprite - Background.
 Cached Pool Pixel & Tile.
-Optimization and improving of performance CPU.
-Test in commands of the processor.
-Recude the power consumption : Halt & Disable sound
+Optimization and improving of performance CPU. (WIP)
+Test in commands of the processor. (WIP)
+Recude the power consumption : Halt ((WIP) 
 ```
 
 #### [Development's video playlist](https://www.youtube.com/watch?v=zCy8_IkdMeE&list=PLNph7ndeSqE9E6XqolWg-6Vx4AOeneJSZ&index=1) 
@@ -123,7 +123,7 @@ Clock (Second cycle)
 * Bit 5 - P15 out port { $8 - Down | $4 - Up | $2 - Left | $1 - Right }
 * Bit 4 - P14 out port { $80 - Start | $40 - Select | $20 -B | $10 -A }
 
-##Display (WIP)
+##Display
 The DMG CPU has 8 KB (64 Kbits) of built-in LCD display RAM.
 
 Data specification ranges for OBJ characters: 
@@ -173,13 +173,19 @@ Frame frequency: 59.7Hz
 
 ####[Shader](https://youtu.be/6Xt7j9bnRRI)
 ```
-    Green Scale                    Dark Yellow Scale                  Grey Scale 
+    Green Scale                                           Dark Yellow Scale
 ```
-![Super Mario Land I](http://i.imgur.com/bpHnetb.png)  ![Super Mario Land I](http://i.imgur.com/54PpYgY.png?1) ![Super Mario Land I](http://i.imgur.com/9KAar8E.png)
+![](http://i.imgur.com/CoW1VWm.png?1)![](http://i.imgur.com/SekcP4j.png?3)
+
 ```
-    Gb Pocket                      Ligth Yellow Scale                 Grey Stark Scale         
+   Grey Scale                                             Gb Pocket
 ```
-![F1 Race](http://i.imgur.com/qMlY8tS.png)   ![Super Mario Land I](http://i.imgur.com/Te6b2mj.png)  ![Super Mario Land I](http://i.imgur.com/LvSc7V1.png)
+![](http://i.imgur.com/GVVYdlB.png?2)![](http://i.imgur.com/aM7FRdh.png?1) 
+
+```
+   Ligth Yellow Scale                                    Grey Stark Scale
+```
+![](http://i.imgur.com/c40HMSK.png?1)![](http://i.imgur.com/ksVSBVk.png?3)
 
 
 
@@ -209,67 +215,100 @@ Frame frequency: 59.7Hz
 
 ####[Backlight (DMG/Pocket) Custom](https://youtu.be/XElP1Y7MT7c)
 ```
-    Orange Scale                     Green Scale                     Pink Scale 
+    Orange Scale                                           Green Scale
 ```
-![Super Mario Land I](http://s28.postimg.org/5wr80r7il/Screen_Shot_2015_09_01_at_17_32_37.png)  ![Super Mario Land I](http://s28.postimg.org/gywaz71l9/Screen_Shot_2015_09_01_at_17_34_57.png)  ![Super Mario Land I](http://s28.postimg.org/4izl5g899/Screen_Shot_2015_09_01_at_17_36_35.png)  
+![](http://i.imgur.com/OXJ38E1.png?1)![](http://i.imgur.com/BrUrCgH.png?2)  
 
 ```
-    Teal Scale                      White Blue Scale                 Red scale                         
+    Pink Scale                                             Teal Scale 
 ```
-![Super Mario Land I](http://i.imgur.com/DVLegQZ.png)   ![Super Mario Land I](http://i.imgur.com/KZ5mEsE.png)
-![Super Mario Land I](http://i.imgur.com/cmAP6uD.png)
+![](http://i.imgur.com/GUjyxkY.png?2)![](http://i.imgur.com/i22Hl6W.png?1)   
 
 ```
-    Blue Scale                                                    
+    White Blue Scale                                       Red scale                                                      
 ```
-![Super Mario Land I](http://i.imgur.com/gBvD48t.png?1)
+![](http://i.imgur.com/pbv0YzB.png?1)![](http://i.imgur.com/RdS5dSj.png?2)
+
+```
+    Blue                                                                   
+```
+![](http://i.imgur.com/zwOmmJo.png?1)
+
 
 
 ####[Backlight (DMG/Pocket) Custom Invert](https://youtu.be/Em2u3XLbHvw)
 ```
-    Orange Scale                     Green Scale                     Pink Scale 
+    Orange Scale                                           Green Scale
 ```
-![Super Mario Land I](http://i.imgur.com/hGL75yN.png?1)  ![Super Mario Land I](http://i.imgur.com/6Dz5wPE.png?1)  ![Super Mario Land I](http://i.imgur.com/8Sqk1J3.png?1)  
+![](http://i.imgur.com/dckFcmn.png?1)![](http://i.imgur.com/j6qShkC.png?1)  
 
 ```
-    Teal Scale                      White Blue Scale                 Red scale                         
+    Pink Scale                                             Teal Scale 
 ```
-![Super Mario Land I](http://i.imgur.com/1TVOR79.png)   ![Super Mario Land I](http://i.imgur.com/NMjF9qI.png)
-![Super Mario Land I](http://i.imgur.com/SAh26JO.png)
+![](http://i.imgur.com/9C1Mjtw.png?2)![](http://i.imgur.com/2fryDFM.png?2)   
 
 ```
-    Blue Scale                                                    
+    White Blue Scale                                       Red scale                                                      
 ```
-![Super Mario Land I](http://i.imgur.com/aAlZp6X.png)
+![](http://i.imgur.com/22zlktq.png?1)![](http://i.imgur.com/gNxqTZx.png?2)
+
+```
+    Blue                                                                   
+```
+![](http://i.imgur.com/NmIdCzZ.png?1)
+
 
 
 ####[Backlight (DMG/Pocket) Custom Polarized](https://youtu.be/oZMo_Q4DtRY)
 ```
-    Orange Scale                     Green Scale                     Pink Scale 
+    Orange Scale                                           Green Scale
 ```
-![Super Mario Land I](http://i.imgur.com/LBsea7q.png)  ![Super Mario Land I](http://i.imgur.com/ZloM5eI.png)  ![Super Mario Land I](http://i.imgur.com/QABFYQ1.png)  
+![](http://i.imgur.com/I2abuBO.png?1)![](http://i.imgur.com/srjwJf1.png?1)  
 
 ```
-    Teal Scale                      White Blue Scale                 Red scale                         
+    Pink Scale                                             Teal Scale 
 ```
-![Super Mario Land I](http://i.imgur.com/M4Zjj9G.png)   ![Super Mario Land I](http://i.imgur.com/vwugztY.png)
-![Super Mario Land I](http://i.imgur.com/fMnWyan.png)
+![](http://i.imgur.com/G0vEUwF.png?2)![](http://i.imgur.com/yNTLBNU.png?3)   
 
 ```
-    Blue Scale                                                    
+    White Blue Scale                                       Red scale                                                      
 ```
-![Super Mario Land I](http://i.imgur.com/W2jDY65.png)
+![](http://i.imgur.com/ffxkBTP.png?1)![](http://i.imgur.com/wXqSnP6.png?2)
 
-
-####[Scalines Emulated](https://www.youtube.com/watch?v=rKAhKN8gFdw)
 ```
-    Horizontal                       Vertical                         Mixes 
+    Blue                                                                   
 ```
-![](http://i.imgur.com/xLpEyAe.png)  ![](http://i.imgur.com/fRPtIeN.png?1) ![](http://i.imgur.com/jsnVmSR.png?1)
+![](http://i.imgur.com/IPPuw2B.png?1)
 
 
-####[Tile Map Graphics](https://youtu.be/Z1gTD_SOAPg)
- ![](http://i.imgur.com/NXElIt2.png)  ![](http://i.imgur.com/N2u0Nnr.png) ![](http://i.imgur.com/rPFpkgz.png) 
+
+####[Scanlines Emulated](https://www.youtube.com/watch?v=rKAhKN8gFdw) / click on the image 
+```
+    Vertical
+```
+[![](http://i.imgur.com/g5qbrVb.png?3)](https://youtu.be/1-L3qa2kmMk)[![](http://i.imgur.com/gGNqsyv.png?1)](https://youtu.be/1-L3qa2kmMk)
+
+```
+    Horizontal
+```
+[![](http://i.imgur.com/p8tCYBQ.png?1)](https://youtu.be/lJZFqBM-fxQ)[![](http://i.imgur.com/c1VbQTF.png?1)](https://youtu.be/lJZFqBM-fxQ)
+ 
+```
+    Mixes 
+```
+[![](http://i.imgur.com/EhRVMJb.png?2)](https://youtu.be/90i4lERsSbU)[![](http://i.imgur.com/Hsu1SF2.png?1)](https://youtu.be/90i4lERsSbU)
+
+
+
+####[Tile Block Graphics](https://youtu.be/LpRdiGlk1zY)
+```
+   Original                                                w/ Tile Block
+```
+![](http://i.imgur.com/UfURPZO.png?1)
+```
+   Original                                                w/ Tile Block
+```
+![](http://i.imgur.com/y26RHa6.png?1)
 
 
 ##Sound (WIP)
@@ -369,7 +408,7 @@ The original GameBoy hardware simulates a cathode-ray tube (CRT) in its timings.
 The following table states how long the GPU stays in each period, in terms of the CPU's T-clock which runs at 4194304 Hz.
 
 ```
-          Period	                GPU mode number  Time spent (clocks)
+          Period     	                GPU mode number  Time spent (clocks)
 Scanline (accessing OAM)                  	2               80
 Scanline (accessing VRAM)               	  3               172
 Horizontal blank                        	  0               204
@@ -414,5 +453,6 @@ RAM use by MBC1 is restricted to 64 Kbits (8 Kbytes).
 * http://www.z80.info/z80undoc.htm for Zilog z80 instructions
 * http://www.ticalc.org/pub/text/z80/z80.txt for Zilog z80 instructions
 * http://sgate.emt.bme.hu/patai/publications/z80guide/app1b.html for Zilog z80 instructions
+* Semantic Versioning 2.0.0 http://semver.org
 * My own know.
 
