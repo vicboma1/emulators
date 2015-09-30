@@ -488,7 +488,6 @@ This controller is similar to MBC1 except it accesses all 16mbits of ROM without
  The Day Counter
  Delays
  ```
- 
 
 ##References :
 * Game BoyTM CPU Manual, Pan of Anthrox, GABY, Marat Fayzullin, Pascal Felber, Paul Robson, Martin Korth, kOOPa, Bowser.
