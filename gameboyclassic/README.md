@@ -7,7 +7,7 @@ Z80 CPU emulated with Pool Async.
 I/O Ports emulated Async (Video Display - Joypad Input - Timer and Divider Registers - Interrupts).
 Reducing Power Consumption in CPU & ROM.
 SRAM emulated for LCD display & Working memory.
-Multi connector for ROM cartridge connection (ROM -MBC1 - MBC2 - MBC3).
+Multi connector for ROM cartridge connection (ROM - MBC1 - MBC2 - MBC3).
 Custom OAM (Sprite Attrib Memory ) & VRAM (Video Ram) & MRAM (Main Ram).
 Graphics emulated with ascendency architectural (576i resolution).
 Grayscale Display evolutioned to Monochromatic Shader and Polirazed Backlight multi-color.
@@ -16,6 +16,7 @@ Block Tiles represented.
  
 Complementary Tools Developed:
 Async Debug Console
+Decompiler for z80 instructions
 Analysis Dump Memory (OAM - VRAM - MRAM - CPU )
 ```
 
