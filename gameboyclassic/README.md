@@ -7,7 +7,7 @@ Z80 CPU emulated with Pool Async.
 I/O Ports emulated Async (Video Display - Joypad Input - Timer and Divider Registers - Interrupts).
 Reducing Power Consumption in CPU & ROM.
 SRAM emulated for LCD display & Working memory.
-Multi connector for ROM cartridge connection (ROM -MBC1 - MBC2 - MBC3).
+Multi connector for ROM cartridge connection (ROM - MBC1 - MBC2 - MBC3).
 Custom OAM (Sprite Attrib Memory ) & VRAM (Video Ram) & MRAM (Main Ram).
 Graphics emulated with ascendency architectural (576i resolution).
 Grayscale Display evolutioned to Monochromatic Shader and Polirazed Backlight multi-color.
@@ -16,10 +16,24 @@ Block Tiles represented.
  
 Complementary Tools Developed:
 Async Debug Console
+Decompiler for z80 instructions
 Analysis Dump Memory (OAM - VRAM - MRAM - CPU )
 ```
 
-#### [Version Control](https://github.com/vicboma1/emulators/blob/master/gameboyclassic/semanticVersioning.md) -  v.0.26.0
+## [Winter FrameWork](https://github.com/vicboma1/emulators/tree/master/gameboyclassic/src/emulator/framework) - Rev 2.0.4 (Access API)
+```
+Adding Context in framework for persistent async configuration
+* Permit access injector
+* Permit access CommandMapper
+* Immediately Install Extension
+* Install Extension Async
+* Immediately Configuration Queue
+* Configuration Queue Async
+* Execute promise Async
+* Execute task queue Async
+```
+
+#### [Version Control](https://github.com/vicboma1/emulators/blob/master/gameboyclassic/semanticVersioning.md) -  v.0.32.0
 ```
 Semantantic classes : Pixel - Tile - Sprite - Background.
 Cached Pool Pixel & Tile.
