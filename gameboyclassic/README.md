@@ -300,7 +300,7 @@ Frame frequency: 59.7Hz
 ```
     Vertical
 ```
-[![](http://i.imgur.com/g5qbrVb.png?3)](https://youtu.be/1-L3qa2kmMk)[![](http://i.imgur.com/gGNqsyv.png?1)](https://youtu.be/1-L3qa2kmMk)
+[![](http://i.imgur.com/g5qbrVb.png?3)](https://youtu.be/1-L3qa2kmMk)[![](http://i.imgur.com/c1VbQTF.png?3)](https://youtu.be/1-L3qa2kmMk)
 
 ```
     Horizontal
