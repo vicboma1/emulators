@@ -305,7 +305,7 @@ Frame frequency: 59.7Hz
 ```
     Horizontal
 ```
-[![](http://i.imgur.com/p8tCYBQ.png?1)](https://youtu.be/lJZFqBM-fxQ)[![](http://i.imgur.com/c1VbQTF.png?1)](https://youtu.be/lJZFqBM-fxQ)
+[![](http://i.imgur.com/p8tCYBQ.png?1)](https://youtu.be/lJZFqBM-fxQ)[![](http://i.imgur.com/c1VbQTF.png?3)](https://youtu.be/lJZFqBM-fxQ)
  
 ```
     Mixes 
@@ -452,10 +452,42 @@ The starting address can be freely set by writing a jump destination address at 
 #### [MBC1](https://github.com/vicboma1/emulators/blob/master/gameboyclassic/LoadRomMBC1)
 MBC1 is a memory controller that enables the use of 512 Kbits (64 Kbytes) or more of ROM and 256 Kbits (32 Kbytes) of RAM. 
 RAM use by MBC1 is restricted to 64 Kbits (8 Kbytes).
-* Register 0 : 0x0000-0x1FFF 
-* Register 1 : 0x2000-0x3FFF 
-* Register 2 : 0x4000-0x5FFF
-* Register 3 : 0x6000-0x7FFF 
+```
+ 0000-3FFF - ROM Bank 00 (Read Only)
+ 4000-7FFF - ROM Bank 01-7F (Read Only)
+ A000-BFFF - RAM Bank 00-03, if any (Read/Write)
+ 0000-1FFF - RAM Enable (Write Only)
+ 2000-3FFF - ROM Bank Number (Write Only)
+ 4000-5FFF - RAM Bank Number - or - Upper Bits of ROM Bank Number (Write Only)
+ 6000-7FFF - ROM/RAM Mode Select (Write Only)
+```
+
+#### MBC2
+This memory controller works much like the MBC1 controller
+RAM use by MBC1 is restricted to 64 Kbits (8 Kbytes).
+```
+ 0000-3FFF - ROM Bank 00 (Read Only)
+ 4000-7FFF - ROM Bank 01-0F (Read Only)
+ A000-A1FF - 512x4bits RAM, built-in into the MBC2 chip (Read/Write)
+ 0000-1FFF - RAM Enable (Write Only)
+ 2000-3FFF - ROM Bank Number (Write Only)
+ ```
+
+#### MBC3
+This controller is similar to MBC1 except it accesses all 16mbits of ROM without requiring any writes to the 4000-5FFF area. Has a built-in battery-backed Real Time Clock (RTC) not found in any other MBC.
+```
+ 0000-3FFF - ROM Bank 00 (Read Only)
+ 4000-7FFF - ROM Bank 01-7F (Read Only)
+ A000-BFFF - RAM Bank 00-03, if any (Read/Write)
+ A000-BFFF - RTC Register 08-0C (Read/Write)
+ 0000-1FFF - RAM and Timer Enable (Write Only)
+ 2000-3FFF - ROM Bank Number (Write Only)
+ 4000-5FFF - RAM Bank Number - or - RTC Register Select (Write Only)
+ 6000-7FFF - Latch Clock Data (Write Only)
+ The Clock Counter Registers
+ The Day Counter
+ Delays
+ ```
 
 ##References :
 * Game BoyTM CPU Manual, Pan of Anthrox, GABY, Marat Fayzullin, Pascal Felber, Paul Robson, Martin Korth, kOOPa, Bowser.
