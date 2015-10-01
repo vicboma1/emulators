@@ -8,11 +8,9 @@ import cartridge.memory.fisic.FisicMemory;
 public interface Game {
     void normalizeRom(FisicMemory rom);
 
-    Boolean checkSum();
+    Boolean checkSum(boolean isCheck);
 
     int romBanks();
-
-    int byteToHexCartridge();
 
     int ramBanks();
 

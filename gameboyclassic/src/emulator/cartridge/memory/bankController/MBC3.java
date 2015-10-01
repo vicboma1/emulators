@@ -1,7 +1,7 @@
 package emulator.cartridge.memory.bankController;
 
-import utils.Diposable.Disposable;
-import utils.Reseteable.Reseteable;
+import framework.pattern.diposable.Disposable;
+import framework.pattern.reseteable.Reseteable;
 
 /**
  * Created by vicboma on 18/08/15.

@@ -11,6 +11,5 @@ import java.util.concurrent.CompletableFuture;
  */
 public interface Battery {
     CompletableFuture<ByteBuffer> saveRam(Game game, FisicMemory ram);
-
     CompletableFuture<ByteBuffer> loadRam(Game game);
 }

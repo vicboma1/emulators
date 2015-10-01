@@ -1,26 +1,31 @@
 package emulator.cartridge.memory.bankController;
 
+import framework.injector.api.annotation.Inject;
+import framework.injector.api.annotation.method.PostConstruct;
+import framework.logger.api.Logger;
+
 /**
  * Created by vicboma on 15/08/15.
  */
 public class MBC1Impl implements MBC1 {
+
     private boolean isModeEnabled;
     private boolean isRamEnabled;
 
-    public static MBC1 Create(){
-        final boolean isModeEnabled1 = true;
-        final boolean isRamEnabled1 = false;
-        return new MBC1Impl(isModeEnabled1, isRamEnabled1);
-    }
+    @Inject
+    public Logger logger;
 
     /**
      * Memory bank controller
-     * @param isModeEnabled
-     * @param isRamEnabled
      */
-    public MBC1Impl(boolean isModeEnabled, boolean isRamEnabled) {
-        this.isModeEnabled = isModeEnabled;
-        this.isRamEnabled = isRamEnabled;
+    public MBC1Impl() {
+        isModeEnabled = true;
+        isRamEnabled = false;
+    }
+
+    @PostConstruct
+    public void initialize(){
+        logger.info(this);
     }
 
     @Override

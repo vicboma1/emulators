@@ -1,5 +1,9 @@
 package emulator.cartridge.memory.bankController;
 
+import framework.injector.api.annotation.Inject;
+import framework.injector.api.annotation.method.PostConstruct;
+import framework.logger.api.Logger;
+
 /**
  * Created by vicboma on 15/08/15.
  */
@@ -9,25 +13,22 @@ public class MBC3Impl implements MBC3 {
     private long time;
     private int reg;
 
-    public static MBC3Impl Create(){
-        final boolean clockenabled1 = false;
-        final int time1 = 0;
-        final int reg1 = 0;
-        return new MBC3Impl(clockenabled1, time1, reg1);
-    }
+    @Inject
+    public Logger logger;
 
-    /**
+   /**
      * Memory bank controller
-     * @param clockenabled
-     * @param time
-     * @param reg
      */
-    public MBC3Impl(boolean clockenabled, long time, int reg) {
-        this.clockenabled = clockenabled;
-        this.time = time;
-        this.reg = reg;
+    public MBC3Impl() {
+        this.clockenabled = false;
+        this.time = 0;
+        this.reg = 0;
     }
 
+    @PostConstruct
+    public void initialize(){
+        logger.info(this);
+    }
 
     @Override
     public boolean isClockenabled() {

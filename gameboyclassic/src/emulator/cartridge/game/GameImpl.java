@@ -2,6 +2,9 @@ package emulator.cartridge.game;
 
 import cartridge.memory.fisic.FisicMemory;
 import cartridge.utils.MemoryControllersGameBoy;
+import framework.injector.api.annotation.Inject;
+import framework.injector.api.annotation.method.PostConstruct;
+import framework.logger.api.Logger;
 import utils.CheckSum;
 
 /**
@@ -9,6 +12,38 @@ import utils.CheckSum;
  */
 public class GameImpl implements Game {
 
+    public static final String SUPER_GAME_BOY_FUNCTION_WON_T_WORK = "Super GameBoy function won't work";
+    public static final String NINTENDO = "Nintendo ";
+    public static final char LN = '\n';
+    public static final String ROM_NAME = "Rom name : ";
+    public static final String ROM_ORIGINAL_TITLE = "Rom original title : ";
+    public static final String ROM_VERSION = "Rom version : ";
+    public static final String LICENSE_CODE = "License code : ";
+    public static final String OLD_LICENSE = "Old license : ";
+    public static final String GAME_BOY_GAME = "Game boy game : ";
+    public static final String DESTINATION_REGION = "Destination Region :  ";
+    public static final String GAME_BOY_INDICATOR = "Game boy indicator : ";
+    public static final String CHECKSUM = "Checksum = ";
+    public static final String ACTUAL_CHECKSUM = "Actual checksum = ";
+    public static final String HEADER_CHECKSUM = "Header checksum = ";
+    public static final String ACTUAL_HEADER_CHECKSUM = "Actual header checksum = ";
+    public static final String CARTRIDGE_TYPE1 = "Cartridge type = ";
+    public static final String ROM_BANKS = "Rom banks = ";
+    public static final String RAM_BANKS1 = "Ram banks = ";
+    public static final String IS_VERTICAL_BLANK_INTERRUPT_HANDLER = "Is vertical blank interrupt handler ? ";
+    public static final String IS_LCD_STATUS_INTERRUPT_HANDLER = "Is lcd status interrupt handler ? ";
+    public static final String IS_TIMER_OVERFLOW_INTERRUPT_HANDLER = "Is timer overflow interrupt handler ? ";
+    public static final String IS_SERIAL_TRANSFER_COMPLETION_INTERRUPT_HANDLER = "Is serial transfer completion interrupt handler ? ";
+    public static final String IS_HIGH_TO_LOWER_OF_P10_P13_INTERRUPT_HANDLER = "Is high to lower of P10-P13 interrupt handler ? ";
+    public static final String CODE = " - Code : ";
+    public static final String ROM_SIZE1 = " - Rom size = ";
+    public static final String KB = " Kb.";
+    public static final String B = " bits";
+
+    // Nintendo Game Boy signature
+    public static final int LOGO_SIZE = 0x30;// Size of Nintendo logo
+    public static final short [] Logo = new short[]{ 0xCE, 0xed, 0x66, 0x66,  0xcc, 0x0d, 0x00, 0x0b, 0x03, 0x73, 0x00, 0x83, 0x00, 0x0c, 0x00, 0x0d, 0x00, 0x08, 0x11, 0x1f,  0x88, 0x89, 0x00, 0x0e, 0xdc, 0xcc, 0x6e, 0xe6, 0xdd, 0xdd, 0xd9, 0x99, 0xbb, 0xbb, 0x67, 0x63,  0x6e, 0x0e, 0xec, 0xcc, 0xdd, 0xdc, 0x99, 0x9f, 0xbb, 0xb9, 0x33, 0x3e };
+    public static final int NINTENDO_LOGO = 0x0104;
     public static final int TITLE_GAME = 0x0134;
     public static final int GB_COLOR = 0x0143;
     public static final int LICENSEE_CODE_HI = 0x0144;
@@ -27,8 +62,6 @@ public class GameImpl implements Game {
     public static final int TIMER_OVER_FLOW_INTERRUPT_HANDLER = 0x0050;
     public static final int SERIAL_TRANSFER_COMPLETAION_INTERRUPT_HANDLER = 0x0058;
     public static final int HIGH_TO_LOW_OF_P10_TO_P13_INTERRUPT_HANDLER = 0x0060;
-    public static final String SUPER_GAME_BOY_FUNCTION_WON_T_WORK = "Super GameBoy function won't work";
-    public static final String NINTENDO = "Nintendo ";
 
     private int codeRegion;
     private String region;
@@ -43,7 +76,6 @@ public class GameImpl implements Game {
     private int key_gbIndicator;
     private int romVersion;
     private String cartridge_type;
-    private int byteToHexCartridge; // to debug errors
     private int romSize;
     private int romBanks;
     private int ramSize;
@@ -57,13 +89,21 @@ public class GameImpl implements Game {
     private boolean isTimerOverflowInterruptHandler;
     private boolean isSerialTransferCompletionInterruptHandler;
     private boolean isHighToLowOfP10ToP13InterruptHandler;
-
     private FisicMemory rom;
-    public static Game Create(){ return  new GameImpl(); }
 
-    public static Game Create(final FisicMemory rom, String romFileName){ return  new GameImpl(rom,romFileName);}
+    @Inject
+    public Logger logger;
 
-    public GameImpl(){}
+    public static Game Create() {
+        return new GameImpl();
+    }
+
+    public static Game Create(final FisicMemory rom, String romFileName) {
+        return new GameImpl(rom, romFileName);
+    }
+
+    public GameImpl() {
+    }
 
     public GameImpl(final FisicMemory _rom, String romFileName) {
         byte[] romBytes = _rom.getObject();
@@ -83,6 +123,12 @@ public class GameImpl implements Game {
         isTimerOverflowInterruptHandler(romBytes);
         isSerialTransferCompletionInterruptHandler(romBytes);
         isHighToLowOfP10ToP13InterruptHandler(romBytes);
+    }
+
+
+    @PostConstruct
+    public void initialize(){
+        logger.info(this);
     }
 
     private void isHighToLowOfP10ToP13InterruptHandler(byte[] rom) {
@@ -114,11 +160,11 @@ public class GameImpl implements Game {
     private void romBankAndSize(byte[] rom) {
         final int key_romBank = (int) rom[ROM_SIZE];
         romBanks = MemoryControllersGameBoy.ROM_SIZE.get(key_romBank);    // Determine the number of 16kb rom banks
-        romSize = romBanks * 16;
+        romSize = (romBanks * 16);
     }
 
     private void cartridgeName(byte[] rom) {
-        byteToHexCartridge = (int) rom[CARTRIDGE_TYPE];
+        final int byteToHexCartridge =  rom[CARTRIDGE_TYPE];
         cartridge_type = MemoryControllersGameBoy.CARTRIDGE_TYPE.get(byteToHexCartridge);
         if (cartridge_type == null)
             cartridge_type = MemoryControllersGameBoy.UNKNOWN;
@@ -137,7 +183,7 @@ public class GameImpl implements Game {
         else if (licenseeCodeOld.equals(MemoryControllersGameBoy.CHECK)) {
             final int codeHi = (int) rom[LICENSEE_CODE_HI];
             final int codeLo = (int) rom[LICENSEE_CODE_LO];
-            licenseeCodeOld = NINTENDO +codeHi + " " + codeLo;
+            licenseeCodeOld = NINTENDO + codeHi + " " + codeLo;
         }
     }
 
@@ -170,36 +216,31 @@ public class GameImpl implements Game {
     }
 
     @Override
-    public final void normalizeRom(FisicMemory rom){
+    public void normalizeRom(FisicMemory rom) {
         this.rom = rom;
     }
 
     @Override
-    public final Boolean checkSum(){
+    public Boolean checkSum(final boolean isCheck) {
 
-        if(!CheckSum.validate(this.rom.getObject()))
+        if (!isCheck)
             return false;
 
-            headerChecksum = CheckSum.headerChecksum;
-            actualHeaderChecksum = CheckSum.actualHeaderChecksum;
-            checksum = CheckSum.checkSum;
-            actualChecksum = CheckSum.actualChecksum;
+        headerChecksum = CheckSum.headerChecksum;
+        actualHeaderChecksum = CheckSum.actualHeaderChecksum;
+        checksum = CheckSum.checkSum;
+        actualChecksum = CheckSum.actualChecksum;
 
-            return true;
+        return true;
     }
 
     @Override
-    public final int romBanks() {
+    public int romBanks() {
         return romBanks;
     }
 
     @Override
-    public final int byteToHexCartridge() {
-        return byteToHexCartridge;
-    }
-
-    @Override
-    public final int ramBanks() {
+    public int ramBanks() {
         return ramBanks;
     }
 
@@ -209,34 +250,38 @@ public class GameImpl implements Game {
     }
 
     @Override
-    public final int indicator() { return key_gbIndicator; }
+    public int indicator() {
+        return key_gbIndicator;
+    }
 
     @Override
-    public final boolean isGbColor() { return GbColorCode == 0x80; }
+    public boolean isGbColor() {
+        return GbColorCode == 0x80;
+    }
 
     @Override
     public String toString() {
-        final StringBuilder sb = new StringBuilder()
-                .append("\nRom name : " + romFileName + "\n")
-                .append("Rom original title : " + nameGame + "\n")
-                .append("Rom version : " + romVersion + "\n")
-                .append("License code : " + licenseCode + "\n")
-                .append("Old license : " + licenseeCodeOld +" - Code : "+key_licenseeCodeOld+"\n")
-                .append("Game boy game : " + GbColor + " - Code : "+GbColorCode+"\n")
-                .append("Destination Region :  "+region +" - Code : "+ codeRegion + "\n")
-                .append("Game boy indicator : " +indicator +" - Code : "+this.key_gbIndicator+"\n")
-                .append("Checksum = " + checksum + "\n")
-                .append("Actual checksum = " + actualChecksum + "\n")
-                .append("Header checksum = " + headerChecksum + "\n")
-                .append("Actual header checksum = " + actualHeaderChecksum + "\n")
-                .append("Cartridge type = " + cartridge_type + "\n")
-                .append("Rom banks = " + romBanks + " - Rom size = " + romSize +" Kb.\n")
-                .append("Ram banks = " + ramBanks + " - Ram size = " + ramSize+ "\n")
-                .append("Is vertical blank interrupt handler ? " + !isVerticalBlankInterruptHandler + "\n")
-                .append("Is lcd status interrupt handler ? " + !isLCDCStatusInterruptHandler + "\n")
-                .append("Is timer overflow interrupt handler ? " + !isTimerOverflowInterruptHandler + "\n")
-                .append("Is serial transfer completion interrupt handler ? " + !isSerialTransferCompletionInterruptHandler + "\n")
-                .append("Is high to lower of P10-P13 interrupt handler ? " + !isHighToLowOfP10ToP13InterruptHandler + "\n");
+        final StringBuilder sb = new StringBuilder(LN)
+                .append(ROM_NAME + romFileName + LN)
+                .append(ROM_ORIGINAL_TITLE + nameGame + LN)
+                .append(ROM_VERSION + romVersion + LN)
+                .append(LICENSE_CODE + licenseCode + LN)
+                .append(OLD_LICENSE + licenseeCodeOld + CODE + key_licenseeCodeOld + LN)
+                .append(GAME_BOY_GAME + GbColor + CODE + GbColorCode + LN)
+                .append(DESTINATION_REGION + region + CODE + codeRegion + LN)
+                .append(GAME_BOY_INDICATOR + indicator + CODE + this.key_gbIndicator + LN)
+                .append(CHECKSUM + checksum + LN)
+                .append(ACTUAL_CHECKSUM + actualChecksum + LN)
+                .append(HEADER_CHECKSUM + headerChecksum + LN)
+                .append(ACTUAL_HEADER_CHECKSUM + actualHeaderChecksum + LN)
+                .append(CARTRIDGE_TYPE1 + cartridge_type + LN)
+                .append(ROM_BANKS + romBanks + ROM_SIZE1 + romSize + KB + LN)
+                .append(RAM_BANKS1 + ramBanks + ROM_SIZE1 + ramSize + B +" - "+(ramSize/1024) + KB+ LN)
+                .append(IS_VERTICAL_BLANK_INTERRUPT_HANDLER + !isVerticalBlankInterruptHandler + LN)
+                .append(IS_LCD_STATUS_INTERRUPT_HANDLER + !isLCDCStatusInterruptHandler + LN)
+                .append(IS_TIMER_OVERFLOW_INTERRUPT_HANDLER + !isTimerOverflowInterruptHandler + LN)
+                .append(IS_SERIAL_TRANSFER_COMPLETION_INTERRUPT_HANDLER + !isSerialTransferCompletionInterruptHandler + LN)
+                .append(IS_HIGH_TO_LOWER_OF_P10_P13_INTERRUPT_HANDLER + !isHighToLowOfP10ToP13InterruptHandler + LN);
 
         return sb.toString();
 

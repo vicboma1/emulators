@@ -3,11 +3,7 @@ package emulator.cartridge.memory.fisic;
 /**
  * Created by vicboma on 15/08/15.
  */
-public class Rom implements FisicMemory {
-
-    private int	offset;
-
-    private byte[] rom;
+public class Rom extends FisicMemoryImpl {
 
     public static Rom Create() {
         return new Rom();
@@ -21,29 +17,11 @@ public class Rom implements FisicMemory {
     }
 
     public Rom(byte[] rom) {
-        this.rom = rom;
+        super(rom);
     }
 
-    public final byte getValue(int index) {
-        return rom[index];
+    public void bank(int bank) {
+        setOffset((bank - 1) * 0x4000);
     }
-
-    public final void setValue(int index, byte value) {
-        rom[index] = value;
-    }
-
-    public final byte[] getObject(){
-        return rom;
-    }
-
-    public final void setObject(byte[] rom) {
-        this.rom = rom;
-    }
-
-    public final int getOffset() { return offset; }
-
-    public final void setOffset(int offset) { this.offset = offset; }
-
-    public final void bank(int bank) { setOffset((bank - 1) * 0x4000); }
 
 }
