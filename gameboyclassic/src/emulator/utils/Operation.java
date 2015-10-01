@@ -20,12 +20,7 @@ public class Operation {
     }
 
     private static Short _unsign(short b) {
-        short result;
-        if (b >= 0)
-            result = b;
-        else
-            result = (short) (0x100 + b);
-
+        final short result = (b >= 0) ?  b : (short) (0x100 + b);
         return result;
 
     }

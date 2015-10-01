@@ -1,4 +1,4 @@
-package emulator.cpu.processor.command.bits8;
+package emulator.cpu.processor.command.bits8.ld;
 
 import cpu.processor.z80.Z80Impl;
 import junit.framework.TestCase;

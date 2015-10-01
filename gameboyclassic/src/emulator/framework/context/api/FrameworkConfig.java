@@ -1,4 +1,4 @@
-package emulator.framework.api;
+package emulator.framework.context.api;
 
 /**
  * Created with IntelliJ IDEA.

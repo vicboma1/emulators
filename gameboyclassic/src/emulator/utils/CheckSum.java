@@ -15,7 +15,8 @@ public class CheckSum {
         int checkSum = (Operation.unsign(rom[HI]) << DESP) + Operation.unsign(rom[LO]);
 
         int sumTotal = 0;
-        for (int r =0; r < rom.length; r++) {
+        final int length = rom.length;
+        for (int r = 0; r < length; r++) {
             if ((r != HI) && (r != LO)) {
                 sumTotal = (sumTotal + Operation.unsign(rom[r])) & MASK;
             }

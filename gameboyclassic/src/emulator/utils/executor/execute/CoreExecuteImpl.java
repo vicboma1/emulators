@@ -50,10 +50,9 @@ public class CoreExecuteImpl implements CoreExecute {
                                                 final Runnable runnable = element.getRunnable();
                                                 final CompletableFuture completableFuture = element.getCompletableFuture();
 
-                                                if (callable == null)
-                                                    submit = threadPoolExecutor.submit(runnable);
-                                                else
-                                                    submit = threadPoolExecutor.submit(callable);
+                                                submit  = (callable == null)
+                                                        ? threadPoolExecutor.submit(runnable)
+                                                        : threadPoolExecutor.submit(callable);
 
                                                 try {
                                                     completableFuture.complete(submit.get());
