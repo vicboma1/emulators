@@ -25,7 +25,16 @@ Analysis Dump Memory (OAM - VRAM - MRAM - CPU )
 JUnit3 & JUnit4. Some exception with TestNG.
 To Mock: Mockito 1.9.5 & PowerVictorito*
 
-* As PowerMockito. Is based with reflection techniques, has better performance and without dependency of Mockito. Own development.
+*As PowerMockito. Is based with reflection techniques, has better performance and without dependency of Mockito. Own development.
+```
+
+#### [Version Control](https://github.com/vicboma1/emulators/blob/master/gameboyclassic/semanticVersioning.md) -  v.0.32.0
+```
+Semantantic classes : Pixel - Tile - Sprite - Background.
+Cached Pool Pixel & Tile.
+Optimization and improving of performance CPU. (WIP)
+Test in commands of the processor. (WIP)
+Recude the power consumption : Halt ((WIP) 
 ```
 
 ## [Winter FrameWork](https://github.com/vicboma1/emulators/tree/master/gameboyclassic/src/emulator/framework) - Rev 2.0.4 (Access API)
@@ -39,15 +48,6 @@ Adding Context in framework for persistent async configuration
 * Configuration Queue Async
 * Execute promise Async
 * Execute task queue Async
-```
-
-#### [Version Control](https://github.com/vicboma1/emulators/blob/master/gameboyclassic/semanticVersioning.md) -  v.0.32.0
-```
-Semantantic classes : Pixel - Tile - Sprite - Background.
-Cached Pool Pixel & Tile.
-Optimization and improving of performance CPU. (WIP)
-Test in commands of the processor. (WIP)
-Recude the power consumption : Halt ((WIP) 
 ```
 
 #### [Development's video playlist](https://www.youtube.com/watch?v=zCy8_IkdMeE&list=PLNph7ndeSqE9E6XqolWg-6Vx4AOeneJSZ&index=1) 
