@@ -50,7 +50,7 @@ Adding Context in framework for persistent async configuration
 * Execute task queue Async
 ```
 
-#### [Development's video playlist](https://www.youtube.com/playlist?list=PLNph7ndeSqE9E6XqolWg-6Vx4AOeneJSZ) 
+#### [Development's video playlist](https://www.youtube.com/watch?v=XjiZJIwULSI&list=PLNph7ndeSqE9E6XqolWg-6Vx4AOeneJSZ) 
 
 
 ##Abbreviation
