@@ -524,6 +524,7 @@ This controller is similar to MBC1 except it accesses all 16mbits of ROM without
 * http://www.ticalc.org/pub/text/z80/z80.txt for Zilog z80 instructions
 * http://sgate.emt.bme.hu/patai/publications/z80guide/app1b.html for Zilog z80 instructions
 * Semantic Versioning 2.0.0 http://semver.org
-* http://gbdev.gg8.se for technical specifications
+* http://gbdev.gg8.se for technical specification
+* http://blog.cballesterosvelasco.es & http://pspemu.soywiz.com
 * My own know.
 
