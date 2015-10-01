@@ -220,12 +220,12 @@ Frame frequency: 59.7Hz
 ```
    Grey Scale                                             Gb Pocket
 ```
-![](http://i.imgur.com/MCHTTxz.png)![](http://i.imgur.com/wAVrtVG.png) 
+![](http://i.imgur.com/6Sy8AVt.png?1)![](http://i.imgur.com/udE8F3z.png?1) 
 
 ```
    Ligth Yellow Scale                                    Grey Stark Scale
 ```
-![](http://i.imgur.com/SyZy6zr.png)![](http://i.imgur.com/SyZy6zr.png)
+![](http://i.imgur.com/OFGflii.png?2)![](http://i.imgur.com/EVNPWue.png?1)
 
 
 
