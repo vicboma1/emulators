@@ -20,15 +20,19 @@ import cpu.processor.z80.powerUp.PowerUpZ80Impl;
 import cpu.processor.z80.timer.Z80Clock;
 import cpu.processor.z80.timer.Z80ClockImpl;
 import cpu.processor.z80.timer.Z80Timer;
+import framework.context.annotation.FrameworkInstall;
 import framework.context.api.FrameworkConfig;
 import framework.injector.api.annotation.Inject;
 import framework.injector.api.annotation.method.PostConstruct;
 import framework.injector.api.type.Injector;
+import framework.install._enum.OrderInstall;
+import framework.install.annotation.PriorityInstall;
 import framework.logger.api.Logger;
 
 /**
  * Created by vicboma on 30/09/15.
  */
+@PriorityInstall(order = OrderInstall.LOW)
 public class ProcessorConfigure implements FrameworkConfig {
 
     @Inject
@@ -64,6 +68,7 @@ public class ProcessorConfigure implements FrameworkConfig {
     }
 
     @Override
+    @FrameworkInstall
     public void configure() throws Exception {
         mapperClasses();
         injectInto();
