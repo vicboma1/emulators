@@ -231,14 +231,19 @@ Frame frequency: 59.7Hz
 
 ####[Shader Polarized](https://youtu.be/W7DstyFZ_j8)
 ```
-    Green Scale                    Dark Yellow Scale                  Grey Scale 
+    Green Scale                                           Dark Yellow Scale
 ```
-![Super Mario Land I](http://i.imgur.com/h8RRcDv.png)  ![Super Mario Land I](http://i.imgur.com/NeOLgAc.png)  ![Super Mario Land I](http://i.imgur.com/Jvc5ZjE.png)
-```
-    Gb Pocket                      Ligth Yellow Scale                 Grey Stark Scale 
-```
-![Super Mario Land I](http://i.imgur.com/fK8kXDP.png)  ![Super Mario Land I](http://i.imgur.com/GmicIBa.png)  ![Super Mario Land I](http://i.imgur.com/w4mhueE.png)
+![](http://i.imgur.com/3Mjvs0c.png?1)![](http://i.imgur.com/qVMaHGq.png?1)
 
+```
+   Grey Scale                                             Gb Pocket
+```
+![](http://i.imgur.com/JPMthue.png?1)![](http://i.imgur.com/MXs3TVp.png?2) 
+
+```
+   Ligth Yellow Scale                                    Grey Stark Scale
+```
+![](http://i.imgur.com/xxwiHgx.png?1)![](http://i.imgur.com/54QrwT8.png?1)
 
 
 ####[Backlight (DMG/Pocket) Custom](https://youtu.be/XElP1Y7MT7c)
