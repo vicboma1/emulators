@@ -10,17 +10,17 @@ PATCH version when you make backwards-compatible bug fixes.
 Additional labels for pre-release and build metadata are available as extensions to the MAJOR.MINOR.PATCH format.
 ```
 
-#### version 0.33.00
+#### version 0.33.0
 ```
 Adding Pause & Reset in toolBar File
 ```
 
-#### version 0.32.00
+#### version 0.32.0
 ```
 Adding instance annotation (Prototype - Singleton - Value)
 ```
 
-#### version 0.31.00
+#### version 0.31.0
 ```
 Adding Context in framework for initial persisten async configuration
 * Permit access injector
@@ -33,37 +33,33 @@ Adding Context in framework for initial persisten async configuration
 * Execute Queue Async
 ```
 
-#### version 0.30.00
+#### version 0.30.0
 ```
 Adding Thread Pool Async in framework
-```
-
-#### version 0.30.00
-```
 Adding Command Mapper for toolBar options in framework
 ```
 
-#### version 0.29.00
+#### version 0.29.0
 ```
 Adding configuration pattern in framework
 ```
 
-#### version 0.28.00
+#### version 0.28.0
 ```
 Adding logger with log4java in framework
 ```
 
-#### version 0.27.00
+#### version 0.27.0
 ```
 Adding annotations compatibility for injector in framework
 ```
 
-#### version 0.27.00
+#### version 0.27.0
 ```
 Adding own Dependency Injection (DI) in framework
 ```
 
-#### version 0.26.00
+#### version 0.26.0
 ```
 Adding TDD & Semantic classes [Register 8 & 16 bits] in Cpu z80Impl
 ```

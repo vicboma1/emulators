@@ -20,6 +20,23 @@ Decompiler for z80 instructions
 Analysis Dump Memory (OAM - VRAM - MRAM - CPU )
 ```
 
+#### Test-Driven Development
+```
+JUnit3 & JUnit4. Some exception with TestNG.
+To Mock: Mockito 1.9.5 & PowerVictorito*
+
+*As PowerMockito. Is based with reflection techniques, has better performance and without dependency of Mockito. Own development.
+```
+
+#### [Version Control](https://github.com/vicboma1/emulators/blob/master/gameboyclassic/semanticVersioning.md) -  v.0.33.0
+```
+Semantantic classes : Pixel - Tile - Sprite - Background.
+Cached Pool Pixel & Tile.
+Optimization and improving of performance CPU. (WIP)
+Test in commands of the processor. (WIP)
+Recude the power consumption : Halt ((WIP) 
+```
+
 ## [Winter FrameWork](https://github.com/vicboma1/emulators/tree/master/gameboyclassic/src/emulator/framework) - Rev 2.0.4 (Access API)
 ```
 Adding Context in framework for persistent async configuration
@@ -33,16 +50,7 @@ Adding Context in framework for persistent async configuration
 * Execute task queue Async
 ```
 
-#### [Version Control](https://github.com/vicboma1/emulators/blob/master/gameboyclassic/semanticVersioning.md) -  v.0.32.0
-```
-Semantantic classes : Pixel - Tile - Sprite - Background.
-Cached Pool Pixel & Tile.
-Optimization and improving of performance CPU. (WIP)
-Test in commands of the processor. (WIP)
-Recude the power consumption : Halt ((WIP) 
-```
-
-#### [Development's video playlist](https://www.youtube.com/watch?v=zCy8_IkdMeE&list=PLNph7ndeSqE9E6XqolWg-6Vx4AOeneJSZ&index=1) 
+#### [Development's video playlist](https://www.youtube.com/watch?v=XjiZJIwULSI&list=PLNph7ndeSqE9E6XqolWg-6Vx4AOeneJSZ) 
 
 
 ##Abbreviation
@@ -194,7 +202,7 @@ Frame frequency: 59.7Hz
 ```
    Grey Scale                                             Gb Pocket
 ```
-![](http://i.imgur.com/GVVYdlB.png?2)![](http://i.imgur.com/aM7FRdh.png?1) 
+![](http://i.imgur.com/lZtHAOY.png?1)![](http://i.imgur.com/aM7FRdh.png?1) 
 
 ```
    Ligth Yellow Scale                                    Grey Stark Scale
@@ -205,13 +213,19 @@ Frame frequency: 59.7Hz
 
 ####[Shader Invert](https://youtu.be/-VP92QbATH8)
 ```
-    Green Scale                    Dark Yellow Scale                  Grey Scale 
+    Green Scale                                           Dark Yellow Scale
 ```
-![Super Mario Land I](http://i.imgur.com/CbLBxTZ.png)  ![Super Mario Land I](http://i.imgur.com/NXFALzF.png)  ![Super Mario Land I](http://i.imgur.com/MCHTTxz.png)
+![](http://i.imgur.com/tCvVCG0.png?1)![](http://i.imgur.com/leGBKI0.png?1)
+
 ```
-    Gb Pocket                      Ligth Yellow Scale                 Grey Stark Scale 
+   Grey Scale                                             Gb Pocket
 ```
-![Super Mario Land I](http://i.imgur.com/wAVrtVG.png)  ![Super Mario Land I](http://i.imgur.com/SyZy6zr.png)  ![Super Mario Land I](http://i.imgur.com/SPTPFZV.png)
+![](http://i.imgur.com/6Sy8AVt.png?1)![](http://i.imgur.com/udE8F3z.png?1) 
+
+```
+   Ligth Yellow Scale                                    Grey Stark Scale
+```
+![](http://i.imgur.com/OFGflii.png?2)![](http://i.imgur.com/EVNPWue.png?1)
 
 
 
@@ -449,6 +463,10 @@ The starting address can be freely set by writing a jump destination address at 
 
 ##Game Boy Memory Controllers (MBC)
 
+#### ROM
+None (32KByte ROM only).
+Small games of not more than 32KBytes ROM do not require a MBC chip for ROM banking
+
 #### [MBC1](https://github.com/vicboma1/emulators/blob/master/gameboyclassic/LoadRomMBC1)
 MBC1 is a memory controller that enables the use of 512 Kbits (64 Kbytes) or more of ROM and 256 Kbits (32 Kbytes) of RAM. 
 RAM use by MBC1 is restricted to 64 Kbits (8 Kbytes).
@@ -489,6 +507,12 @@ This controller is similar to MBC1 except it accesses all 16mbits of ROM without
  Delays
  ```
 
+
+
+* Some games do not work for now. Step by step.
+ 
+
+
 ##References :
 * Game BoyTM CPU Manual, Pan of Anthrox, GABY, Marat Fayzullin, Pascal Felber, Paul Robson, Martin Korth, kOOPa, Bowser.
 * ￼Game Boy PROGRAMMING MANUAL v.1.0, DMG-06-4216-001-A Released 11/09/1999 Nintendo.
@@ -500,5 +524,7 @@ This controller is similar to MBC1 except it accesses all 16mbits of ROM without
 * http://www.ticalc.org/pub/text/z80/z80.txt for Zilog z80 instructions
 * http://sgate.emt.bme.hu/patai/publications/z80guide/app1b.html for Zilog z80 instructions
 * Semantic Versioning 2.0.0 http://semver.org
+* http://gbdev.gg8.se for technical specification
+* http://blog.cballesterosvelasco.es & http://pspemu.soywiz.com
 * My own know.
 
