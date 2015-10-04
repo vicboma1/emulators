@@ -16,7 +16,7 @@ Block Tiles represented.
  
 Complementary Tools Developed:
   Async Debug Console
-  Decompiler for z80 instructions
+  Disassembler for z80 instructions
   Analysis Dump Memory (OAM - VRAM - MRAM - CPU )
 ```
 
