@@ -11,7 +11,7 @@ Multi connector for ROM cartridge connection (ROM - MBC1 - MBC2 - MBC3)
 Custom OAM (Sprite Attrib Memory ) & VRAM (Video Ram) & MRAM (Main Ram).
 Graphics emulated with ascendency architectural (576i resolution).
 Grayscale Display evolutioned to Monochromatic Shader and Polirazed Backlight multi-color.
-Scalines emulated.
+Scalines emulated (Horizontal & Vertical & Mixes).
 Block Tiles represented.
  
 Complementary Tools Developed:
@@ -22,7 +22,7 @@ Complementary Tools Developed:
 
 ## Agile Software Development   
 
-#### SOLID
+#### SOLID ( SRP - OCP - LSP - ISP - DIP )
 ```
 The principles of SOLID are guidelines that can be applied while working on software to remove 
 code smells by causing the programmer to refactor the software's source code until it is both 
