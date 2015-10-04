@@ -28,6 +28,11 @@ To Mock: Mockito 1.9.5 & PowerVictorito*
 *As PowerMockito. Is based with reflection techniques, has better performance and without dependency of Mockito. Own development.
 ```
 
+#### Hollywood Principle - Don’t Call Us, We’ll Call You!
+```
+It is a useful paradigm that assists in the development of code with high cohesion and low coupling that is easier to debug, maintain and test. Dependency Injection (DI), which is a form of Inversion of Control (IoC) is an example of the use.
+```
+
 #### [Version Control](https://github.com/vicboma1/emulators/blob/master/gameboyclassic/semanticVersioning.md) -  v.0.33.0
 ```
 Semantantic classes : Pixel - Tile - Sprite - Background.
@@ -530,6 +535,7 @@ This controller is similar to MBC1 except it accesses all 16mbits of ROM without
 * http://sgate.emt.bme.hu/patai/publications/z80guide/app1b.html for Zilog z80 instructions
 * Semantic Versioning 2.0.0 http://semver.org
 * http://gbdev.gg8.se for technical specification
+* Hollywood Principle - "Don't call us, we'll call you" - http://martinfowler.com/bliki/InversionOfControl.html 
 * http://blog.cballesterosvelasco.es & http://pspemu.soywiz.com
 * My own know.
 
