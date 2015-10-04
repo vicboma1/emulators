@@ -1,13 +1,13 @@
 _![](https://realboyemulator.files.wordpress.com/2013/01/220px-gameboy.jpg?w=47&h=90) GameBoy Classic Java Emulator / WIP ![](https://realboyemulator.files.wordpress.com/2013/01/220px-gameboy.jpg?w=47&h=90)_
 =========
 
-## SOLID Software Development & TDD 
+## Supported Features :
 ```
 Z80 CPU emulated with Pool Async.
 I/O Ports emulated Async (Video Display - Joypad Input - Timer and Divider Registers - Interrupts).
 Reducing Power Consumption in CPU & ROM.
 SRAM emulated for LCD display & Working memory.
-Multi connector for ROM cartridge connection (ROM - MBC1 - MBC2 - MBC3).
+Multi connector for ROM cartridge connection (ROM - MBC1 - MBC2 - MBC3)
 Custom OAM (Sprite Attrib Memory ) & VRAM (Video Ram) & MRAM (Main Ram).
 Graphics emulated with ascendency architectural (576i resolution).
 Grayscale Display evolutioned to Monochromatic Shader and Polirazed Backlight multi-color.
@@ -20,7 +20,16 @@ Complementary Tools Developed:
   Analysis Dump Memory (OAM - VRAM - MRAM - CPU )
 ```
 
-#### Test-Driven Development
+## Agile Software Development   
+
+#### SOLID
+```
+The principles of SOLID are guidelines that can be applied while working on software to remove 
+code smells by causing the programmer to refactor the software's source code until it is both 
+legible and extensible
+```
+
+#### Test-Driven Development (TDD)
 ```
 JUnit3 & JUnit4. Some exception with TestNG.
 To Mock: Mockito 1.9.5 & PowerVictorito*
@@ -36,6 +45,18 @@ coupling that is easier to debug, maintain and test. Dependency Injection (DI), 
 form of Inversion of Control (IoC) is an example of the use.
 ```
 
+#### KISS Principle - Keep it simple, stupid.
+```
+The code should never overcomplicate design, considering different approach and trade-off and
+finally choose the simplest one, given system constraints and business rules. 
+```
+
+#### DRY Principle - Don’t Repeat Yourself.
+```
+Help you to achieve more reusability and automation.
+```
+
+
 #### [Version Control](https://github.com/vicboma1/emulators/blob/master/gameboyclassic/semanticVersioning.md) -  v.0.33.0
 ```
 Semantantic classes : Pixel - Tile - Sprite - Background.
@@ -44,6 +65,8 @@ Optimization and improving of performance CPU. (WIP)
 Test in commands of the processor. (WIP)
 Recude the power consumption : Halt ((WIP) 
 ```
+
+
 
 ## [Winter FrameWork](https://github.com/vicboma1/emulators/tree/master/gameboyclassic/src/emulator/framework) - Rev 2.0.4 (Access API)
 ```
