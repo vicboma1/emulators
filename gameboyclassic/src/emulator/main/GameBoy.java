@@ -1,12 +1,12 @@
-package emulator.main;
+package main;
 
-import configuration.EmulatorConfigurator;
-import org.apache.log4j.BasicConfigurator;import java.lang.Boolean;import java.lang.Exception;import java.lang.String;
+import main.configuration.*;
+import org.apache.log4j.BasicConfigurator;
 
 /**
  * Created by vicboma on 03/06/14.
  */
-public class GameBoyEmulator_ {
+public class GameBoy {
 
     public static final String VICBOMA_GAME_BOY_EMULATOR_V1 = "Vicboma  -  Game Boy Emulator v";
     public static String VERSION = "0.32.0 Debug";
