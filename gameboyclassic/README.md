@@ -15,9 +15,9 @@ Scalines emulated.
 Block Tiles represented.
  
 Complementary Tools Developed:
-Async Debug Console
-Decompiler for z80 instructions
-Analysis Dump Memory (OAM - VRAM - MRAM - CPU )
+  Async Debug Console
+  Decompiler for z80 instructions
+  Analysis Dump Memory (OAM - VRAM - MRAM - CPU )
 ```
 
 #### Test-Driven Development
@@ -25,12 +25,15 @@ Analysis Dump Memory (OAM - VRAM - MRAM - CPU )
 JUnit3 & JUnit4. Some exception with TestNG.
 To Mock: Mockito 1.9.5 & PowerVictorito*
 
-*As PowerMockito. Is based with reflection techniques, has better performance and without dependency of Mockito. Own development.
+*As PowerMockito. Is based with reflection techniques, has better performance and without
+dependency of Mockito. Own development.
 ```
 
 #### Hollywood Principle - Don’t Call Us, We’ll Call You!
 ```
-It is a useful paradigm that assists in the development of code with high cohesion and low coupling that is easier to debug, maintain and test. Dependency Injection (DI), which is a form of Inversion of Control (IoC) is an example of the use.
+It is a useful paradigm that assists in the development of code with high cohesion and low 
+coupling that is easier to debug, maintain and test. Dependency Injection (DI), which is a 
+form of Inversion of Control (IoC) is an example of the use.
 ```
 
 #### [Version Control](https://github.com/vicboma1/emulators/blob/master/gameboyclassic/semanticVersioning.md) -  v.0.33.0
