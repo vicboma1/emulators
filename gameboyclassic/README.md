@@ -1,32 +1,61 @@
 _![](https://realboyemulator.files.wordpress.com/2013/01/220px-gameboy.jpg?w=47&h=90) GameBoy Classic Java Emulator / WIP ![](https://realboyemulator.files.wordpress.com/2013/01/220px-gameboy.jpg?w=47&h=90)_
 =========
 
-## SOLID Software Development & TDD 
+## Supported Features :
 ```
 Z80 CPU emulated with Pool Async.
 I/O Ports emulated Async (Video Display - Joypad Input - Timer and Divider Registers - Interrupts).
 Reducing Power Consumption in CPU & ROM.
 SRAM emulated for LCD display & Working memory.
-Multi connector for ROM cartridge connection (ROM - MBC1 - MBC2 - MBC3).
+Multi connector for ROM cartridge connection (ROM - MBC1 - MBC2 - MBC3)
 Custom OAM (Sprite Attrib Memory ) & VRAM (Video Ram) & MRAM (Main Ram).
 Graphics emulated with ascendency architectural (576i resolution).
 Grayscale Display evolutioned to Monochromatic Shader and Polirazed Backlight multi-color.
-Scalines emulated.
+Scalines emulated (Horizontal & Vertical & Mixes).
 Block Tiles represented.
  
 Complementary Tools Developed:
-Async Debug Console
-Decompiler for z80 instructions
-Analysis Dump Memory (OAM - VRAM - MRAM - CPU )
+  Async Debug Console
+  Disassembler for z80 instructions
+  Analysis Dump Memory (OAM - VRAM - MRAM - CPU )
 ```
 
-#### Test-Driven Development
+## Agile Software Development   
+
+#### SOLID ( SRP - OCP - LSP - ISP - DIP )
+```
+The principles of SOLID are guidelines that can be applied while working on software to remove 
+code smells by causing the programmer to refactor the software's source code until it is both 
+legible and extensible
+```
+
+#### Test-Driven Development (TDD)
 ```
 JUnit3 & JUnit4. Some exception with TestNG.
 To Mock: Mockito 1.9.5 & PowerVictorito*
 
-*As PowerMockito. Is based with reflection techniques, has better performance and without dependency of Mockito. Own development.
+*As PowerMockito. Is based with reflection techniques, has better performance and without
+dependency of Mockito. Own development.
 ```
+
+#### Hollywood Principle - Don’t Call Us, We’ll Call You!
+```
+It is a useful paradigm that assists in the development of code with high cohesion and low 
+coupling that is easier to debug, maintain and test. Dependency Injection (DI), which is a 
+form of Inversion of Control (IoC) is an example of the use.
+```
+
+#### KISS Principle - Keep it simple, stupid.
+```
+The code should never overcomplicate design, considering different approach and trade-off and
+finally choose the simplest one, given system constraints and business rules. 
+```
+
+#### DRY Principle - Don’t Repeat Yourself.
+```
+Help you to achieve more reusability and automation.
+```
+
 
 #### [Version Control](https://github.com/vicboma1/emulators/blob/master/gameboyclassic/semanticVersioning.md) -  v.0.33.0
 ```
@@ -36,6 +65,8 @@ Optimization and improving of performance CPU. (WIP)
 Test in commands of the processor. (WIP)
 Recude the power consumption : Halt ((WIP) 
 ```
+
+
 
 ## [Winter FrameWork](https://github.com/vicboma1/emulators/tree/master/gameboyclassic/src/emulator/framework) - Rev 2.0.4 (Access API)
 ```
@@ -530,6 +561,7 @@ This controller is similar to MBC1 except it accesses all 16mbits of ROM without
 * http://sgate.emt.bme.hu/patai/publications/z80guide/app1b.html for Zilog z80 instructions
 * Semantic Versioning 2.0.0 http://semver.org
 * http://gbdev.gg8.se for technical specification
+* Hollywood Principle - "Don't call us, we'll call you" - http://martinfowler.com/bliki/InversionOfControl.html 
 * http://blog.cballesterosvelasco.es & http://pspemu.soywiz.com
 * My own know.
 
