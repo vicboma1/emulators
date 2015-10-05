@@ -1,5 +1,5 @@
-_![](https://realboyemulator.files.wordpress.com/2013/01/220px-gameboy.jpg?w=47&h=90) GameBoy Classic Java Emulator / WIP ![](https://realboyemulator.files.wordpress.com/2013/01/220px-gameboy.jpg?w=47&h=90)_
-=========
+![](http://i.imgur.com/8X0qlu4.png)
+![](http://i.imgur.com/HsOVI7x.png)
 
 ## Supported Features :
 ```
@@ -80,8 +80,10 @@ Adding Context in framework for persistent async configuration
 * Execute task queue Async
 ```
 
+
 ## [Development's video playlist](https://www.youtube.com/watch?v=y2GHmVP2p8w&list=PLNph7ndeSqE9E6XqolWg-6Vx4AOeneJSZ) 
 
+[![](http://i.imgur.com/6omXJfT.png)](https://www.youtube.com/watch?v=_oDOJyyZyL0)
 
 ##Abbreviation
 DMG: Game Boy (monochrome), introduced on April 21, 1989
