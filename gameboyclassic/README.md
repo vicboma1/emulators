@@ -56,14 +56,13 @@ finally choose the simplest one, given system constraints and business rules.
 Help you to achieve more reusability and automation.
 ```
 
-
-#### [Version Control](https://github.com/vicboma1/emulators/blob/master/gameboyclassic/semanticVersioning.md) -  v.0.33.0
+#### [Version Control - v.0.35.2](https://github.com/vicboma1/emulators/blob/master/gameboyclassic/semanticVersioning.md)  
 ```
 Semantantic classes : Pixel - Tile - Sprite - Background.
 Cached Pool Pixel & Tile.
-Optimization and improving of performance CPU. (WIP)
-Test in commands of the processor. (WIP)
-Recude the power consumption : Halt ((WIP) 
+Optimization and improving of performance CPU. (WIP - Rev 1.2)
+Test in commands of the processor. (WIP - 70% )
+Recude the power consumption : Halt (WIP - Rev 1.1) 
 ```
 
 
@@ -81,7 +80,7 @@ Adding Context in framework for persistent async configuration
 * Execute task queue Async
 ```
 
-#### [Development's video playlist](https://www.youtube.com/watch?v=y2GHmVP2p8w&list=PLNph7ndeSqE9E6XqolWg-6Vx4AOeneJSZ) 
+## [Development's video playlist](https://www.youtube.com/watch?v=y2GHmVP2p8w&list=PLNph7ndeSqE9E6XqolWg-6Vx4AOeneJSZ) 
 
 
 ##Abbreviation
