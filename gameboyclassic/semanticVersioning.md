@@ -10,6 +10,27 @@ PATCH version when you make backwards-compatible bug fixes.
 Additional labels for pre-release and build metadata are available as extensions to the MAJOR.MINOR.PATCH format.
 ```
 
+#### version 0.35.2
+```
+Fixed "CreateMenu" method in toolBarUitls for "T" instances (MenuItem & CheckMenuItem)
+```
+
+#### version 0.35.1
+```
+Fixed change options "other" in toolBar
+```
+
+#### version 0.35.0
+```
+Adding disassembler toolBar
+Optimize with StringBuilder
+```
+
+#### version 0.34.0
+```
+Optimize toolBar
+```
+
 #### version 0.33.0
 ```
 Adding Pause & Reset in toolBar File

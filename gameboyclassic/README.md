@@ -1,5 +1,5 @@
-_![](https://realboyemulator.files.wordpress.com/2013/01/220px-gameboy.jpg?w=47&h=90) GameBoy Classic Java Emulator / WIP ![](https://realboyemulator.files.wordpress.com/2013/01/220px-gameboy.jpg?w=47&h=90)_
-=========
+![](http://i.imgur.com/8X0qlu4.png)
+![](http://i.imgur.com/HsOVI7x.png)
 
 ## Supported Features :
 ```
@@ -56,14 +56,13 @@ finally choose the simplest one, given system constraints and business rules.
 Help you to achieve more reusability and automation.
 ```
 
-
-#### [Version Control](https://github.com/vicboma1/emulators/blob/master/gameboyclassic/semanticVersioning.md) -  v.0.33.0
+#### [Version Control - v.0.35.2](https://github.com/vicboma1/emulators/blob/master/gameboyclassic/semanticVersioning.md)  
 ```
 Semantantic classes : Pixel - Tile - Sprite - Background.
 Cached Pool Pixel & Tile.
-Optimization and improving of performance CPU. (WIP)
-Test in commands of the processor. (WIP)
-Recude the power consumption : Halt ((WIP) 
+Optimization and improving of performance CPU. (WIP - Rev 1.2)
+Test in commands of the processor. (WIP - 70% )
+Recude the power consumption : Halt (WIP - Rev 1.1) 
 ```
 
 
@@ -81,8 +80,10 @@ Adding Context in framework for persistent async configuration
 * Execute task queue Async
 ```
 
-#### [Development's video playlist](https://www.youtube.com/watch?v=XjiZJIwULSI&list=PLNph7ndeSqE9E6XqolWg-6Vx4AOeneJSZ) 
 
+## [Development's video playlist](https://www.youtube.com/watch?v=y2GHmVP2p8w&list=PLNph7ndeSqE9E6XqolWg-6Vx4AOeneJSZ) 
+
+[![](http://i.imgur.com/6omXJfT.png)](https://www.youtube.com/watch?v=_oDOJyyZyL0)
 
 ##Abbreviation
 DMG: Game Boy (monochrome), introduced on April 21, 1989
