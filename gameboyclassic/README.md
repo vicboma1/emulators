@@ -280,24 +280,24 @@ Frame frequency: 59.7Hz
 
 ####[Backlight (DMG/Pocket) Custom](https://youtu.be/XElP1Y7MT7c)
 ```
-    Orange Scale                                           Green Scale
+    Orange                                                 Green 
 ```
 ![](http://i.imgur.com/OXJ38E1.png?1)![](http://i.imgur.com/BrUrCgH.png?2)  
 
 ```
-    Pink Scale                                             Teal Scale 
+    Pink                                                   Teal 
 ```
 ![](http://i.imgur.com/GUjyxkY.png?2)![](http://i.imgur.com/i22Hl6W.png?1)   
 
 ```
-    White Blue Scale                                       Red scale                                                      
+    White Blue                                             Red                                                      
 ```
 ![](http://i.imgur.com/pbv0YzB.png?1)![](http://i.imgur.com/RdS5dSj.png?2)
 
 ```
-    Blue                                                                   
+    Blue                                                   Lemon                                               
 ```
-![](http://i.imgur.com/zwOmmJo.png?1)
+![](http://i.imgur.com/zwOmmJo.png?1)![](http://i.imgur.com/GIJSBZb.png?1)
 
 
 
