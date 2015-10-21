@@ -56,7 +56,7 @@ finally choose the simplest one, given system constraints and business rules.
 Help you to achieve more reusability and automation.
 ```
 
-#### [Version Control - v.0.35.2](https://github.com/vicboma1/emulators/blob/master/gameboyclassic/semanticVersioning.md)  
+#### [Version Control - v.0.36.0](https://github.com/vicboma1/emulators/blob/master/gameboyclassic/semanticVersioning.md)  
 ```
 Semantantic classes : Pixel - Tile - Sprite - Background.
 Cached Pool Pixel & Tile.
@@ -303,22 +303,22 @@ Frame frequency: 59.7Hz
 
 ####[Backlight (DMG/Pocket) Custom Invert](https://youtu.be/Em2u3XLbHvw)
 ```
-    Orange Scale                                           Green Scale
+    Orange                                                 Green 
 ```
 ![](http://i.imgur.com/dckFcmn.png?1)![](http://i.imgur.com/j6qShkC.png?1)  
 
 ```
-    Pink Scale                                             Teal Scale 
+    Pink                                                   Teal  
 ```
 ![](http://i.imgur.com/9C1Mjtw.png?2)![](http://i.imgur.com/2fryDFM.png?2)   
 
 ```
-    White Blue Scale                                       Red scale                                                      
+    White Blue                                              Red                                                    
 ```
 ![](http://i.imgur.com/22zlktq.png?1)![](http://i.imgur.com/gNxqTZx.png?2)
 
 ```
-    Blue                                                                   
+    Blue                                                   Lemon    (WIP)                                           
 ```
 ![](http://i.imgur.com/NmIdCzZ.png?1)
 
@@ -326,22 +326,22 @@ Frame frequency: 59.7Hz
 
 ####[Backlight (DMG/Pocket) Custom Polarized](https://youtu.be/oZMo_Q4DtRY)
 ```
-    Orange Scale                                           Green Scale
+    Orange                                                 Green 
 ```
 ![](http://i.imgur.com/I2abuBO.png?1)![](http://i.imgur.com/srjwJf1.png?1)  
 
 ```
-    Pink Scale                                             Teal Scale 
+    Pink                                                   Teal  
 ```
 ![](http://i.imgur.com/G0vEUwF.png?2)![](http://i.imgur.com/yNTLBNU.png?3)   
 
 ```
-    White Blue Scale                                       Red scale                                                      
+    White Blue                                             Red                                                       
 ```
 ![](http://i.imgur.com/ffxkBTP.png?1)![](http://i.imgur.com/wXqSnP6.png?2)
 
 ```
-    Blue                                                                   
+    Blue                                                   Lemon (WIP)                             
 ```
 ![](http://i.imgur.com/IPPuw2B.png?1)
 
