@@ -295,7 +295,7 @@ Frame frequency: 59.7Hz
 ![](http://i.imgur.com/pbv0YzB.png?1)![](http://i.imgur.com/RdS5dSj.png?2)
 
 ```
-    Blue                                                   Lemon                                               
+    Blue                                                   Lemon
 ```
 ![](http://i.imgur.com/zwOmmJo.png?1)![](http://i.imgur.com/GIJSBZb.png?1)
 
@@ -318,7 +318,7 @@ Frame frequency: 59.7Hz
 ![](http://i.imgur.com/22zlktq.png?1)![](http://i.imgur.com/gNxqTZx.png?2)
 
 ```
-    Blue                                                   Lemon    (WIP)                                           
+    Blue                                                   Lemon (WIP)
 ```
 ![](http://i.imgur.com/NmIdCzZ.png?1)
 
@@ -341,9 +341,9 @@ Frame frequency: 59.7Hz
 ![](http://i.imgur.com/ffxkBTP.png?1)![](http://i.imgur.com/wXqSnP6.png?2)
 
 ```
-    Blue                                                   Lemon (WIP)                             
+    Blue                                                   Lemon
 ```
-![](http://i.imgur.com/IPPuw2B.png?1)
+![](http://i.imgur.com/IPPuw2B.png?1)![](http://i.imgur.com/ZOPdyX6.png?1)
 
 
 
