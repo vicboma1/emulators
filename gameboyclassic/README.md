@@ -589,7 +589,7 @@ This controller is similar to MBC1 except it accesses all 16mbits of ROM without
 
 
 
-* Some games do not work for now. Step by step.
+* some games do not work yet. Step by step.
  
 
 
