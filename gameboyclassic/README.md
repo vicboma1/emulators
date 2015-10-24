@@ -318,9 +318,9 @@ Frame frequency: 59.7Hz
 ![](http://i.imgur.com/22zlktq.png?1)![](http://i.imgur.com/gNxqTZx.png?2)
 
 ```
-    Blue                                                   Lemon (WIP)
+    Blue                                                   Lemon
 ```
-![](http://i.imgur.com/NmIdCzZ.png?1)
+![](http://i.imgur.com/NmIdCzZ.png?1)![](http://i.imgur.com/xITS3jQ.png?2)
 
 
 
