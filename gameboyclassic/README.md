@@ -56,9 +56,9 @@ finally choose the simplest one, given system constraints and business rules.
 Help you to achieve more reusability and automation.
 ```
 
-#### [Version Control - v.0.36.0](https://github.com/vicboma1/emulators/blob/master/gameboyclassic/semanticVersioning.md)  
+#### [Version Control - v.0.37.0](https://github.com/vicboma1/emulators/blob/master/gameboyclassic/semanticVersioning.md)  
 ```
-Semantantic classes : Pixel - Tile - Sprite - Background.
+Semantantic classes : Pixel - Tile - Sprite - Background. (100 %)
 Cached Pool Pixel & Tile.
 Optimization and improving of performance CPU. (WIP - Rev 1.2)
 Test in commands of the processor. (WIP - 70% )
