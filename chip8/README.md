@@ -70,3 +70,4 @@ Load Rom OK!
 * Software Design Pattern, http://en.wikipedia.org/wiki/Software_design_pattern
 * Benjamin winterberg, winterbe.com/posts/2014/03/16/java-8-tutorial/
 * My own know.
+* @Author: Victor Bolinches Marin
