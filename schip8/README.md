@@ -21,3 +21,4 @@ Fx85 - LD Vx, R
 
 * [Chip8 Java Emulator](https://github.com/vicboma1/emulators/blob/master/chip8/README.md#references-)
 * My own know.
+@Author: Victor Bolinches Marin
