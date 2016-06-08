@@ -608,7 +608,7 @@ This controller is similar to MBC1 except it accesses all 16mbits of ROM without
 * Hollywood Principle - "Don't call us, we'll call you" - http://martinfowler.com/bliki/InversionOfControl.html 
 * http://blog.cballesterosvelasco.es & http://pspemu.soywiz.com
 * My own knowledge.
-
+* @Author: Victor Bolinches Marin
 
 [![Analytics](https://ga-beacon.appspot.com/UA-68658653-3/gameboyclassic/readme)](https://github.com/igrigorik/ga-beacon)
 
