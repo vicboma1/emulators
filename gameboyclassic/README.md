@@ -18,6 +18,7 @@ Complementary Tools Developed:
   Async Debug Console
   Disassembler for z80 instructions
   Analysis Dump Memory (OAM - VRAM - MRAM - CPU )
+  GameBoy Emulator Environment - GBEE
 ```
 ## New Complementary Tool :
 
