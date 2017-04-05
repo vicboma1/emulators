@@ -1,7 +1,7 @@
 Chip8 Java Emulator  
 =========
 
-##Tag hierarchy of the project :
+## Tag hierarchy of the project :
 
 * [Emulator](https://github.com/victorakamon/emulators/tree/master/chip8/src/emulator)
   * ```Instructions```
@@ -14,7 +14,7 @@ Chip8 Java Emulator
 
 
 
-##Loader Rom :
+## Loader Rom :
 ```
 Emulator loaded OK!
 Rom size: 280.0 bytes
@@ -43,16 +43,16 @@ Stack
 Load Rom OK!
 ```
 
-##Screenshots :
+## Screenshots :
 
-###Brix :
+### Brix :
 
 ![](http://i59.tinypic.com/16hixkj.png)
    * Inputs:
      * ```Q -> Left ```
      * ```E -> Right ```
 
-###Pong :
+### Pong :
 
 ![](http://i60.tinypic.com/s4mdyp.png)
    * Inputs:
@@ -60,7 +60,7 @@ Load Rom OK!
      * ```2 Player 4 -> Up | R -> Down ```
 
 
-##References :
+## References :
 
 * Thomas P. Greene, http://devernay.free.fr/hacks/chip8/C8TECH10.HTM
 * David Winter, http://www.pong-story.com/chip8/
