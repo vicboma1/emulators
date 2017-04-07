@@ -89,10 +89,10 @@ Adding Context in framework for persistent async configuration
 
 [![](http://i.imgur.com/6omXJfT.png)](https://www.youtube.com/watch?v=_oDOJyyZyL0)
 
-##Abbreviation
+## Abbreviation
 DMG: Game Boy (monochrome), introduced on April 21, 1989
 
-##System DMG
+## System DMG
 * Dot-matrix LCD unit capable of
 * Grayscale display
 * 64 Kbit – SRAM (for LCD display)
@@ -106,7 +106,7 @@ DMG: Game Boy (monochrome), introduced on April 21, 1989
 * Stereo headphone connector
 * Input connector for external power source
 
-##General Memory Map
+## General Memory Map
 ```
 Interrupt Enable Register  --------------------------- FFFF
 Internal RAM               --------------------------- FF80
@@ -126,7 +126,7 @@ NOTE: b = bit, B = byte
 
 ```
 
-##Memory
+## Memory
 32 KB from 0x0 to 0x7FFF is available as program area :
 * 0x000 to 0x0FF: Allocated as the destination address for RST instructions and the starting address for interrupts.
 * 0x100 to 0x14F: Allocated as the ROM area for storing data such as the name of the game.
@@ -145,7 +145,7 @@ DMG allows 40 x 32-bit DMA transfers from 0x8000-0xDFFF to OAM (0xFE00-0xFE9F).
 
 The transfer start address can be specified in increments of 0x100 for 0x8000-0xDFFF.
 
-##Timer (Wip)
+## Timer (Wip)
 Execution time (E.T.) for each instruction is given in microseconds for an assumed 4 MHz clock.
 Total machine cycles (M) are indicated with total clock periods (T States).
 
@@ -173,7 +173,7 @@ Clock (Second cycle)
 
 ^Time clock: The Z80 holds two types of clock (m and t)
 
-##Registers JoyPad interrupt $FF00
+## Registers JoyPad interrupt $FF00
 * Bit 3 - P13 in port 
 * Bit 2 - P12 in port 
 * Bit 1 - P11 in port 
@@ -181,7 +181,7 @@ Clock (Second cycle)
 * Bit 5 - P15 out port { $8 - Down | $4 - Up | $2 - Left | $1 - Right }
 * Bit 4 - P14 out port { $80 - Start | $40 - Select | $20 -B | $10 -A }
 
-##Display
+## Display
 The DMG CPU has 8 KB (64 Kbits) of built-in LCD display RAM.
 
 Data specification ranges for OBJ characters: 
@@ -200,7 +200,7 @@ Frame frequency: 59.7Hz
 ![Monochrome4-shades](http://fornaxvoid.com/colorpalettes/GameBoy-palette.png)
 
 
-####Resolution 160x144 = 20x18 tiles
+#### Resolution 160x144 = 20x18 tiles
 ```
     Max # of sprites: 40
     Max # sprites/line: 10
@@ -229,7 +229,7 @@ Frame frequency: 59.7Hz
                                                       00000000      
  ```
 
-####[Shader](https://youtu.be/6Xt7j9bnRRI)
+#### [Shader](https://youtu.be/6Xt7j9bnRRI)
 ```
     Green Scale                                           Dark Yellow Scale
 ```
@@ -247,7 +247,7 @@ Frame frequency: 59.7Hz
 
 
 
-####[Shader Invert](https://youtu.be/-VP92QbATH8)
+#### [Shader Invert](https://youtu.be/-VP92QbATH8)
 ```
     Green Scale                                           Dark Yellow Scale
 ```
@@ -265,7 +265,7 @@ Frame frequency: 59.7Hz
 
 
 
-####[Shader Polarized](https://youtu.be/W7DstyFZ_j8)
+#### [Shader Polarized](https://youtu.be/W7DstyFZ_j8)
 ```
     Green Scale                                           Dark Yellow Scale
 ```
@@ -282,7 +282,7 @@ Frame frequency: 59.7Hz
 ![](http://i.imgur.com/xxwiHgx.png?1)![](http://i.imgur.com/54QrwT8.png?1)
 
 
-####[Backlight (DMG/Pocket) Custom](https://youtu.be/XElP1Y7MT7c)
+### [Backlight (DMG/Pocket) Custom](https://youtu.be/XElP1Y7MT7c)
 ```
     Orange                                                 Green 
 ```
@@ -305,7 +305,7 @@ Frame frequency: 59.7Hz
 
 
 
-####[Backlight (DMG/Pocket) Custom Invert](https://youtu.be/Em2u3XLbHvw)
+#### [Backlight (DMG/Pocket) Custom Invert](https://youtu.be/Em2u3XLbHvw)
 ```
     Orange                                                 Green 
 ```
@@ -328,7 +328,7 @@ Frame frequency: 59.7Hz
 
 
 
-####[Backlight (DMG/Pocket) Custom Polarized](https://youtu.be/oZMo_Q4DtRY)
+#### [Backlight (DMG/Pocket) Custom Polarized](https://youtu.be/oZMo_Q4DtRY)
 ```
     Orange                                                 Green 
 ```
@@ -351,7 +351,7 @@ Frame frequency: 59.7Hz
 
 
 
-####[Scanlines Emulated](https://www.youtube.com/watch?v=rKAhKN8gFdw) / click on the image 
+#### [Scanlines Emulated](https://www.youtube.com/watch?v=rKAhKN8gFdw) / click on the image 
 ```
     Vertical
 ```
@@ -369,7 +369,7 @@ Frame frequency: 59.7Hz
 
 
 
-####[Tile Block Graphics](https://youtu.be/LpRdiGlk1zY)
+#### [Tile Block Graphics](https://youtu.be/LpRdiGlk1zY)
 ```
    Original                                                w/ Tile Block
 ```
@@ -380,13 +380,13 @@ Frame frequency: 59.7Hz
 ![](http://i.imgur.com/y26RHa6.png?1)
 
 
-##Sound (WIP)
+## Sound (WIP)
 * Sound 1: Generates a rectangle waveform with sweep and envelope functions.
 * Sound 2: Generates a rectangle waveform with an envelope function.
 * Sound 3: Outputs any waveform from waveform RAM.
 * Sound 4: Generates white noise with an envelope function.
 
-####ON Mode
+#### ON Mode
 
 Sounds 1, 2, 4:
 * Output level is 0 with the default envelope value set to a value other than 0000 and in DOWN mode
@@ -395,7 +395,7 @@ Sounds 1, 2, 4:
 Sound 3:
 * With the output level set to mute (bits 5 and 6 of NR32 set to 0)
 
-####OFF Mode
+#### OFF Mode
 
 Sounds 1, 2, and 4:
 * When the default level is set to 0000 with the envelope in DOWN mode (initialization not required)
@@ -403,11 +403,11 @@ Sounds 1, 2, and 4:
 Sound 3:
 * When the Sound OFF flag (bit 7 of NR30) is set to 0. Setting the Sound OFF flag to 1 cancels OFF mode. Sound 3 is started by re-initialization.
 
-####Sumary
+#### Sumary
 
 ```Reg  |  Addr  |  D7 ... D0 ```
 
-##CPU
+## CPU
 * Acc : Accumulator (8 bits)
 * Aux Reg: B,C,D,E,H,L -> (BC), (DE), (HL) (8 bits)
 * PC: Program Counter (16 bits)
@@ -415,7 +415,7 @@ Sound 3:
 * F: Flag Register (8 bits)
 
 
-###Reducing Power Consumption
+### Reducing Power Consumption
 
 Can be used to recude the power consumption of the gameboy, and to extend the life of the batteries.
 
@@ -425,7 +425,7 @@ Can be used to recude the power consumption of the gameboy, and to extend the li
 * PWR Not using CGB Double Speed Mode (Future work)
 * PWR Using the Skills
 
-####Sumary
+#### Sumary
 ```
 C | H | N | Z |  CYCL | OpCodes
 ```
@@ -529,14 +529,14 @@ Vertical blank	                            1           	4560 (10 lines)
 Full frame (scans and vblank)		            timeX               70224
 ```
 
-##Interrupt Procedure
+## Interrupt Procedure
 * V-Blank
 * LCDC Status
 * Timer Overflow
 * Serial Transfer Completion
 * Joy P10-P13
 
-##Monitor Rom
+## Monitor Rom
 When power on the hardware is turned on, the monitor ROM checks for errors in the ‘Nintendo’ logo character data within the game software.
 If the data is correct, the Nintendo logo is displayed and the program is then started. 
 If there is an error in the data, the screen flashes repeatedly.
@@ -545,7 +545,7 @@ The conditions required for starting the user program are as follows.
 Starting Address 0x150.
 The starting address can be freely set by writing a jump destination address at 0x102 and 0x103.
 
-##Game Boy Memory Controllers (MBC)
+## Game Boy Memory Controllers (MBC)
 
 #### ROM
 None (32KByte ROM only).
@@ -597,7 +597,7 @@ This controller is similar to MBC1 except it accesses all 16mbits of ROM without
  
 
 
-##References :
+## References :
 * Game BoyTM CPU Manual, Pan of Anthrox, GABY, Marat Fayzullin, Pascal Felber, Paul Robson, Martin Korth, kOOPa, Bowser.
 * ￼Game Boy PROGRAMMING MANUAL v.1.0, DMG-06-4216-001-A Released 11/09/1999 Nintendo.
 * Study of the techniques for emulation programming, Victor Moya del Barrio, Agustin Fernandez, 2001.
